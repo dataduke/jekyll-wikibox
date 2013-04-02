@@ -10,8 +10,8 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 ## Project Structure
 
     .
-    |-- _demo (can be ignored; used for project information only)
     |-- _backup (can be ignored; used for backup of development files)
+    |-- _demo (can be ignored; used for project information only)
     |-- _includes (used for building index pages)
     |   |-- main-index-sidebar.md
     |   |-- main-index-box-N.md
