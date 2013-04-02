@@ -5,11 +5,11 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 
 ## Change History
 
-- *Version 0.1* Inital commit, not working
+- **Version 0.1** Inital commit, not working
 
 ## Preview
 
-[Demo Version 0.1](/demo-v01.jpg)
+![Demo Version 0.1](demo-v01.jpg)
 
 ## References
 
