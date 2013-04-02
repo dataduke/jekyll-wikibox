@@ -51,7 +51,7 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
   - launch local website in safari via alfred app
   - search local website in safari via alfred app
   - only create local relate links that don't need a webserver (static html only), like:
-    `<a href='./folder/2011-12-29-jekyll-introduction.html title='Jekyll Introduction'>Jekyll Introduction</a>`
+    `<a href='./folder/2011-12-29-jekyll-introduction.html' title='Jekyll Introduction'>Jekyll Introduction</a>`
 - big appify (maybe not to be done)
   - create browser app which wraps all dependencies (jekyll, ruby)
   - implement toggle to source view on post layout
@@ -78,7 +78,7 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 ### Design Inspirations
 
 - [Sublime Text](http://www.sublimetext.com/)
-- [Soda-Dark.sublime-theme] (https://github.com/buymeasoda/soda-theme)
+- [Soda-Dark.sublime-theme](https://github.com/buymeasoda/soda-theme)
 - [Monokai-Soda.tmtheme](https://github.com/simeonv/st2-color-schemes)
 
 ### Markup Languages
