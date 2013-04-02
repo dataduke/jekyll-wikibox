@@ -5,6 +5,10 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 
 ![Demo Version 0.1](https://raw.github.com/dataduke/jekyll-wiki/master/%E2%80%8Edemo-v01.jpg)
 
+## Change History
+
+- **Version 0.1** Inital commit, not working
+
 ## Implemented Features
 
 - multiple boxes/repositories (blogs) for notes (markdown, textile)
@@ -19,10 +23,10 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 - advanced layout
   - card stack view
 - sorting
-  - Sort by date modified
-  - Sort by category
-  - Sort by tags
-  - Sort by name
+  - sort by date modified
+  - sort by category
+  - sort by tags
+  - sort by name
 - markup
   - add syntax highlighting
   - add mathjs
@@ -48,16 +52,14 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
   - search local website in safari via alfred app
   - only create local relate links that don't need a webserver (static html only), like:
     `<a href='./folder/2011-12-29-jekyll-introduction.html title='Jekyll Introduction'>Jekyll Introduction</a>`
-- big appify
+- big appify (maybe not to be done)
   - create browser app which wraps all dependencies (jekyll, ruby)
   - implement toggle to source view on post layout
   - allow editing inside source view
   - separate/strip boxes to folders outside of app
   - allow only custom folder path for boxes outside of wiki instance
-
-## Change History
-
-- **Version 0.1** Inital commit, not working
+- mobile appify
+  - make it deployable via dropbox for mobile use (ios, android)
 
 ## References
 
@@ -84,3 +86,4 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 - [markdown](http://daringfireball.net/projects/markdown/) by John Gruber
 - [multimarkdown](http://fletcherpenney.net/multimarkdown/) by Fletcher Penny
 - [textile](http://textism.com/tools/textile/) by Dean Allan
+- [taskpaper](http://www.hogbaysoftware.com/products/taskpaper) by Jesse Grosjean
