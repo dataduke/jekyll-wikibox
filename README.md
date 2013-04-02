@@ -22,12 +22,14 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
   - box layout
 - advanced layout
   - card stack view
+  - show/hide box column by selesction in main view
+  - allow drag and drop to sort columns
 - sorting
   - sort by date modified
   - sort by category
   - sort by tags
   - sort by name
-- set content column width
+- set box/post/content column width
   - 300px
   - 600px
   - 900px
