@@ -18,9 +18,9 @@ TBD [BOX 4](/blog4/index.html)
 
 **CHANGE VIEW **
 
-[INDEX](/name.html)  
-TBD  [CARD](/name.html)  
-TBD  [POST](/name.html)  
+[INDEX LIST](/name.html)  
+TBD  [CARD STACK](/name.html)  
+TBD  [POST LINE](/name.html)  
 (each post one column)
 
 **SORT BY**

@@ -4,8 +4,7 @@
 TBD [BOX 1](/blog1/index.html)  
 TBD [BOX 2](/blog2/index.html)  
 TBD [BOX 3](/blog3/index.html)  
-TBD [BOX 4](/blog4/index.html)  
-(with grab handle for sorting)
+TBD [BOX 4](/blog4/index.html)
 
 **INSPECT BOX**
 
@@ -16,10 +15,9 @@ TBD [BOX 4](/blog4/index.html)
 
 **CHANGE VIEW **
 
-[INDEX](/name.html)  
-TBD  [CARD](/name.html)  
-TBD  [POST](/name.html)  
-(each post one column)
+[INDEX LIST](/name.html)  
+TBD  [CARD STACK](/name.html)  
+TBD  [POST LINE](/name.html)
 
 **SORT BY**
 
@@ -33,42 +31,8 @@ TBD [Name](/name.html)
 
 [300 PX](/tags.html)  
 TBD [600 PX](/name.html) 
-slider for dynamic width  
-Toggle line number column
 
 **INFO**
 
 {{ site.time | date: '%Y' }} dataduke  
 Version 0.1
-
-**LEFT SIDEBAR**
-
-- Info
-- favorite posts
-- saved searches/filters
-- can be toggled via icon in bottom bar
-
-**RIGHT SIDEBAR**
-
-- preferences/options
-- can be toggled via icon in bottom bar
-
-**TOP BAR FIXED**
-
-- logo (home link)
-- name (home link)
-- links to each box
-
-- link to wiki distrubutor landing page
-- links to other wiki instances 
-
-**BOTTOM BAR FIXED**
-
-- command line for search/filter/set preferences with autocomplete and suggestions and history
-- icon for toggle preferences sidebar
-- icon for toogle additional bottom status bar 
-
-** BOTTOM STATUS BAR FIXED**
-
-- breadcrumb navigation
-- statistices: word/letter count etc.
