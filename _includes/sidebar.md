@@ -8,20 +8,20 @@
 **CHANGE VIEW **
 
 [INDEX](/name.html)  
-[CARD](/name.html)  
+TBD  [CARD](/name.html)  
 
 **SORT BY**
 
 [Date Created](/datecreated.html)  
-[Date Modified](/datemodified.html)  
-[Category](/category.html)  
-[Tags](/tags.html)  
-[Name](/name.html) 
+TBD [Date Modified](/datemodified.html)  
+TBD [Category](/category.html)  
+TBD [Tags](/tags.html)  
+TBD [Name](/name.html) 
 
-**CHANGE WIDTH**
+**SET COLUMN WIDTH**
 
 [300 PX](/tags.html)  
-[600 PX](/name.html) 
+TBD [600 PX](/name.html) 
 
 **ABOUT**
 
@@ -36,4 +36,4 @@ markdown, textile, ruby, jekyll, sublime text, Soda-Dark.sublime-theme, Monokai-
 **INFO**
 
 {{ site.time | date: '%Y' }} dataduke  
-Version 1.0
+Version 0.1
