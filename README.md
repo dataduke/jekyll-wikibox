@@ -52,7 +52,7 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 
 - **Version alpha01 (2013-04-02):** Inital commit, not working
 
-## Implemented Features (Done)
+## Implemented Features (DONE)
 
 - multiple boxes/repositories (blogs) for notes (markdown, textile)
 - sort by date created
@@ -64,7 +64,7 @@ refer to **taskpaper** file (plaintext) in **_background** folder:
 
     ./_background/jekyll-wiki.taskpaper
 
-## Inital Feature Backlog (To Be Done)
+## Initial Feature Backlog (TBD)
 
 - basic layout  
   - fix horizontal scrolling
