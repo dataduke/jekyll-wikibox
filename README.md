@@ -3,7 +3,43 @@
 This project is supposed to serve as foundation of a responsive and flexible guerilla wiki for hackers.
 It transfers your markdown/textile notes to satic html layout inspired by sublime text editor.
 
-![Demo Version 0.1](https://raw.github.com/dataduke/jekyll-wiki/master/%E2%80%8Edemo-v01.jpg)
+## Preview/Current Demo
+
+![Version 0.1](https://raw.github.com/dataduke/jekyll-wiki/master/_demo/%E2%80%8Edemo-v01.jpg)
+
+## Project Structure
+
+    .
+    |-- _demo (can be ignored; used for project information only)
+    |-- _backup (can be ignored; used for backup of development files)
+    |-- _includes (used for building index pages)
+    |   |-- main-index-sidebar.md
+    |   |-- main-index-box-N.md
+    |   |-- box-N-index-sidebar.md
+    |   |-- box-N-index.md
+    |-- _layouts
+    |   |-- default.html
+    |   |-- post.html
+    |-- _site (created by jekyll for deployment; not checked in)
+    |-- _plugins 
+    |   |-- additional-feature-X
+    |-- assets (for layout dependencies only)
+    |   |-- css
+    |       |-- style.css
+    |   |-- img
+    |   |-- js
+    |   |-- favicon.ico
+    |-- box-N (box 1-4 implemented for testing; boxes can be added if needed and be renamed as wished)
+    |   |-- _posts
+    |   |   |-- 2013-01-01-hello-world.markdown (.md or .textile or .taskpaper)
+    |   |   |-- 2013-01-01-hello-world (folder for post attachments)
+    |   |       |-- attachment-1.jpg
+    |   |       |-- attachment-2.pdf
+    |   |-- atom.xml
+    |   |-- index.html
+    |-- _config.yml
+    |-- index.html
+    |-- atom.xml
 
 ## Change History
 
