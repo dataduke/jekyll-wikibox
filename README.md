@@ -3,16 +3,23 @@
 This project is supposed to serve as foundation of a responsive and flexible guerilla wiki for hackers.
 It transfers your markdown/textile notes to satic html layout inspired by sublime text editor.
 
-## Preview/Current Demo
+## Current State/Preview
 
-![Version 0.1](https://github.com/dataduke/jekyll-wiki/raw/master/%E2%80%8E_demo/version01.jpg)
+![Version 0.1](https://github.com/dataduke/jekyll-wiki/raw/master/%E2%80%8E_background/snapshot-version-a01.jpg)
+
+## Usage/Demo
+
+1. install ruby
+2. install jekyll: `sudo gem install jekyll`
+3. fork/clone/check out this github project
+4. inside project run `jekyll --server` and open `http://localhost:4000/`
 
 ## Project Structure
 
     .
-    |-- _backup (can be ignored; used for backup of development files)
-    |-- _demo (can be ignored; used for project information only)
-    |-- _includes (used for building index pages)
+    |-- _background   (can be ignored; used for project information only)
+    |-- _backup       (can be ignored; used at development for backup of important files)
+    |-- _includes     (used for building index pages)
     |   |-- main-index-sidebar.md
     |   |-- main-index-box-N.md
     |   |-- box-N-index-sidebar.md
@@ -20,7 +27,7 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
     |-- _layouts
     |   |-- default.html
     |   |-- post.html
-    |-- _site (created by jekyll for deployment; not checked in)
+    |-- _site         (not checked in; created by jekyll as deployment directory)
     |-- _plugins 
     |   |-- additional-feature-X
     |-- assets (for layout dependencies only)
@@ -29,7 +36,7 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
     |   |-- img
     |   |-- js
     |   |-- favicon.ico
-    |-- box-N (box 1-4 implemented for testing; boxes can be added if needed and be renamed as wished)
+    |-- box-N         (box 1-4 for testing; if needed more boxes can be added or renamed)
     |   |-- _posts
     |   |   |-- 2013-01-01-hello-world.markdown (.md or .textile or .taskpaper)
     |   |   |-- 2013-01-01-hello-world (folder for post attachments)
@@ -43,14 +50,21 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 
 ## Change History
 
-- **Version 0.1** Inital commit, not working
+- **Version alpha01 (2013-04-02):** Inital commit, not working
 
-## Implemented Features
+## Implemented Features (Done)
 
 - multiple boxes/repositories (blogs) for notes (markdown, textile)
 - sort by date created
 
-## To Be Done
+## Project Planning
+
+For information about the next planned features and current backlog
+refer to **taskpaper** file (plaintext) in **_background** folder:
+
+    ./_background/jekyll-wiki.taskpaper
+
+## Inital Feature Backlog (To Be Done)
 
 - basic layout  
   - fix horizontal scrolling
@@ -130,6 +144,12 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 - [multi-blog-jekyll](https://github.com/ggarron/multi-blog-jekyll)
 - [github pages](http://pages.github.com/)  
 - [github pages help](https://help.github.com/categories/20/articles) 
+
+### Feature Inspirations
+
+ - **Pile of Index Cards (PoIC)**
+    - [Wiki](http://pileofindexcards.org/)
+    - [Blog](http://pileofindexcards.org/blog/)
 
 ### Design Inspirations
 
