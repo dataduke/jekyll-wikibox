@@ -43,6 +43,7 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
   - build theme github-like
   - build theme apple-like
   - build theme paint-pot-like (website suitable)
+  - build theme [FoldingText](http://www.foldingtext.com/) like 
   - add theme switcher
 - individual columns
   - show/hide boxes on landing page
@@ -63,7 +64,7 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 
 ## References
 
-### Core Technology
+### Core Technologies
 
 - [ruby](http://www.ruby-lang.org/en/)
 - [jekyll](https://github.com/mojombo/jekyll)
