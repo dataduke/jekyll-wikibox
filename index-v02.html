@@ -1,0 +1,54 @@
+<style type="text/css">
+body {
+  background-color: #75777f;
+  /*font*/
+  font-family: helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-align: left;
+  letter-spacing: 0px;
+  line-height: 24px;
+}
+
+/*colors*/
+.inverted { background-color: #222222; color: #b3b3b3; }
+.grey1 { background-color: #e6e6e6; color: #333333;}
+.grey2 { background-color: #cccccc; color: #333333;}
+
+/*columns*/
+.col { margin: 0px; width: 260px; padding: 20px;}
+.top{ position:fixed; top:0px; border-top: 100px solid #75777f;}
+.pos0 { left:0px; border-top: 100px solid #222222; border-bottom: 1600px solid #222222 ;}
+.pos1 { left:300px; }
+.pos2 { left:600px; }
+.pos3 { left:900px; }
+.pos4 { left:1200px; }
+
+</style>
+
+<div class="inverted col top pos0">
+{% capture sidebar %}{% include sidebar.md %}{% endcapture %}
+{{ sidebar | markdownify }}
+</div>
+
+<div class="grey1 col top pos1">
+{% capture blog1 %}{% include blog1.md %}{% endcapture %}
+{{ blog1 | markdownify }}
+</div>
+
+<div class="grey1 col top pos2">
+{% capture blog2 %}{% include blog2.md %}{% endcapture %}
+{{ blog2 | markdownify }}
+</div>
+
+<div class="grey1 col top pos3">
+{% capture blog3 %}{% include blog3.md %}{% endcapture %}
+{{ blog3 | markdownify }}
+</div>
+
+<div class="grey1 col top pos4">
+{% capture blog4 %}{% include blog4.md %}{% endcapture %}
+{{ blog4 | markdownify }}
+</div>

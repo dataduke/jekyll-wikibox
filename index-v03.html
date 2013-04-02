@@ -1,0 +1,81 @@
+---
+layout: nil
+---
+
+<style type="text/css">
+body {
+  background-color: #222222;
+  /*font*/
+  font-family: menlo, helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-align: left;
+  letter-spacing: 0px;
+  line-height: 24px;
+}
+
+/*columns column width = 300px = (sidebar+numbers) */
+.sidebar { margin: 0px; width: 209px; padding: 20px; border-right: 1px solid #191919}
+.numbers { margin: 0px; width: 20px; padding: 15px; position:fixed; top:0px; left:250px;}
+.column { margin: 0px; width: 260px; padding: 20px;}
+.top{ position:fixed; top:0px; border-top: 100px solid #222222;}
+.pos0 { left:0px; border-top: 100px solid #1e1e1e; border-bottom: 1600px solid #1e1e1e;}
+.pos1 { left:300px; }
+.pos2 { left:600px; }
+.pos3 { left:900px; }
+.pos4 { left:1200px; }
+
+/*colors monokai soda*/
+.greysnow { background-color: #1e1e1e; color: #d2d2d2;}
+.greymid { background-color: #222222; color: #8d8d8a;}
+.greyred { background-color: #222222; color: #f32570;}
+.greyblue { background-color: #222222; color: #5ec4d7;}
+.greylila { background-color: #222222; color: #ae81ff;}
+.greygreen { background-color: #222222; color: #96cc2c;}
+.greyyellow { background-color: #222222; color: #e6db74;}
+
+/*links*/
+a:link {color:#767676; text-decoration:none;}    /* unvisited link */
+a:visited {color:#767676; text-decoration:none;} /* visited link */
+a:hover {color:#767676; text-decoration:underline;}   /* mouse over link */
+a:active {color:#767676; text-decoration:underline;}  /* selected link */
+
+/*listings*/
+ul {margin:0px; padding: 0px;}
+.listing-seperator {list-style-type:none; margin-top: 1em; margin-bottom:1em;  border: 1px solid; 
+  padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px;}
+.listing-item {list-style-type:none;}
+
+</style>
+
+<div class="sidebar top pos0 greysnow">
+{% capture sidebar %}{% include sidebar.md %}{% endcapture %}
+{{ sidebar | markdownify }}
+</div>
+
+<div class="numbers greymid">
+{% capture numbers %}{% include numbers.md %}{% endcapture %}
+{{ numbers | markdownify }}
+</div>
+
+<div class="column top pos1 greygreen">
+{% capture blog1 %}{% include blog1.md %}{% endcapture %}
+{{ blog1 | markdownify }}
+</div>
+
+<div class="column top pos2 greyred ">
+{% capture blog2 %}{% include blog2.md %}{% endcapture %}
+{{ blog2 | markdownify }}
+</div>
+
+<div class="column top pos3 greyblue">
+{% capture blog3 %}{% include blog3.md %}{% endcapture %}
+{{ blog3 | markdownify }}
+</div>
+
+<div class="column top pos4 greylila">
+{% capture blog4 %}{% include blog4.md %}{% endcapture %}
+{{ blog4 | markdownify }}
+</div>

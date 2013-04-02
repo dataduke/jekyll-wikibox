@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<div class="post">
+	{{ content }}
+</div>
+{% if page.comments %}
+{% include comments.md %}
+{% endif %}

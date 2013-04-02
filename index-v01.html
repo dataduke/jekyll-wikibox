@@ -1,0 +1,61 @@
+---
+layout: nil
+---
+
+<style type="text/css">
+
+body {
+  background-color: #cccccc;
+  font-family: helvetica, sans-serif;
+  font-size: 13px;
+  color: #000000;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-align: left;
+  letter-spacing: 0px;
+  line-height: 24px;
+}
+
+.sidebar {
+  margin: 0px; 
+  width: 270px;
+  padding: 10px;
+  border-right: 5px solid #eaeaea;
+  border-left: 5px solid #4c4c4c;
+}
+
+.column {
+  margin: 0px; 
+  width: 270px;
+  padding: 10px;
+  border-right: 5px solid #eaeaea;
+  border-left: 5px solid #4c4c4c;
+}
+
+</style>
+
+<div class="sidebar">
+{% capture sidebar %}{% include sidebar.md %}{% endcapture %}
+{{ sidebar | markdownify }}
+</div>
+
+<div class="column">
+{% capture blog1 %}{% include blog1.md %}{% endcapture %}
+{{ blog1 | markdownify }}
+</div>
+
+<div class="column">
+{% capture blog2 %}{% include blog2.md %}{% endcapture %}
+{{ blog2 | markdownify }}
+</div>
+
+<div class="column">
+{% capture blog3 %}{% include blog3.md %}{% endcapture %}
+{{ blog3 | markdownify }}
+</div>
+
+<div class="column">
+{% capture blog4 %}{% include blog4.md %}{% endcapture %}
+{{ blog4 | markdownify }}
+</div>

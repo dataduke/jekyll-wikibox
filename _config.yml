@@ -1,0 +1,4 @@
+markdown: rdiscount
+pygments: true
+permalink: none
+exclude: ['Rakefile', 'README.textile', 'README.md', 'config.rb', 'CNAME']
