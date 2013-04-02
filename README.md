@@ -3,61 +3,35 @@
 This project is supposed to serve as foundation of a responsive and flexible guerilla wiki for hackers.
 It transfers your markdown/textile notes to satic html layout inspired by sublime text editor.
 
-## Current State/Preview
-
-![Version alpha.01](https://github.com/dataduke/jekyll-wiki/raw/master/_background/snapshot-version-a01.jpg)
-![Version alpha.02](https://github.com/dataduke/jekyll-wiki/raw/master/_background/snapshot-version-a02.jpg)
+- Usage/Demo
+- Change History
+- Project Planning
+  - Implemented Features (DONE)
+  - Initial Feature Backlog (TBD)
+- Project Structure
+- References
+  - Core Technologies
+  - Related Technologies
+  - Feature Inspirations
+  - Design Inspiration
+  - Markup Languages
 
 ## Usage/Demo
 
 1. install ruby
-2. install jekyll: `sudo gem install jekyll`
+2. install jekyll `sudo gem install jekyll`
 3. fork/clone/check out this github project
 4. inside project run `jekyll --server` and open `http://localhost:4000/`
-
-## Project Structure
-
-    .
-    |-- _background   (can be ignored; used for project information only)
-    |-- _backup       (can be ignored; used at development for backup of important files)
-    |-- _includes     (used for building index pages)
-    |   |-- main-index-sidebar.md
-    |   |-- main-index-box-N.md
-    |   |-- box-N-index-sidebar.md
-    |   |-- box-N-index.md
-    |-- _layouts
-    |   |-- default.html
-    |   |-- post.html
-    |-- _site         (not checked in; created by jekyll as deployment directory)
-    |-- _plugins 
-    |   |-- additional-feature-X
-    |-- assets        (for layout dependencies only)
-    |   |-- css
-    |       |-- style.css
-    |   |-- img
-    |   |-- js
-    |   |-- favicon.ico
-    |-- box-N         (box 1-4 for testing; more boxes can be added/renamed/deleted)
-    |   |-- _posts
-    |   |   |-- 2013-01-01-hello-world.markdown    (.md or .textile or .taskpaper)
-    |   |   |-- 2013-01-01-hello-world             (folder for post attachments)
-    |   |       |-- attachment-1.jpg
-    |   |       |-- attachment-2.pdf
-    |   |-- atom.xml
-    |   |-- index.html
-    |-- _config.yml
-    |-- index.html
-    |-- atom.xml
 
 ## Change History
 
 - Version **alpha.01** (2013-04-02): *Inital commit; not working.*
 - Version **alpha.02** (2013-04-03): *Project restructuring.*
 
-## Implemented Features (DONE)
+## Current State/Preview
 
-- multiple boxes/repositories (blogs) for notes (markdown, textile)
-- sort by date created
+![Version alpha.01](https://github.com/dataduke/jekyll-wiki/raw/master/_background/snapshot-version-a01.jpg)
+![Version alpha.02](https://github.com/dataduke/jekyll-wiki/raw/master/_background/snapshot-version-a02.jpg)
 
 ## Project Planning
 
@@ -66,7 +40,12 @@ refer to **taskpaper** file (plaintext) in **_background** folder:
 
     ./_background/jekyll-wiki.taskpaper
 
-## Initial Feature Backlog (TBD)
+### Implemented Features (DONE)
+
+- multiple boxes/repositories (blogs) for notes (markdown, textile)
+- sort by date created
+
+### Initial Feature Backlog (TBD)
 
 - basic layout  
   - fix horizontal scrolling
@@ -132,6 +111,40 @@ refer to **taskpaper** file (plaintext) in **_background** folder:
 - mobile appify
   - make it deployable via dropbox for mobile use (ios, android)
   - every box has its own feed which is usable by rss-reader apps
+
+## Project Structure
+
+    .
+    |-- _background   (can be ignored; used for project information only)
+    |-- _backup       (can be ignored; used at development for backup of important files)
+    |-- _includes     (used for building index pages)
+    |   |-- main-index-sidebar.md
+    |   |-- main-index-box-N.md
+    |   |-- box-N-index-sidebar.md
+    |   |-- box-N-index.md
+    |-- _layouts
+    |   |-- default.html
+    |   |-- post.html
+    |-- _site         (not checked in; created by jekyll as deployment directory)
+    |-- _plugins 
+    |   |-- additional-feature-X
+    |-- assets        (for layout dependencies only)
+    |   |-- css
+    |       |-- style.css
+    |   |-- img
+    |   |-- js
+    |   |-- favicon.ico
+    |-- box-N         (box 1-4 for testing; more boxes can be added/renamed/deleted)
+    |   |-- _posts
+    |   |   |-- 2013-01-01-hello-world.markdown    (.md or .textile or .taskpaper)
+    |   |   |-- 2013-01-01-hello-world             (folder for post attachments)
+    |   |       |-- attachment-1.jpg
+    |   |       |-- attachment-2.pdf
+    |   |-- atom.xml
+    |   |-- index.html
+    |-- _config.yml
+    |-- index.html
+    |-- atom.xml
 
 ## References
 
