@@ -5,7 +5,7 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 
 ## Current State/Preview
 
-![Version 0.1](https://github.com/dataduke/jekyll-wiki/raw/master/_background/snapshot-version-a01.jpg)
+![Version alpha01](https://github.com/dataduke/jekyll-wiki/raw/master/_background/snapshot-version-a01.jpg)
 
 ## Usage/Demo
 
