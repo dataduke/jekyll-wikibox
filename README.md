@@ -36,10 +36,10 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
     |   |-- img
     |   |-- js
     |   |-- favicon.ico
-    |-- box-N         (box 1-4 for testing; if needed more boxes can be added or renamed)
+    |-- box-N         (box 1-4 for testing; more boxes can be added/renamed/deleted)
     |   |-- _posts
-    |   |   |-- 2013-01-01-hello-world.markdown (.md or .textile or .taskpaper)
-    |   |   |-- 2013-01-01-hello-world (folder for post attachments)
+    |   |   |-- 2013-01-01-hello-world.markdown    (.md or .textile or .taskpaper)
+    |   |   |-- 2013-01-01-hello-world             (folder for post attachments)
     |   |       |-- attachment-1.jpg
     |   |       |-- attachment-2.pdf
     |   |-- atom.xml
