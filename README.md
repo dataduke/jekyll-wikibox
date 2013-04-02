@@ -47,8 +47,9 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 - search
   - add search box in sidebar
 - themes
+  - finish sublime text theme
   - build theme Simple Github / jekyll-bootstrap with [twitter theme](http://themes.jekyllbootstrap.com/)
-  - build theme [Apple Wiki](https://developer.apple.com/technologies/ios/)
+  - build theme [Apple Developer Wiki](https://developer.apple.com/technologies/ios/)
   - build theme [FoldingText Website](http://www.foldingtext.com/)
   - build theme paint-pot-like (website suitable)
   - build theme scientific thesis (website suitable)
@@ -86,9 +87,10 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 
 ### Design Inspirations
 
-- [Sublime Text](http://www.sublimetext.com/)
-- [Soda-Dark.sublime-theme](https://github.com/buymeasoda/soda-theme)
-- [Monokai-Soda.tmtheme](https://github.com/simeonv/st2-color-schemes)
+- Sublime Text Theme (default)
+  - [Sublime Text](http://www.sublimetext.com/)
+  - [Soda-Dark.sublime-theme](https://github.com/buymeasoda/soda-theme)
+  - [Monokai-Soda.tmtheme](https://github.com/simeonv/st2-color-schemes)
 
 ### Markup Languages
 
