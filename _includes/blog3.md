@@ -1,18 +1,19 @@
 [BOX 3](/blog3/index.html)
 
 <ul class="listing">
-{% for page in site.hello  %}
-  {% capture c %}{{page.category}}{% endcapture %}
-  {% capture y %}{{page.date | date:"%Y"}}{% endcapture %}
-  
+{% for post in site.posts %}
+  {% capture c %}{{post.category}}{% endcapture %}
+  {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+  {% if c == "blog3" %}
     {% if year != y %}
       {% assign year = y %}
       <li class="listing-seperator">{{ y }}</li>
     {% endif %}
     <li class="listing-item">
-      <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
-      <a href="{{ site.url }}{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
+      <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time> <br/>
+      <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li>
-    
+  {% endif %}
 {% endfor %}
+{% assign year = "0" %}
 </ul>

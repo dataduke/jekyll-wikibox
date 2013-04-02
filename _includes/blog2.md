@@ -10,9 +10,10 @@
       <li class="listing-seperator">{{ y }}</li>
     {% endif %}
     <li class="listing-item">
-      <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+      <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time> <br/>
       <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li>
-    {% endif %}
+  {% endif %}
 {% endfor %}
+{% assign year = "0" %}
 </ul>

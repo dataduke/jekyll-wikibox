@@ -39,18 +39,25 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
   - add mathjs
 - special cards
   - add support for .taskpaper files
+  - add support for .rst file (reStructuredText)
   - add support for learning card attribute (POI pile of index cards)
 - attachment and image support
   - attachment folder has same name as post (sits in same directory)
   - create automatic links to images in attachment folders
   - add support for post/card attachments (contained in post-name-folders)
-- search
-  - add search box in sidebar
+- add top bar
+  - add search box on left
+  - add breadcrumb path
+  - filter box (for highlighting words in content area)
+- add config file
+  - global font with font size
+  - contains attributes for each box (box name, relative box path, box foreground color, box background color)
 - themes
   - finish sublime text theme
   - build theme Simple Github / jekyll-bootstrap with [twitter theme](http://themes.jekyllbootstrap.com/)
   - build theme [Apple Developer Wiki](https://developer.apple.com/technologies/ios/)
   - build theme [FoldingText Website](http://www.foldingtext.com/)
+  - build theme [docs](https://readthedocs.org/)
   - build theme paint-pot-like (website suitable)
   - build theme scientific thesis (website suitable)
   - add theme switcher
@@ -70,6 +77,7 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
   - allow only custom folder path for boxes outside of wiki instance
 - mobile appify
   - make it deployable via dropbox for mobile use (ios, android)
+  - every box has its own feed which is usable by rss-reader apps
 
 ## References
 
@@ -87,7 +95,7 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 
 ### Design Inspirations
 
-- Sublime Text Theme (default)
+- **Sublime Text Theme (default)**
   - [Sublime Text](http://www.sublimetext.com/)
   - [Soda-Dark.sublime-theme](https://github.com/buymeasoda/soda-theme)
   - [Monokai-Soda.tmtheme](https://github.com/simeonv/st2-color-schemes)
@@ -96,5 +104,6 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 
 - [markdown](http://daringfireball.net/projects/markdown/) by John Gruber
 - [multimarkdown](http://fletcherpenney.net/multimarkdown/) by Fletcher Penny
+- [github flavored markdown](https://help.github.com/articles/github-flavored-markdown) by GitHub
 - [textile](http://textism.com/tools/textile/) by Dean Allan
 - [taskpaper](http://www.hogbaysoftware.com/products/taskpaper) by Jesse Grosjean
