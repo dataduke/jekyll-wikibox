@@ -123,11 +123,11 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 
 - [ruby](http://www.ruby-lang.org/en/)
 - [jekyll](https://github.com/mojombo/jekyll)
-- [jekyll-bootstrap](https://github.com/plusjade/jekyll-bootstrap) 
-- [multi-blog-jekyll](https://github.com/ggarron/multi-blog-jekyll)
 
 ### Related Technologies
 
+- [jekyll-bootstrap](https://github.com/plusjade/jekyll-bootstrap) 
+- [multi-blog-jekyll](https://github.com/ggarron/multi-blog-jekyll)
 - [github pages](http://pages.github.com/)  
 - [github pages help](https://help.github.com/categories/20/articles) 
 
