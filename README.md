@@ -27,6 +27,13 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
   - sort by category
   - sort by tags
   - sort by name
+- set content column width
+  - 300px
+  - 600px
+  - 900px
+- switch scrolling for post
+  - horizontal
+  - vertical 
 - markup
   - add syntax highlighting
   - add mathjs
@@ -40,10 +47,11 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 - search
   - add search box in sidebar
 - themes
-  - build theme github-like
-  - build theme apple-like
+  - build theme Simple Github / jekyll-bootstrap with [twitter theme](http://themes.jekyllbootstrap.com/)
+  - build theme [Apple Wiki](https://developer.apple.com/technologies/ios/)
+  - build theme [FoldingText Website](http://www.foldingtext.com/)
   - build theme paint-pot-like (website suitable)
-  - build theme [FoldingText](http://www.foldingtext.com/) like 
+  - build theme scientific thesis (website suitable)
   - add theme switcher
 - individual columns
   - show/hide boxes on landing page
