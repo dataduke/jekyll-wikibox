@@ -1,13 +1,13 @@
 # jekyll-wiki
 
-This project is supposed to serve as foundation of a responsive guerilla wiki for hackers.
+This project is supposed to serve as foundation of a responsive and flexible guerilla wiki for hackers.
 It transfers your markdown/textile notes to satic html layout inspired by sublime text editor.
 
 ![Demo Version 0.1](https://raw.github.com/dataduke/jekyll-wiki/master/%E2%80%8Edemo-v01.jpg)
 
 ## Implemented Features
 
-- multiple boxes (blogs)
+- multiple boxes/repositories (blogs) for notes (markdown, textile)
 - sort by date created
 
 ## To Be Done
@@ -24,18 +24,36 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
   - Sort by tags
   - Sort by name
 - markup
-  - add support for .taskpaper files
   - add syntax highlighting
   - add mathjs
+- special cards
+  - add support for .taskpaper files
+  - add support for learning card attribute (POI pile of index cards)
+- attachment and image support
+  - attachment folder has same name as post (sits in same directory)
+  - create automatic links to images in attachment folders
+  - add support for post/card attachments (contained in post-name-folders)
 - search
   - add search box in sidebar
-- theming
+- themes
   - build theme github-like
   - build theme apple-like
+  - build theme paint-pot-like (website suitable)
   - add theme switcher
 - individual columns
   - show/hide boxes on landing page
   - change view/sorting of each box individually
+- small appify
+  - launch local website in safari via alfred app
+  - search local website in safari via alfred app
+  - only create local relate links that don't need a webserver (static html only), like:
+    `<a href='./folder/2011-12-29-jekyll-introduction.html title='Jekyll Introduction'>Jekyll Introduction</a>`
+- big appify
+  - create browser app which wraps all dependencies (jekyll, ruby)
+  - implement toggle to source view on post layout
+  - allow editing inside source view
+  - separate/strip boxes to folders outside of app
+  - allow only custom folder path for boxes outside of wiki instance
 
 ## Change History
 
