@@ -17,7 +17,7 @@ TBD [BOX 4](/blog4/index.html)
 
 [INDEX LIST](/name.html)  
 TBD  [CARD STACK](/name.html)  
-TBD  [POST LINE](/name.html)
+TBD  [POST LINE](/name.html)  
 
 **SORT BY**
 
@@ -35,4 +35,4 @@ TBD [600 PX](/name.html)
 **INFO**
 
 {{ site.time | date: '%Y' }} dataduke  
-Version 0.1
+Version alpha.02
