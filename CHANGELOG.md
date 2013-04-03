@@ -1,10 +1,10 @@
 # jekyll-wiki: Version History
 
-### alpha.02 / 2013-04-03
+### alpha.02 --- 2013-04-03
 
-- Project restructuring
+IMPROVED Project Structure.  
+FIXED  Project Documentation.  
 
-### alpha.01 / 2013-04-02
+### alpha.01 --- 2013-04-02
 
--  Inital commit
--  not working
+ADDED Inital Layout.  
