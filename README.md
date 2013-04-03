@@ -6,8 +6,11 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 <!-- ![Version alpha.01](https://github.com/dataduke/jekyll-wiki/raw/master/.info/snapshot-version-a01.jpg) -->
 ![Version alpha.02](https://github.com/dataduke/jekyll-wiki/raw/master/.info/snapshot-version-a02.jpg)
 
-- Usage/Demo
-- Project Structure
+- Manual
+  - Installation
+  - Usage
+  - Live Demo
+  - Project Structure
 - Project Planning
   - Features (DONE)
   - Initial Backlog (TBD)
@@ -19,14 +22,32 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
   - Markup Languages
 - Change History
 
-## Usage/Demo
+## Manual
+
+### Installation
 
 1. install ruby
 2. install jekyll `sudo gem install jekyll`
 3. fork/clone/check out this github project
-4. in project run `jekyll --server` and open `http://localhost:4000/`
 
-## Project Structure
+### Usage
+
+#### Local
+
+1. change to `cd ~/github/jekyll-wiki`
+2. run `jekyll --server` 
+3. open `http://localhost:4000/`
+
+#### Web - Github
+
+Please refer to github pages help.
+
+### Live Demo
+
+Available via github pages (branch gh-pages):
+`http://dataduke.github.com/jekyll-wiki` (to be done)
+
+### Project Structure
 
     .
     |-- .info         (can be ignored; used for project information only)
@@ -130,7 +151,11 @@ refer to **taskpaper** file (plaintext) in **.info** folder:
   - only create local relative links that don't need a webserver (static html only), like:
     `<a href='./folder/2011-12-29-jekyll-introduction.html' title='Jekyll Introduction'>Jekyll Introduction</a>`
   - use [fluid.app](http://fluidapp.com) and [fake.app](http://fakeapp.com/)
-- big appify (maybe not to be done)
+- big appify/headless running
+  - create gem for jekyllwiki
+  - wiki tructure: `~/wikiroot/box/category/note.md` 
+  - wiki usage: `cd ~/wikiroot` and `jekyllwiki --server 4444` and webbrowser `http://localhost:4444`
+  - alternative appify wiki with fluid.app 
   - create browser app which wraps all dependencies (jekyll, ruby)
   - implement toggle to source view on post layout
   - allow editing inside source view
