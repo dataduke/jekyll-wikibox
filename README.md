@@ -82,14 +82,11 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 
 ## Project Planning
 
-For information about the next planned features and current backlog
-refer to **taskpaper** file (plaintext) in **.info** folder:
+Please refer to the following files:
 
-`./JEKYLL-WIKI.taskpaper`
-
-For information about the version history refer to **changelog** file:
-
-`./CHANGELOG.md`
+    ./CHANGELOG.md  # contains version history
+    ./JEKYLL-WIKI.taskpaper # contains next planned features and current backlog
+    ./README.md  # contains general project information
 
 ### Features (DONE)
 
