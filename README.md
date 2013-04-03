@@ -181,10 +181,10 @@ Please refer to the following files:
 
 ### Supporting Technologies
 
-- [YAML](http://www.yaml.org) # data serialization
-- [{{ mustache }}](http://mustache.github.com) # tag expansion
-- [Sass](http://sass-lang.com) # CSS3 abstraction; .scss or .sass
-- [Haml](http://haml.info), [doc](http://haml.info/docs/yardoc/file.REFERENCE.html) # HTML abstraction; .html.haml
+- [YAML](http://www.yaml.org): data serialization;
+- [{{ mustache }}](http://mustache.github.com): tag expansion;
+- [Sass](http://sass-lang.com): CSS3 abstraction; .scss or .sass;
+- [Haml](http://haml.info), [doc](http://haml.info/docs/yardoc/file.REFERENCE.html): HTML abstraction; .html.haml;
 
 ### Related Technologies
 
