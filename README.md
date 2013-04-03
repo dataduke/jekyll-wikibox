@@ -125,10 +125,11 @@ refer to **taskpaper** file (plaintext) in **.info** folder:
   - show/hide boxes on landing page
   - change view/sorting of each box individually
 - small appify
-  - launch local website in safari via alfred app
-  - search local website in safari via alfred app
-  - only create local relate links that don't need a webserver (static html only), like:
+  - launch local website in safari or fluid.app via alfred app
+  - search local website in safari or fluid.app via alfred app
+  - only create local relative links that don't need a webserver (static html only), like:
     `<a href='./folder/2011-12-29-jekyll-introduction.html' title='Jekyll Introduction'>Jekyll Introduction</a>`
+  - use [fluid.app](http://fluidapp.com) and [fake.app](http://fakeapp.com/)
 - big appify (maybe not to be done)
   - create browser app which wraps all dependencies (jekyll, ruby)
   - implement toggle to source view on post layout
