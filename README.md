@@ -178,15 +178,19 @@ Please refer to the following files:
 
 - [ruby](http://www.ruby-lang.org/en/)
 - [jekyll](https://github.com/mojombo/jekyll)
-- [YAML](http://www.yaml.org) (data serialization)
-- [{{ mustache }}](http://mustache.github.com) (logic-less templates)
-- [Sass](http://sass-lang.com) (CSS3 extension; .scss or .sass)
+
+### Supporting Technologies
+
+- [YAML](http://www.yaml.org) # data serialization
+- [{{ mustache }}](http://mustache.github.com) # tag expansion
+- [Sass](http://sass-lang.com) # CSS3 abstraction; .scss or .sass
+- [Haml](http://haml.info), [doc](http://haml.info/docs/yardoc/file.REFERENCE.html) # HTML abstraction; .html.haml
 
 ### Related Technologies
 
 - [jekyll-bootstrap](https://github.com/plusjade/jekyll-bootstrap) 
 - [multi-blog-jekyll](https://github.com/ggarron/multi-blog-jekyll)
-- [github pages](http://pages.github.com/) [help](https://help.github.com/categories/20/articles) 
+- [github pages](http://pages.github.com/), [help](https://help.github.com/categories/20/articles) 
 - [octopress](https://github.com/imathis/octopress)
 - [ruhoh](http://ruhoh.com)
 

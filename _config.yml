@@ -1,5 +1,85 @@
-exclude: ['Rakefile', 'config.rb', 'CNAME', 'README.md', 'CHANGELOG.md', 'JEKYLL-WIKI.taskpaper', 'JEKYLL-WIKI.sublime-project', 'JEKYLL-WIKI.sublime-workspace']
 
+###################
+# Jekyll Settings #
+###################
+
+exclude: ['Rakefile', 'config.rb', 'CNAME', 'CHANGELOG.md', 'JEKYLL-WIKI.taskpaper', 'JEKYLL-WIKI.sublime-project', 'JEKYLL-WIKI.sublime-workspace']
 markdown: rdiscount
-pygments: true
-permalink: /:categories/:year/:month/:day/:title
+pygments: true 
+permalink: /:categories/:year/:month/:day/:title # https://github.com/mojombo/jekyll/wiki/Permalinks
+
+#################
+# Site Settings #
+#################
+
+title : Site Name
+tagline: Site Tagline
+author :
+  name : Name Lastname
+  email : hello@testmail.com
+  github : username
+  twitter : username
+  feedburner : feedname
+
+# Site Logo Path
+# big (landing page, jpg/png, 32x32 or 48x48) 
+# small
+
+# Site Favicon Path (must be: 16x16)
+# 
+# Site Favicon Type (see wikipedia)
+
+##########################
+# Global Box Definitions #
+##########################
+
+# COLOURS
+
+### Default Box Background Colour (required)
+### Default Card Background Colour (required)
+### Default Card Highlight Text Colour (required)
+
+## COLUMNS
+
+### Default Box Default Column Width (required)
+### Default Card Default Column Width (required)
+
+## CARD ATTRIBUTES
+
+### Default YAML-Frontmatter with optional default values (required)
+
+#######################
+# Box XXX Definitions #
+#######################
+
+## GENERAL
+
+### Box ID (required)
+### Box Title (required)
+### Box Folder Path (required)
+
+## ICONS
+
+### Box Logo/Icon Path (landing page, jpg/png, 32x32 or 48x48) 
+### Card Logo/Icon Path (post icon/global search, png/jpg, 16x16, example: bootstrap glyphicon)
+
+# COLOURS
+
+### Box Background Colour
+### Card Background Colour
+### Card Highlight Text Colour
+
+## COLUMNS
+
+### Box Default Column Width
+### Card Default Column Width
+
+## CARD ATTRIBUTES (YAML-Frontmatter)
+
+### Default:
+#### Box, Title, Category, Tags/Keywords, Headline, Abstract/Description, Date Created, Date Modified, Date Last Opened, Kind, Comments.
+### Additional:
+
+####################
+## Box Definition ##
+####################
