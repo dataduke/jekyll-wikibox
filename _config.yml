@@ -1,4 +1,5 @@
+exclude: ['Rakefile', 'config.rb', 'CNAME', 'README.md', 'CHANGELOG.md', 'JEKYLL-WIKI.taskpaper', 'JEKYLL-WIKI.sublime-project', 'JEKYLL-WIKI.sublime-workspace']
+
 markdown: rdiscount
 pygments: true
-permalink: none
-exclude: ['Rakefile', 'README.textile', 'README.md', 'config.rb', 'CNAME']
+permalink: /:categories/:year/:month/:day/:title

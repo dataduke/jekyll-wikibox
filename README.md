@@ -9,8 +9,9 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 - Manual
   - Live Demo
   - Installation
-  - Local Usage
-  - Web Usage
+  - Local Deployment
+  - Web Deployment
+  - Customization
   - Project Structure
 - Project Planning
   - Features (DONE)
@@ -49,11 +50,9 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 ### Customization
 
     ./_config.yml           # configuration
-    ./_themes/themename     # themes; move all files/folders contained in a theme to root folder (override)
+    ./_themes/themename     # themes; move all files/folders contained in a theme to root folder (and override)
 
-
-
-### Project Structure
+### Structure
 
     .
     |-- .info               # can be ignored; used for project information only
@@ -179,6 +178,8 @@ Please refer to the following files:
 
 - [ruby](http://www.ruby-lang.org/en/)
 - [jekyll](https://github.com/mojombo/jekyll)
+- [mustache](http://mustache.github.com)
+- [yaml](http://www.yaml.org)
 
 ### Related Technologies
 
@@ -187,6 +188,7 @@ Please refer to the following files:
 - [github pages](http://pages.github.com/)  
 - [github pages help](https://help.github.com/categories/20/articles) 
 - [octopress](https://github.com/imathis/octopress)
+- [ruhoh](http://ruhoh.com)
 
 ### Feature Inspirations
 

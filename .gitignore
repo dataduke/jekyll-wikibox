@@ -1,2 +1,8 @@
+# project 
 _site/
+
+# editor
 *.sublime-workspace
+
+# mac osx
+.DS_Store
