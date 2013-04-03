@@ -85,7 +85,7 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 For information about the next planned features and current backlog
 refer to **taskpaper** file (plaintext) in **.info** folder:
 
-`./.info/jekyll-wiki.taskpaper`
+`./JEKYLL-WIKI.taskpaper`
 
 For information about the version history refer to **changelog** file:
 
