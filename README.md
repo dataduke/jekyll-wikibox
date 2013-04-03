@@ -26,9 +26,8 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 
 ### Live Demo
 
-Available via `branch gh-pages` (github pages):  
-
-`http://dataduke.github.com/jekyll-wiki` (to be done)
+- Available via `branch gh-pages` (github pages)  
+  `http://dataduke.github.com/jekyll-wiki` (to be done)
 
 ### Installation
 
@@ -44,7 +43,7 @@ Available via `branch gh-pages` (github pages):
 
 ### Web Usage
 
-- Hosted via Github: Please refer to github pages help.
+- Hosted via GitHub: Please refer to github pages help.
 - Via Webhoster: Please refer to jekyll help.
 
 ### Project Structure
