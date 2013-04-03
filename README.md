@@ -15,7 +15,7 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
   - Core Technologies
   - Related Technologies
   - Feature Inspirations
-  - Design Inspiration
+  - Design Inspirations
   - Markup Languages
 - Change History
 
@@ -24,7 +24,7 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 1. install ruby
 2. install jekyll `sudo gem install jekyll`
 3. fork/clone/check out this github project
-4. inside project run `jekyll --server` and open `http://localhost:4000/`
+4. in project run `jekyll --server` and open `http://localhost:4000/`
 
 ## Project Structure
 
@@ -63,9 +63,9 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 ## Project Planning
 
 For information about the next planned features and current backlog
-refer to **taskpaper** file (plaintext) in **_background** folder:
+refer to **taskpaper** file (plaintext) in **.info** folder:
 
-    ./_background/jekyll-wiki.taskpaper
+    ./.info/jekyll-wiki.taskpaper
 
 ### Features (DONE)
 
@@ -196,7 +196,7 @@ refer to **taskpaper** file (plaintext) in **_background** folder:
 
 ### Design Inspirations
 
-- **Sublime Text Theme (default)**
+- Theme **sublimetext** (default)
   - [Sublime Text](http://www.sublimetext.com/)
   - [Soda-Dark.sublime-theme](https://github.com/buymeasoda/soda-theme)
   - [Monokai-Soda.tmtheme](https://github.com/simeonv/st2-color-schemes)
