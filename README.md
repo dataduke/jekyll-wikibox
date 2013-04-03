@@ -35,23 +35,30 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 2. install jekyll `sudo gem install jekyll`
 3. fork/clone/check out this github project
 
-### Local Usage
+### Local Deployment
 
 1. change to `cd ~/github/jekyll-wiki`
 2. run `jekyll --server` 
 3. open `http://localhost:4000/`
 
-### Web Usage
+### Web Deployment
 
-- Hosted via GitHub: Please refer to github pages help.
-- Via Webhoster: Please refer to jekyll help.
+- GitHub Hosting: Please refer to github pages help.
+- Other web hoster: Please refer to jekyll wiki/help.
+
+### Customization
+
+    ./_config.yml           # configuration
+    ./_themes/themename     # themes; move all files/folders contained in a theme to root folder (override)
+
+
 
 ### Project Structure
 
     .
-    |-- .info         (can be ignored; used for project information only)
-    |-- .temp         (can be ignored; used at development for backup of important files)
-    |-- _includes     (used for building index pages)
+    |-- .info               # can be ignored; used for project information only
+    |-- .temp               # can be ignored; used at development for backup of important files
+    |-- _includes           # used for building index pages
     |   |-- main-index-sidebar.md
     |   |-- main-index-box-N.md
     |   |-- box-N-index-sidebar.md
@@ -59,19 +66,20 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
     |-- _layouts
     |   |-- default.html
     |   |-- post.html
-    |-- _site         (not checked in; created by jekyll as deployment directory)
+    |-- _themes             
+    |-- _site               # not checked in; created by jekyll as deployment directory
     |-- _plugins 
     |   |-- additional-feature-X
-    |-- assets        (for layout dependencies only)
+    |-- assets              # for layout dependencies only
     |   |-- css
     |       |-- style.css
     |   |-- img
     |   |-- js
     |   |-- favicon.ico
-    |-- box-N         (box 1-4 for testing; more boxes can be added/renamed/deleted)
+    |-- box-N               # box 1-4 for testing; more boxes can be added/renamed/deleted
     |   |-- _posts
-    |   |   |-- 2013-01-01-hello-world.markdown    (.md or .textile or .taskpaper)
-    |   |   |-- 2013-01-01-hello-world             (folder for post attachments)
+    |   |   |-- 2013-01-01-hello-world.markdown    # .md or .textile or .taskpaper
+    |   |   |-- 2013-01-01-hello-world             # folder for post attachments
     |   |       |-- attachment-1.jpg
     |   |       |-- attachment-2.pdf
     |   |-- atom.xml
