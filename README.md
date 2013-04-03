@@ -139,40 +139,6 @@ refer to **taskpaper** file (plaintext) in **.info** folder:
   - make it deployable via dropbox for mobile use (ios, android)
   - every box has its own feed which is usable by rss-reader apps
 
-## Project Structure
-
-    .
-    |-- .info   (can be ignored; used for project information only)
-    |-- .temp       (can be ignored; used at development for backup of important files)
-    |-- _includes     (used for building index pages)
-    |   |-- main-index-sidebar.md
-    |   |-- main-index-box-N.md
-    |   |-- box-N-index-sidebar.md
-    |   |-- box-N-index.md
-    |-- _layouts
-    |   |-- default.html
-    |   |-- post.html
-    |-- _site         (not checked in; created by jekyll as deployment directory)
-    |-- _plugins 
-    |   |-- additional-feature-X
-    |-- assets        (for layout dependencies only)
-    |   |-- css
-    |       |-- style.css
-    |   |-- img
-    |   |-- js
-    |   |-- favicon.ico
-    |-- box-N         (box 1-4 for testing; more boxes can be added/renamed/deleted)
-    |   |-- _posts
-    |   |   |-- 2013-01-01-hello-world.markdown    (.md or .textile or .taskpaper)
-    |   |   |-- 2013-01-01-hello-world             (folder for post attachments)
-    |   |       |-- attachment-1.jpg
-    |   |       |-- attachment-2.pdf
-    |   |-- atom.xml
-    |   |-- index.html
-    |-- _config.yml
-    |-- index.html
-    |-- atom.xml
-
 ## References
 
 ### Core Technologies
