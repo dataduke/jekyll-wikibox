@@ -46,6 +46,7 @@ Version 0.1
 **LEFT SIDEBAR**
 
 - Info
+- table of contents (for current note)
 - favorite posts
 - saved searches/filters
 - can be toggled via icon in bottom bar

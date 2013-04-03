@@ -3,8 +3,8 @@
 This project is supposed to serve as foundation of a responsive and flexible guerilla wiki for hackers.
 It transfers your markdown/textile notes to satic html layout inspired by sublime text editor.
 
-<!-- ![Version alpha.01](https://github.com/dataduke/jekyll-wiki/raw/master/_background/snapshot-version-a01.jpg) -->
-![Version alpha.02](https://github.com/dataduke/jekyll-wiki/raw/master/_background/snapshot-version-a02.jpg)
+<!-- ![Version alpha.01](https://github.com/dataduke/jekyll-wiki/raw/master/.info/snapshot-version-a01.jpg) -->
+![Version alpha.02](https://github.com/dataduke/jekyll-wiki/raw/master/.info/snapshot-version-a02.jpg)
 
 - Usage/Demo
 - Project Structure
@@ -29,8 +29,8 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 ## Project Structure
 
     .
-    |-- _background   (can be ignored; used for project information only)
-    |-- _backup       (can be ignored; used at development for backup of important files)
+    |-- .info         (can be ignored; used for project information only)
+    |-- .temp         (can be ignored; used at development for backup of important files)
     |-- _includes     (used for building index pages)
     |   |-- main-index-sidebar.md
     |   |-- main-index-box-N.md
@@ -139,6 +139,40 @@ refer to **taskpaper** file (plaintext) in **_background** folder:
   - make it deployable via dropbox for mobile use (ios, android)
   - every box has its own feed which is usable by rss-reader apps
 
+## Project Structure
+
+    .
+    |-- .info   (can be ignored; used for project information only)
+    |-- .temp       (can be ignored; used at development for backup of important files)
+    |-- _includes     (used for building index pages)
+    |   |-- main-index-sidebar.md
+    |   |-- main-index-box-N.md
+    |   |-- box-N-index-sidebar.md
+    |   |-- box-N-index.md
+    |-- _layouts
+    |   |-- default.html
+    |   |-- post.html
+    |-- _site         (not checked in; created by jekyll as deployment directory)
+    |-- _plugins 
+    |   |-- additional-feature-X
+    |-- assets        (for layout dependencies only)
+    |   |-- css
+    |       |-- style.css
+    |   |-- img
+    |   |-- js
+    |   |-- favicon.ico
+    |-- box-N         (box 1-4 for testing; more boxes can be added/renamed/deleted)
+    |   |-- _posts
+    |   |   |-- 2013-01-01-hello-world.markdown    (.md or .textile or .taskpaper)
+    |   |   |-- 2013-01-01-hello-world             (folder for post attachments)
+    |   |       |-- attachment-1.jpg
+    |   |       |-- attachment-2.pdf
+    |   |-- atom.xml
+    |   |-- index.html
+    |-- _config.yml
+    |-- index.html
+    |-- atom.xml
+
 ## References
 
 ### Core Technologies
@@ -152,6 +186,7 @@ refer to **taskpaper** file (plaintext) in **_background** folder:
 - [multi-blog-jekyll](https://github.com/ggarron/multi-blog-jekyll)
 - [github pages](http://pages.github.com/)  
 - [github pages help](https://help.github.com/categories/20/articles) 
+- [octopress](https://github.com/imathis/octopress)
 
 ### Feature Inspirations
 
@@ -172,9 +207,4 @@ refer to **taskpaper** file (plaintext) in **_background** folder:
 - [multimarkdown](http://fletcherpenney.net/multimarkdown/) by Fletcher Penny
 - [github flavored markdown](https://help.github.com/articles/github-flavored-markdown) by GitHub
 - [textile](http://textism.com/tools/textile/) by Dean Allan
-- [taskpaper](http://www.hogbaysoftware.com/products/taskpaper) by Jesse Grosjean
-
-## Change History
-
-- Version **alpha.02** (2013-04-03): *Project restructuring.*
-- Version **alpha.01** (2013-04-02): *Inital commit; not working.*
+- [taskpaper](http://www.hogbaysoftware.com/products/taskpaper) by Jesse Grosjea
