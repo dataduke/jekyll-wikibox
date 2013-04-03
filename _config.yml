@@ -23,16 +23,25 @@ author :
 
 # Site Logo Path
 # big (landing page, jpg/png, 32x32 or 48x48) 
-# small
+# small (topbar, jpg/png 24x24)
 
 # Site Favicon Path (must be: 16x16)
-# 
 # Site Favicon Type (see wikipedia)
 
+#################################
+# Global Navigation Definitions #
+#################################
 
-##############################
+### Global Background Colour
+### Global Highlight Text Colour
+### Global Text Colour
+### Global Decobar Column Width
+### Global Sidebar Default Column Width
+### GLobal Sidebar Icon Path
+
+##########################
 # Navigation Definitions #
-##############################
+##########################
 
 ## TOPBAR
 
@@ -45,18 +54,37 @@ author :
 ### Background Colour
 ### Highlight Text Colour
 ### Text Colour
+### Default Column Width
+### Icon Path (topbar, jpg/png 24x24)
+
+## LEFT DECOBAR
+
+### Background Colour
+### Show linenumbers
+### Text Colour
+### Column Width
+
+## RIGHT DECOBAR
+
+### Background Colour
+### Show linenumbers
+### Text Colour
+### Column Width
 
 ## RIGHT SIDEBAR
 
 ### Background Colour
 ### Highlight Text Colour
 ### Text Colour
+### Default Column Width
+### Icon Path (topbar, jpg/png 24x24)
 
 ## BOTTOMBAR
 
 ### Background Colour
 ### Highlight Text Colour
 ### Text Colour
+### Icon Path (topbar, jpg/png 24x24)
 
 ##########################
 # Global Box Definitions #
@@ -118,7 +146,3 @@ author :
 ### Default:
 #### Box, Title, Category, Tags/Keywords, Headline, Abstract/Description, Date Created, Date Modified, Date Last Opened, Kind, Comments.
 ### Additional:
-
-####################
-## Box Definition ##
-####################
