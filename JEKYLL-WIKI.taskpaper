@@ -9,6 +9,10 @@ Iteration 1:
 		- fix horizontal scrolling
 		- post layout
 		- box layout
+	- split _config.yaml exclude theming parts to other .yaml file
+	themes change colors and background of items but do never touch the structure of the weblayout webapplication @sticky 
+	- enable support for taskpaper themes for taskpaper files
+	- enable support for highlight.js themes for code highlighting
 Iteration 2:
 Backlog:
 	- advanced layout
