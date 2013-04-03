@@ -29,24 +29,58 @@ author :
 # 
 # Site Favicon Type (see wikipedia)
 
+
+##############################
+# Navigation Definitions #
+##############################
+
+## TOPBAR
+
+### Background Colour
+### Highlight Text Colour
+### Text Colour
+
+## LEFT SIDEBAR
+
+### Background Colour
+### Highlight Text Colour
+### Text Colour
+
+## RIGHT SIDEBAR
+
+### Background Colour
+### Highlight Text Colour
+### Text Colour
+
+## BOTTOMBAR
+
+### Background Colour
+### Highlight Text Colour
+### Text Colour
+
 ##########################
 # Global Box Definitions #
 ##########################
 
 # COLOURS
 
-### Default Box Background Colour (required)
-### Default Card Background Colour (required)
-### Default Card Highlight Text Colour (required)
+### Global Box Background Colour (required)
+### Global Card Background Colour (required)
+### Global Card Highlight Text Colour (required)
 
 ## COLUMNS
 
-### Default Box Default Column Width (required)
-### Default Card Default Column Width (required)
+### Global Box Default Column Width (required)
+### Global Card Default Column Width (required)
+
+## VIEW
+
+### Global Box Default Shown/Hidden (required)
+### Global Box Default Style (required)
 
 ## CARD ATTRIBUTES
 
-### Default YAML-Frontmatter with optional default values (required)
+### Global YAML-Frontmatter with optional default values (required)
 
 #######################
 # Box XXX Definitions #
@@ -54,7 +88,7 @@ author :
 
 ## GENERAL
 
-### Box ID (required)
+### Box Order ID (required)
 ### Box Title (required)
 ### Box Folder Path (required)
 
@@ -73,6 +107,11 @@ author :
 
 ### Box Default Column Width
 ### Card Default Column Width
+
+## VIEW
+
+### Box Default Shown/Hidden
+### Box Default Style
 
 ## CARD ATTRIBUTES (YAML-Frontmatter)
 
