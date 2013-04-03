@@ -7,9 +7,10 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 ![Version alpha.02](https://github.com/dataduke/jekyll-wiki/raw/master/.info/snapshot-version-a02.jpg)
 
 - Manual
-  - Installation
-  - Usage
   - Live Demo
+  - Installation
+  - Local Usage
+  - Web Usage
   - Project Structure
 - Project Planning
   - Features (DONE)
@@ -20,9 +21,13 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
   - Feature Inspirations
   - Design Inspirations
   - Markup Languages
-- Change History
 
 ## Manual
+
+## Live Demo
+
+Available via `branch gh-pages` (github pages):
+`http://dataduke.github.com/jekyll-wiki` (to be done)
 
 ### Installation
 
@@ -30,22 +35,16 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 2. install jekyll `sudo gem install jekyll`
 3. fork/clone/check out this github project
 
-### Usage
-
-#### Local
+### Local Usage
 
 1. change to `cd ~/github/jekyll-wiki`
 2. run `jekyll --server` 
 3. open `http://localhost:4000/`
 
-#### Web - Github
+### Web Usage
 
-Please refer to github pages help.
-
-### Live Demo
-
-Available via github pages (branch gh-pages):
-`http://dataduke.github.com/jekyll-wiki` (to be done)
+- Hosted via Github: Please refer to github pages help.
+- Via Webhoster: Please refer to jekyll help.
 
 ### Project Structure
 
@@ -86,7 +85,11 @@ Available via github pages (branch gh-pages):
 For information about the next planned features and current backlog
 refer to **taskpaper** file (plaintext) in **.info** folder:
 
-    ./.info/jekyll-wiki.taskpaper
+`./.info/jekyll-wiki.taskpaper`
+
+For information about the version history refer to **changelog** file:
+
+`./CHANGELOG.md`
 
 ### Features (DONE)
 
