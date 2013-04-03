@@ -190,7 +190,7 @@ refer to **taskpaper** file (plaintext) in **.info** folder:
 
 ### Feature Inspirations
 
- - Pile of Index Cards (**PoIC**)
+ - **PoIC** (Pile of Index Cards)
     - [Wiki](http://pileofindexcards.org/)
     - [Blog](http://pileofindexcards.org/blog/)
 
