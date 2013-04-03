@@ -84,9 +84,9 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 
 Please refer to the following files:
 
-    ./CHANGELOG.md  # contains version history
-    ./JEKYLL-WIKI.taskpaper # contains next planned features and current backlog
-    ./README.md  # contains general project information
+    ./CHANGELOG.md            # contains version history
+    ./JEKYLL-WIKI.taskpaper   # contains planned features and current backlog
+    ./README.md               # contains general information
 
 ### Features (DONE)
 
