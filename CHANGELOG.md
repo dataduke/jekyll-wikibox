@@ -1,4 +1,4 @@
-# Jekyll Wiki
+# jekyll-wiki: Version History
 
 ### alpha.02 / 2013-04-03
 
