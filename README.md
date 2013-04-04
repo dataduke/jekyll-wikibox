@@ -1,10 +1,10 @@
-# jekyll-wiki
+# jekyll-wikibox
 
 This project is supposed to serve as foundation of a responsive and flexible guerilla wiki for hackers.
 It transfers your markdown/textile notes to satic html layout inspired by sublime text editor.
 
-<!-- ![Version alpha.01](https://github.com/dataduke/jekyll-wiki/raw/master/.info/snapshot-version-a01.jpg) -->
-![Version alpha.02](https://github.com/dataduke/jekyll-wiki/raw/master/.info/snapshot-version-a02.jpg)
+<!-- ![Version alpha.01](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/snapshot-version-a01.jpg) -->
+![Version alpha.02](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/snapshot-version-a02.jpg)
 
 - Manual
   - Live Demo
