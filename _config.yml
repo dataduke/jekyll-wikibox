@@ -21,6 +21,8 @@ author :
   twitter : username
   feedburner : feedname
 
+
+
 # Site Logo Path
 # big (landing page, jpg/png, 32x32 or 48x48) 
 # small (topbar, jpg/png 24x24)
@@ -56,6 +58,7 @@ author :
 ### Text Colour
 ### Default Column Width
 ### Icon Path (topbar, jpg/png 24x24)
+### Sidebar Overlap (z-index)
 
 ## LEFT DECOBAR
 
@@ -98,6 +101,7 @@ author :
 
 ## COLUMNS
 
+### Global Column Top Offset
 ### Global Box Default Column Width (required)
 ### Global Card Default Column Width (required)
 
@@ -133,6 +137,7 @@ author :
 
 ## COLUMNS
 
+### Column Top Offset
 ### Box Default Column Width
 ### Card Default Column Width
 
