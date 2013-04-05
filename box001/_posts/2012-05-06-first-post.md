@@ -1,6 +1,6 @@
 ---
 layout: post
-box: 001
+box: box001
 category: first
 title: 'My first post in box1'
 date: 2012-04-06 21:35

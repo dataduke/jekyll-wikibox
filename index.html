@@ -1,7 +1,8 @@
 ---
 layout: nil
 ---
-
+<html>
+<head><title>Titel des Dokuments</title>
 <link rel="icon" href="./assets/icon/favicon.png" type="image/png">
 
 <style type="text/css">
@@ -9,8 +10,10 @@ layout: nil
 /* DESIGN */
 
 body {
-  width: 1500px;
-  /* background-color: #222222; */
+  background-color: #555;
+  margin: 0;
+  padding: 0;
+  height: 100%;
   /* font */
   font-family: menlo, helvetica, sans-serif;
   font-size: 13px;
@@ -20,6 +23,17 @@ body {
   text-align: left;
   letter-spacing: 0px;
   line-height: 24px;
+}
+
+div {
+  display: block;
+}
+
+#wrapperinnercontent {
+  height:auto;
+  width: auto;
+  color: #222;
+  background-color: #fff;
 }
 
 /* colors monokai soda */
@@ -55,22 +69,62 @@ ul {margin:0px; padding: 0px;}
   overflow: none; /* no scrolling */
   z-index: 100; /* always on top */
   top: 0; /* vertical offset */
+  height: auto !important;
   height: 100%; /* vertical size */
-  left: 0px; /* horizontal offset */
-  width: 209px; margin: 0px; padding-left: 20px; padding-right: 20px; /* horizontal size */
+  left: 0; /* horizontal offset */
+  width: 209; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
+  border-right: 1 solid #191919;
+  border-top: 75 solid #1e1e1e; border-bottom: 250 solid #1e1e1e; /* vertical spacers */
   border-right: 1 solid #191919;
 }
 
 /* sidebarright */
 .sidebarright{
   position: fixed; /* no movement */
-  overflow: none; /* no scrolling */
+  overflow: auto; /* no scrolling */
   z-index: 100; /* always on top */
-  top: 0; /* vertical offset */
+  top: 0; /* vertical offset */  
+  height: auto !important;
   height: 100%; /* vertical size */
-  right: 0px; /* horizontal offset */
-  width: 209px; margin: 0px; padding-left: 20px; padding-right: 20px; /* horizontal size */
+  right: 0; /* horizontal offset */
+  width: 209; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
+  border-top: 75 solid #1e1e1e; border-bottom: 250 solid #1e1e1e; /* vertical spacers */
   border-left: 1 solid #191919;
+}
+
+/* right end */
+.sidebarrightend{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 1850;
+  width: 75;
+  border-left: 1 solid #191919;
+}
+
+/* decobarleft numbers */
+.decobarleft{ 
+  position: absolute; 
+  top:0;
+  height: auto !important;
+  height: 100%;
+  overflow: none !important;
+  left:250;
+  width: 20; margin: 0; padding-left: 15; padding-right: 15;
+  border-top: 75 solid #222222; border-bottom: 250 solid #222222; /* vertical spacers */
+}
+
+/* decobarright number */
+.decobarright{ 
+  position: absolute; 
+  top:0;
+  min-height: 100%; /* Mindesthöhe für moderne Browser */
+  height:auto !important; /* Important Regel für moderne Browser */
+  height:100%; /* Mindesthöhe für den IE */ 
+  overflow: none !important; /* FF Scroll-leiste */ 
+  left:1800;
+  width: 20; margin: 0; padding-left: 15; padding-right: 15;
+  border-top: 75 solid #222222; border-bottom: 250 solid #222222; /* vertical spacers */
 }
 
 /*
@@ -86,78 +140,106 @@ box-shadow: -2px 0px 8px rgba(0,0,0,.65);
 }
 */
 
-/* columns */
 .column001{
   position: absolute; 
-  top: 50; /* vertical offset */
-  /*height: 80%;*/ /* vertical size */
+  top: 0; /* vertical offset */
+  /*height: 100%; /* vertical size */
+  min-height: 100%; /* Mindesthöhe für moderne Browser */
+  height:auto !important; /* Important Regel für moderne Browser */
+  height:100%; /* Mindesthöhe für den IE */ 
+  overflow: none !important; /* FF Scroll-leiste */ 
+
   left: 300; /* horizontal offset */
   width: 260; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
+  border-top: 75 solid #222222; border-bottom: 250 solid #222222; /* vertical spacers */
 }
 .column002{
   position: absolute; 
-  top: 50; /* vertical offset */
-  /*height: 80%;*/ /* vertical size */
+  top: 0; /* vertical offset */
+  height: 100%; /* vertical size */
   left: 600; /* horizontal offset */
   width: 260; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
+  border-top: 75 solid #222222; border-bottom: 50 solid #222222; /* vertical spacers */
 }
 .column003{
   position: absolute; 
-  top: 50; /* vertical offset */
-  /*height: 80%;*/ /* vertical size */
+  top: 0; /* vertical offset */
+  height: 100%; /* vertical size */
   left: 900; /* horizontal offset */
   width: 260; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
+  border-top: 75 solid #222222; /*border-bottom: 250 solid #222222;*/ /* vertical spacers */
 }
 .column004{
   position: absolute; 
-  top: 50; /* vertical offset */
-  /*height: 80%;*/ /* vertical size */
+  top: 0; /* vertical offset */
+  height: 100%; /* vertical size */
   left: 1200; /* horizontal offset */
   width: 260; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
+  border-top: 75 solid #222222; border-bottom: 50 solid #222222; /* vertical spacers */
+}
+.column005{
+  position: absolute; 
+  top: 0; /* vertical offset */
+  height: 100%; /* vertical size */
+  left: 1500; /* horizontal offset */
+  width: 260; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
+  border-top: 75 solid #222222; border-bottom: 50 solid #222222; /* vertical spacers */
 }
 
-/*columns column width = 300px = (sidebar+numbers) */
-.numbers { margin: 0px; width: 20px; padding: 15px; position:fixed; top:0px; left:250px;}
-
 </style>
-
+</head>
+<body> 
 <div class="sidebarleft greysnow">
 {% capture sidebarleft %}{% include sidebarleft.md %}{% endcapture %}
 {{ sidebarleft | markdownify }}
 </div>
 
-<div class="sidebarright greysnow">
+<!-- <div class="sidebarright greysnow">
 {% capture sidebarleft %}{% include sidebarleft.md %}{% endcapture %}
 {{ sidebarleft | markdownify }}
 </div>
-
-
-<!-- <div class="numbers greymid">
-{% capture decobarleft %}{% include decobarleft.md %}{% endcapture %}
-{{ decobarleft | markdownify }}
-</div>
 -->
 
-<div class="column001 greygreen">
-{% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
-{{ box001 | markdownify }}
+<div id="wrapperinnercontent">
+
+  <div class="decobarleft greymid">
+  {% capture decobarleft %}{% include decobarleft.md %}{% endcapture %}
+  {{ decobarleft | markdownify }}
+  </div>
+
+  <div class="column001 greygreen">
+  {% capture box01 %}{% include customize-root-index/box001.md %}{% endcapture %}
+  {{ box01 | markdownify }}
+  </div>
+
+
+  <div class="column002 greyred">
+  {% capture box002 %}{% include customize-root-index/box002.md %}{% endcapture %}
+  {{ box002 | markdownify }}
+  </div>
+
+  <div class="column003 greyblue">
+  {% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
+  {{ box001 | markdownify }}
+  </div>
+
+  <div class="column004 greylila">
+  {% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
+  {{ box001 | markdownify }}
+  </div>
+
+  <div class="column005 greyyellow">
+  {% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
+  {{ box001 | markdownify }}
+  </div>
+
+  <div class="decobarright greymid">
+  {% capture decobarright %}{% include decobarleft.md %}{% endcapture %}
+  {{ decobarright | markdownify }}
+  </div>
 </div>
 
-<div class="column002 greyred">
-{% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
-{{ box001 | markdownify }}
-</div>
-
-<div class="column003 greyblue">
-{% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
-{{ box001 | markdownify }}
-</div>
-
-<div class="column004 greylila">
-{% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
-{{ box001 | markdownify }}
-</div>
-
+<div class="sidebarrightend greysnow"></div>
 
 <!-- <div class="columna greygreen">
 {% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
@@ -179,3 +261,6 @@ box-shadow: -2px 0px 8px rgba(0,0,0,.65);
 {% capture box004 %}{% include /customize-root-index/box004.md %}{% endcapture %}
 {{ box004 | markdownify }}
 </div> -->
+
+</body>
+<html>

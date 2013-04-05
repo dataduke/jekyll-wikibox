@@ -1,0 +1,181 @@
+---
+layout: nil
+---
+
+<link rel="icon" href="./assets/icon/favicon.png" type="image/png">
+
+<style type="text/css">
+
+/* DESIGN */
+
+body {
+  width: 1500px;
+  /* background-color: #222222; */
+  /* font */
+  font-family: menlo, helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-align: left;
+  letter-spacing: 0px;
+  line-height: 24px;
+}
+
+/* colors monokai soda */
+.greysnow { background-color: #1e1e1e; color: #d2d2d2;}
+.greymid { background-color: #222222; color: #8d8d8a;}
+.greyred { background-color: #222222; color: #f32570;}
+.greyblue { background-color: #222222; color: #5ec4d7;}
+.greylila { background-color: #222222; color: #ae81ff;}
+.greygreen { background-color: #222222; color: #96cc2c;}
+.greyyellow { background-color: #222222; color: #e6db74;}
+
+/* links */
+a:link {color:#767676; text-decoration:none;}    /* unvisited link */
+a:visited {color:#767676; text-decoration:none;} /* visited link */
+a:hover {color:#767676; text-decoration:underline;}   /* mouse over link */
+a:active {color:#767676; text-decoration:underline;}  /* selected link */
+
+/*listings*/
+ul {margin:0px; padding: 0px;}
+.listing-seperator {list-style-type:none; margin-top: 1em; margin-bottom:1em;  border: 1px solid; 
+  padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px;}
+.listing-item {list-style-type:none;}
+
+/* ELEMENTS */
+
+/* show/hide elements */
+.show {display: block;}
+.hide {display: none;}
+
+/* sidebarleft */
+.sidebarleft{
+  position: fixed; /* no movement */
+  overflow: none; /* no scrolling */
+  z-index: 100; /* always on top */
+  top: 0; /* vertical offset */
+  height: 100%; /* vertical size */
+  left: 0px; /* horizontal offset */
+  width: 209px; margin: 0px; padding-left: 20px; padding-right: 20px; /* horizontal size */
+  border-right: 1 solid #191919;
+}
+
+/* sidebarright */
+.sidebarright{
+  position: fixed; /* no movement */
+  overflow: none; /* no scrolling */
+  z-index: 100; /* always on top */
+  top: 0; /* vertical offset */
+  height: 100%; /* vertical size */
+  right: 0px; /* horizontal offset */
+  width: 209px; margin: 0px; padding-left: 20px; padding-right: 20px; /* horizontal size */
+  border-left: 1 solid #191919;
+}
+
+/*
+.shadowright{
+-moz-box-shadow: 2px 0px 8px rgba(0,0,0,.65);
+-webkit-box-shadow: 2px 0px 8px rgba(0,0,0,.65);
+box-shadow: 2px 0px 8px rgba(0,0,0,.65);
+}
+.shadowleft{
+-moz-box-shadow: -2px 0px 8px rgba(0,0,0,.65);
+-webkit-box-shadow: -2px 0px 8px rgba(0,0,0,.65);
+box-shadow: -2px 0px 8px rgba(0,0,0,.65);
+}
+*/
+
+/* columns */
+.column001{
+  position: absolute; 
+  top: 50; /* vertical offset */
+  /*height: 80%;*/ /* vertical size */
+  left: 300; /* horizontal offset */
+  width: 260; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
+}
+.column002{
+  position: absolute; 
+  top: 50; /* vertical offset */
+  /*height: 80%;*/ /* vertical size */
+  left: 600; /* horizontal offset */
+  width: 260; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
+}
+.column003{
+  position: absolute; 
+  top: 50; /* vertical offset */
+  /*height: 80%;*/ /* vertical size */
+  left: 900; /* horizontal offset */
+  width: 260; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
+}
+.column004{
+  position: absolute; 
+  top: 50; /* vertical offset */
+  /*height: 80%;*/ /* vertical size */
+  left: 1200; /* horizontal offset */
+  width: 260; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
+}
+
+/*columns column width = 300px = (sidebar+numbers) */
+.numbers { margin: 0px; width: 20px; padding: 15px; position:fixed; top:0px; left:250px;}
+
+</style>
+
+<div class="sidebarleft greysnow">
+{% capture sidebarleft %}{% include sidebarleft.md %}{% endcapture %}
+{{ sidebarleft | markdownify }}
+</div>
+
+<div class="sidebarright greysnow">
+{% capture sidebarleft %}{% include sidebarleft.md %}{% endcapture %}
+{{ sidebarleft | markdownify }}
+</div>
+
+
+<!-- <div class="numbers greymid">
+{% capture decobarleft %}{% include decobarleft.md %}{% endcapture %}
+{{ decobarleft | markdownify }}
+</div>
+-->
+
+<div class="column001 greygreen">
+{% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
+{{ box001 | markdownify }}
+</div>
+
+<div class="column002 greyred">
+{% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
+{{ box001 | markdownify }}
+</div>
+
+<div class="column003 greyblue">
+{% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
+{{ box001 | markdownify }}
+</div>
+
+<div class="column004 greylila">
+{% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
+{{ box001 | markdownify }}
+</div>
+
+
+<!-- <div class="columna greygreen">
+{% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
+{{ box001 | markdownify }}
+</div>
+-->
+
+<!-- <div class="column top pos2 greyred ">
+{% capture box002 %}{% include customize-root-index/box002.md %}{% endcapture %}
+{{ box002 | markdownify }}
+</div>
+
+<div class="column top pos3">
+{% capture box003 %}{% include customize-root-index/box003.md %}{% endcapture %}
+{{ box003 | markdownify }}
+</div>
+
+<div class="sidebarright sidebarshadow greylila">
+{% capture box004 %}{% include /customize-root-index/box004.md %}{% endcapture %}
+{{ box004 | markdownify }}
+</div> -->
