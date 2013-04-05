@@ -28,7 +28,7 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 ### Live Demo
 
 - Available via `branch gh-pages` (github pages)  
-  `http://dataduke.github.com/jekyll-wiki` (to be done)
+  `http://dataduke.github.com/jekyll-wikibox` (to be done)
 
 ### Installation
 
@@ -75,7 +75,7 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
     |   |-- img
     |   |-- js
     |   |-- favicon.ico
-    |-- box-N               # box 1-4 for testing; more boxes can be added/renamed/deleted
+    |-- box000               # box001-004 for testing; more boxes can be added/renamed/deleted
     |   |-- _posts
     |   |   |-- 2013-01-01-hello-world.markdown    # .md or .textile or .taskpaper
     |   |   |-- 2013-01-01-hello-world             # folder for post attachments
@@ -91,9 +91,9 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 
 Please refer to the following files:
 
-    ./CHANGELOG.md            # contains version history
-    ./JEKYLL-WIKI.taskpaper   # contains planned features and current backlog
-    ./README.md               # contains general information
+    ./CHANGELOG.md              # contains version history
+    ./JEKYLL-WIKIBOX.taskpaper  # contains planned features and current backlog
+    ./README.md                 # contains general information
 
 ### Features (DONE)
 
