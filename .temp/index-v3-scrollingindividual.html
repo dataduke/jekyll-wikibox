@@ -51,29 +51,23 @@ ul {margin:0px; padding: 0px;}
 
 /* sidebarleft */
 .sidebarleft{
-  position: fixed; /* no movement */
-  overflow: none; /* no scrolling */
-  z-index: 100; /* always on top */
+  position:fixed; overflow: none; /* for scrolling overflow: auto; */
   top: 0; /* vertical offset */
   height: 100%; /* vertical size */
   left: 0px; /* horizontal offset */
   width: 209px; margin: 0px; padding-left: 20px; padding-right: 20px; /* horizontal size */
   border-right: 1 solid #191919;
+  z-index: 100;
 }
 
-/* sidebarright */
-.sidebarright{
-  position: fixed; /* no movement */
-  overflow: none; /* no scrolling */
-  z-index: 100; /* always on top */
-  top: 0; /* vertical offset */
-  height: 100%; /* vertical size */
-  right: 0px; /* horizontal offset */
-  width: 209px; margin: 0px; padding-left: 20px; padding-right: 20px; /* horizontal size */
-  border-left: 1 solid #191919;
+/*#sidebarleft {
+  left: 0;
+  z-index: 100;
 }
-
-/*
+#sidebarright {
+  right: 0;
+  z-index: 100;
+}
 .shadowright{
 -moz-box-shadow: 2px 0px 8px rgba(0,0,0,.65);
 -webkit-box-shadow: 2px 0px 8px rgba(0,0,0,.65);
@@ -88,32 +82,32 @@ box-shadow: -2px 0px 8px rgba(0,0,0,.65);
 
 /* columns */
 .column001{
-  position: absolute; 
-  top: 50; /* vertical offset */
-  /*height: 80%;*/ /* vertical size */
-  left: 300; /* horizontal offset */
-  width: 260; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
+  position: absolute; overflow: auto;
+  top: 10%; /* vertical offset */
+  height: 80%; /* vertical size */
+  left: 300px; /* horizontal offset */
+  width: 260px; margin: 0px; padding-left: 20px; padding-right: 20px; /* horizontal size */
 }
 .column002{
-  position: absolute; 
-  top: 50; /* vertical offset */
-  /*height: 80%;*/ /* vertical size */
-  left: 600; /* horizontal offset */
-  width: 260; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
+  position: absolute; overflow: auto;
+  top: 10%; /* vertical offset */
+  height: 80%; /* vertical size */
+  left: 600px; /* horizontal offset */
+  width: 260px; margin: 0px; padding-left: 20px; padding-right: 20px; /* horizontal size */
 }
 .column003{
-  position: absolute; 
-  top: 50; /* vertical offset */
-  /*height: 80%;*/ /* vertical size */
-  left: 900; /* horizontal offset */
-  width: 260; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
+  position: absolute; overflow: auto;
+  top: 10%; /* vertical offset */
+  height: 80%; /* vertical size */
+  left: 900px; /* horizontal offset */
+  width: 260px; margin: 0px; padding-left: 20px; padding-right: 20px; /* horizontal size */
 }
 .column004{
-  position: absolute; 
-  top: 50; /* vertical offset */
-  /*height: 80%;*/ /* vertical size */
-  left: 1200; /* horizontal offset */
-  width: 260; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
+  position: absolute; overflow: auto;
+  top: 10%; /* vertical offset */
+  height: 80%; /* vertical size */
+  left: 1200px; /* horizontal offset */
+  width: 260px; margin: 0px; padding-left: 20px; padding-right: 20px; /* horizontal size */
 }
 
 /*columns column width = 300px = (sidebar+numbers) */
@@ -121,12 +115,7 @@ box-shadow: -2px 0px 8px rgba(0,0,0,.65);
 
 </style>
 
-<div class="sidebarleft greysnow">
-{% capture sidebarleft %}{% include sidebarleft.md %}{% endcapture %}
-{{ sidebarleft | markdownify }}
-</div>
-
-<div class="sidebarright greysnow">
+<div class="sidebarleft greysnow show">
 {% capture sidebarleft %}{% include sidebarleft.md %}{% endcapture %}
 {{ sidebarleft | markdownify }}
 </div>
@@ -143,7 +132,7 @@ box-shadow: -2px 0px 8px rgba(0,0,0,.65);
 {{ box001 | markdownify }}
 </div>
 
-<div class="column002 greyred">
+<div class="column002 greyred ">
 {% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
 {{ box001 | markdownify }}
 </div>
