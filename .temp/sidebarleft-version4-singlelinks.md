@@ -1,12 +1,13 @@
 ### Paintbucket Theme
 
-Welcome at this site. Horizontal and vertical scrolling is fun!
+Welcome at this amazing site.
+It has horizontal scrolling!
 
-Box 1 [open](/box001/index.html)/[show](#)/[toggle](#)  
-Box 2 [open](/box002/index.html)/[show](#)/[toggle](#)  
-Box 3 [open](/box003/index.html)/[show](#)/[toggle](#)  
-Box 4 [open](/box004/index.html)/[show](#)/[toggle](#)  
-Box 5 [open](/box005/index.html)/[show](#)/[toggle](#)  
+Box 1 [open](/box001/index.html) [show](#) [toggle](#)
+Box 2 [open](/box002/index.html) [show](#) [toggle](#)
+Box 3 [open](/box003/index.html) [show](#) [toggle](#) 
+Box 4 [open](/box004/index.html) [show](#) [toggle](#) 
+Box 5 [open](/box005/index.html) [show](#) [toggle](#)
 
 **OPEN BOX**
 
