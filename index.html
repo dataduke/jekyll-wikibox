@@ -40,7 +40,7 @@ body {
 }
 
 /* COLORS */
-/* monokai soda theme */
+/* monokai soda theme colors*/
 
 /* background colors */
 .bgdark   {background-color: #1e1e1e;}
@@ -63,8 +63,8 @@ body {
 .fglila   {color: #ae81ff;}
 
 /* link colors and style */
-a:link {color:#767676; text-decoration:none;}    /* unvisited link */
-a:visited {color:#767676; text-decoration:none;} /* visited link */
+a:link {color:#767676; text-decoration:none;}         /* unvisited link */
+a:visited {color:#767676; text-decoration:none;}      /* visited link */
 a:hover {color:#767676; text-decoration:underline;}   /* mouse over link */
 a:active {color:#767676; text-decoration:underline;}  /* selected link */
 
@@ -106,26 +106,33 @@ div {
 }
 
 /* SLOT WIDTH */
+.slot50{width: 50;}
 .slot250{width: 250;}
 .slot300{width: 300;}
 
 /* SLOT POSITION */
 .slot099{right: 0;}
 .slot000{left: 0;}
+.slotdecoleft{left: 250;}
 .slot001{left: 300;}
 .slot002{left: 600;}
 .slot003{left: 900;}
 .slot004{left: 1200;}
 .slot005{left: 1500;}
+.slotdecoright{left: 1800;}
+.slotdecorightend{left: 1850;}
 
 /* SLOT CONTENT SPACERS */
+.spacer10 { height: 10; width: 100%;}
 .spacer50 { height: 50; width: 100%;}
 .spacer150 { height: 150; width: 100%; }
+.spacer1000 { height: 150; width: 100%; }
 
 /* SLOT CONTENT ITEMS */
 /* must fit to slot width */
 .item300 { width: 260; margin-left: 20; margin-right: 20;}
 .item250 { width: 210; margin-left: 20; margin-right: 20;}
+.item50 { width: 20; margin: 0; padding-left: 15; padding-right: 15;}
 
 /* SIDEBAR OPTIONS */
 
@@ -152,68 +159,33 @@ box-shadow: -2px 0px 8px rgba(0,0,0,.65);
   z-index: 100; /* always on top */
 }
 
-/* OLD ELEMENTS 
-
-/* show/hide elements 
-.show {display: block;}
-.hide {display: none;}
-
-/* right end 
-.sidebarrightend{
-  position: absolute;
-  top: 0;
-  height: 100%;
-  left: 1850;
-  width: 75;
-  border-left: 1 solid #191919;
-}
-
-/* decobarleft numbers 
-.decobarleft{ 
-  position: absolute; 
-  top:0;
-  left:250;
-  width: 20; margin: 0; padding-left: 15; padding-right: 15;
-  border-top: 75 solid #222222; border-bottom: 250 solid #222222;
-}
-
-/* decobarright number
-.decobarright{ 
-  position: absolute; 
-  top:0;
-  left:1800;
-  width: 20; margin: 0; padding-left: 15; padding-right: 15;
-  border-top: 75 solid #222222; border-bottom: 250 solid #222222; 
-}
-*/
 </style>
 </head>
 <body class="bgdark">
-  <!-- <div class="bodywrapper bggrey testgreen"> -->
 
-  <div class="slotwrapper slot300 slot000 slotfixed slotborderright shadowright bgsnow">
+  <div class="slotwrapper slot250 slot000 slotfixed slotborderright bgdark">
     <div class="spacer50"></div>
     <div class="slot bgdark">
       <div class="spacer50"></div>
-      <div class="item300 fgsnow">
+      <div class="item250 fgsnow">
         {% capture sidebarleft %}{% include sidebarleft.md %}{% endcapture %}
         {{ sidebarleft | markdownify }}
       </div>
       <div class="spacer50"></div>
-      <div class="spacer150 bgsnow"></div>
     </div>
   </div>
 
-  <!--   <div class="decobarwrapper">
-    <div class="spacerbottom"/>
-    <div class="decobarleft fggrey">
-      {% capture decobarleft %}{% include decobarleft.md %}{% endcapture %}
-      {{ decobarleft | markdownify }}
+  <div class="slotwrapper slot50 slotdecoleft bggrey">
+    <div class="slot bggrey">
+      <!-- <div class="spacer10"></div> -->
+      <div class="item50 fggrey">
+        {% capture decobar %}{% include decobar.md %}{% endcapture %}
+        {{ decobar | markdownify }}
+      </div>
     </div>
-    <div class="spacerbottom"/>
-  </div> -->
+  </div>
 
-  <div class="slotwrapper slot300 slot001 bggreen">
+  <div class="slotwrapper slot300 slot001 bggrey">
     <div class="spacer50"></div>
     <div class="slot bggrey">
       <div class="spacer50"></div>
@@ -221,12 +193,11 @@ box-shadow: -2px 0px 8px rgba(0,0,0,.65);
         {% capture b01 %}{% include customize-root-index/box001.md %}{% endcapture %}
         {{ b01 | markdownify }}
       </div>
-      <div class="spacer50"></div>
-      <div class="spacer150 bggreen"></div>
+      <div class="spacer150"></div>
     </div>
   </div>
 
-  <div class="slotwrapper slot300 slot002 bgred">
+  <div class="slotwrapper slot300 slot002 bggrey">
     <div class="spacer50"> </div>
     <div class="slot bggrey">
       <div class="spacer50"></div>
@@ -234,12 +205,11 @@ box-shadow: -2px 0px 8px rgba(0,0,0,.65);
       {% capture b02 %}{% include customize-root-index/box002.md %}{% endcapture %}
       {{ b02 | markdownify }}
       </div>
-      <div class="spacer50"></div>
-      <div class="spacer150 bgred"></div>
+      <div class="spacer150"></div>
     </div>
   </div>
 
-  <div class="slotwrapper slot300 slot003 bgblue">
+  <div class="slotwrapper slot300 slot003 bggrey">
     <div class="spacer50"></div>
     <div class="slot bggrey">
       <div class="spacer50"></div>
@@ -247,12 +217,11 @@ box-shadow: -2px 0px 8px rgba(0,0,0,.65);
       {% capture b03 %}{% include customize-root-index/box003.md %}{% endcapture %}
       {{ b03 | markdownify }}
       </div>
-      <div class="spacer50"></div>
-      <div class="spacer150 bgblue"></div>
+      <div class="spacer150"></div>
     </div>
   </div>
 
-  <div class="slotwrapper slot300 slot004 bglila">
+  <div class="slotwrapper slot300 slot004 bggrey">
     <div class="spacer50"></div>
     <div class="slot bggrey">
       <div class="spacer50"></div>
@@ -260,12 +229,11 @@ box-shadow: -2px 0px 8px rgba(0,0,0,.65);
       {% capture b04 %}{% include customize-root-index/box004.md %}{% endcapture %}
       {{ b04 | markdownify }}
       </div>
-      <div class="spacer50"></div>
-      <div class="spacer150 bglila"></div>
+      <div class="spacer150"></div>
     </div>
   </div>
 
-  <div class="slotwrapper slot300 slot005 bgyellow">
+  <div class="slotwrapper slot300 slot005 bggrey">
     <div class="spacer50"></div>
     <div class="slot bggrey">
       <div class="spacer50"></div>
@@ -273,28 +241,26 @@ box-shadow: -2px 0px 8px rgba(0,0,0,.65);
       {% capture b05 %}{% include customize-root-index/box005.md %}{% endcapture %}
       {{ b05 | markdownify }}
       </div>
-      <div class="spacer50"></div>
-      <div class="spacer150 bgyellow"></div>
+      <div class="spacer150"></div>
     </div>
   </div>
 
-  <!-- <div class="decobarwrapper">
-    <div class="spacertop"/>
-    <div class="decobarright greymid">
-      {% capture decobarright %}{% include decobarleft.md %}{% endcapture %}
-      {{ decobarright | markdownify }}
+  <div class="slotwrapper slot50 slotdecoright bggrey">
+    <div class="slot bggrey">
+      <!-- <div class="spacer10"></div> -->
+      <div class="item50 fggrey">
+        {% capture decobar %}{% include decobar.md %}{% endcapture %}
+        {{ decobar | markdownify }}
+      </div>
     </div>
-    <div class="spacerbottom"/>
-  </div> -->
+  </div>
 
-<!-- </div> -->
-
-<!-- <div class="sidebarrightend greysnow"></div> -->
-
-<!-- <div class="sidebarright sidebarshadow greylila">
-{% capture box004 %}{% include /customize-root-index/box004.md %}{% endcapture %}
-{{ box004 | markdownify }}
-</div> -->
+  <div class="slotwrapper slot50 slotdecorightend slotborderleft bgdark">
+    <div class="slot"> 
+      <div class="item50"></div>
+      <div class="spacer1000"></div>
+    </div>
+  </div>
 
 </body>
 </html>
