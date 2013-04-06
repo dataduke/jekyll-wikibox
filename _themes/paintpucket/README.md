@@ -4,7 +4,7 @@
 
 - Copy files to root folder and overwrite.  
 
-**Ignore:**
+### Ignored these Files
 
 - `README.md`
 - `_theme-paintbucket.jpg`
@@ -13,4 +13,3 @@
 ### Sample Shots
 
 ![Paint Bucket Theme](https://github.com/dataduke/jekyll-wikibox/raw/master/_themes/paintpucket/_theme-paintbucket.jpg)
-
