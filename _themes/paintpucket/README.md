@@ -4,7 +4,7 @@
 
 - Copy files to root folder and overwrite.  
 
-### Ignored these Files
+### Ignore these files!
 
 - `README.md`
 - `_theme-paintbucket.jpg`
