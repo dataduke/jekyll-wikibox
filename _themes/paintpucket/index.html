@@ -1,0 +1,227 @@
+---
+layout: nil
+title: Home
+navigation: Home
+---
+
+<html>
+<head>
+  <title>Website Home</title>
+  <link rel="icon" href="./assets/icon/favicon.png" type="image/png">
+
+<style type="text/css">
+
+/* BODY */
+body {
+  /* size */
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* font */
+  font-family: menlo, helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-align: left;
+  letter-spacing: 0px;
+  line-height: 24px;
+}
+
+/* COLORS */
+/* monokai soda theme colors*/
+
+/* background colors */
+.bgdark   {background-color: #1e1e1e;}
+.bggrey   {background-color: #222222;}
+.bgsnow   {background-color: #d2d2d2;}
+.bgred    {background-color: #f32570;}
+.bgblue   {background-color: #5ec4d7;}
+.bgyellow {background-color: #e6db74;}
+.bggreen  {background-color: #96cc2c;}
+.bglila   {background-color: #ae81ff;}
+
+/* foreground colors */
+.fgdark   {color: #1e1e1e;}
+.fggrey   {color: #8d8d8a;}
+.fgsnow   {color: #d2d2d2;}
+.fgred    {color: #f32570;}
+.fgblue   {color: #5ec4d7;}
+.fgyellow {color: #e6db74;}
+.fggreen  {color: #96cc2c;}
+.fglila   {color: #ae81ff;}
+
+/* link colors and style */
+a:link {color:#767676; text-decoration:none;}         /* unvisited link */
+a:visited {color:#767676; text-decoration:none;}      /* visited link */
+a:hover {color:#767676; text-decoration:underline;}   /* mouse over link */
+a:active {color:#767676; text-decoration:underline;}  /* selected link */
+
+/* listing colors and style*/
+ul {margin:0px; padding: 0px;}
+.listing-seperator {list-style-type:none; margin-top: 1em; margin-bottom:1em;  border: 1px solid; 
+  padding-left: 20px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px;}
+.listing-item {list-style-type:none;}
+
+
+/* CONTAINERS */
+div {
+  display: block;
+}
+.bodywrapper {
+  min-height: 100%;
+  height:auto !important;
+  height: 100%;
+  overflow: hidden !important;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.slotwrapper {
+  position: absolute;
+  min-height: 100%;
+  height:auto !important;
+  height:100%;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: auto;
+}
+.slot {
+  position: absolute;
+  width: 100%;
+}
+
+/* SLOT WIDTH */
+.slot250{width: 250;}
+.slot300{width: 300;}
+
+/* SLOT POSITION */
+.slot099{right: 0;}
+.slot000{left: 0;}
+.slot001{left: 300;}
+.slot002{left: 600;}
+.slot003{left: 900;}
+.slot004{left: 1200;}
+.slot005{left: 1500;}
+
+/* SLOT CONTENT SPACERS */
+.spacer50 { height: 50; width: 100%;}
+.spacer150 { height: 150; width: 100%; }
+
+/* SLOT CONTENT ITEMS */
+/* must fit to slot width */
+.item300 { width: 260; margin-left: 20; margin-right: 20;}
+.item250 { width: 210; margin-left: 20; margin-right: 20;}
+
+/* SIDEBAR OPTIONS */
+
+/* SLOT BORDER */
+/* needed for always shown sidebars */
+.slotborderright{ border-right: 1 solid #191919;}
+.shadowright{
+-moz-box-shadow: 2px 0px 8px rgba(0,0,0,.65);
+-webkit-box-shadow: 2px 0px 8px rgba(0,0,0,.65);
+box-shadow: 2px 0px 8px rgba(0,0,0,.65);
+}
+.slotborderleft{ border-left: 1 solid #191919;}
+.shadowleft{
+-moz-box-shadow: -2px 0px 8px rgba(0,0,0,.65);
+-webkit-box-shadow: -2px 0px 8px rgba(0,0,0,.65);
+box-shadow: -2px 0px 8px rgba(0,0,0,.65);
+}
+
+/* SLOT DEPTH */
+/* needed for always shown sidebars */
+.slotfixed{
+  position: fixed; /* no movement */
+  overflow: none; /* no scrolling */
+  z-index: 100; /* always on top */
+}
+
+</style>
+</head>
+<body class="bgdark">
+
+  <div class="slotwrapper slot300 slot000 slotfixed slotborderright shadowright bgsnow">
+    <div class="spacer50"></div>
+    <div class="slot bgdark">
+      <div class="spacer50"></div>
+      <div class="item300 fgsnow">
+        {% capture sidebarleft %}{% include sidebarleft.md %}{% endcapture %}
+        {{ sidebarleft | markdownify }}
+      </div>
+      <div class="spacer50"></div>
+      <div class="spacer150 bgsnow"></div>
+    </div>
+  </div>
+
+  <div class="slotwrapper slot300 slot001 bggreen">
+    <div class="spacer50"></div>
+    <div class="slot bggrey">
+      <div class="spacer50"></div>
+      <div class="item300 fggreen">
+        {% capture b01 %}{% include customize-root-index/box001.md %}{% endcapture %}
+        {{ b01 | markdownify }}
+      </div>
+      <div class="spacer50"></div>
+      <div class="spacer150 bggreen"></div>
+    </div>
+  </div>
+
+  <div class="slotwrapper slot300 slot002 bgred">
+    <div class="spacer50"> </div>
+    <div class="slot bggrey">
+      <div class="spacer50"></div>
+      <div class="item300 fgred">
+      {% capture b02 %}{% include customize-root-index/box002.md %}{% endcapture %}
+      {{ b02 | markdownify }}
+      </div>
+      <div class="spacer50"></div>
+      <div class="spacer150 bgred"></div>
+    </div>
+  </div>
+
+  <div class="slotwrapper slot300 slot003 bgblue">
+    <div class="spacer50"></div>
+    <div class="slot bggrey">
+      <div class="spacer50"></div>
+      <div class="item300 fgblue">
+      {% capture b03 %}{% include customize-root-index/box003.md %}{% endcapture %}
+      {{ b03 | markdownify }}
+      </div>
+      <div class="spacer50"></div>
+      <div class="spacer150 bgblue"></div>
+    </div>
+  </div>
+
+  <div class="slotwrapper slot300 slot004 bglila">
+    <div class="spacer50"></div>
+    <div class="slot bggrey">
+      <div class="spacer50"></div>
+      <div class="item300 fglila">
+      {% capture b04 %}{% include customize-root-index/box004.md %}{% endcapture %}
+      {{ b04 | markdownify }}
+      </div>
+      <div class="spacer50"></div>
+      <div class="spacer150 bglila"></div>
+    </div>
+  </div>
+
+  <div class="slotwrapper slot300 slot005 bgyellow">
+    <div class="spacer50"></div>
+    <div class="slot bggrey">
+      <div class="spacer50"></div>
+      <div class="item300 fgyellow">
+      {% capture b05 %}{% include customize-root-index/box005.md %}{% endcapture %}
+      {{ b05 | markdownify }}
+      </div>
+      <div class="spacer50"></div>
+      <div class="spacer150 bgyellow"></div>
+    </div>
+  </div>
+
+</body>
+</html>

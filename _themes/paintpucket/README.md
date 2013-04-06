@@ -1,1 +1,10 @@
-themes folder
+## Paint Bucket Theme
+
+### Installation
+
+- Copy files to root folder and overwrite.
+- Ignore files that start with "_" (underscore). E.g. `_theme-paintbucket.jpg`
+
+### Sample Shots
+
+![Paint Bucket Theme](https://github.com/dataduke/jekyll-wikibox/raw/master/_themes/paintbucket/_theme-paintbucket.jpg)

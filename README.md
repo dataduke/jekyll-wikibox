@@ -57,7 +57,7 @@ Sublime Text Theme
 
 ![Version alpha.02](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/snapshot-version-a02.jpg)
 
-Paintbucket Theme
+Paint Bucket Theme
 
 ![Version alpha.03](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/snapshot-version-a03.jpg)
 
