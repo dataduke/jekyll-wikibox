@@ -7,4 +7,5 @@
 
 ### Sample Shots
 
-![Paint Bucket Theme](https://github.com/dataduke/jekyll-wikibox/raw/master/_themes/paintbucket/_theme-paintbucket.jpg)
+![Paint Bucket Theme](https://github.com/dataduke/jekyll-wikibox/raw/master/_themes/paintpucket/_theme-paintbucket.jpg)
+
