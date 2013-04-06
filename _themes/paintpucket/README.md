@@ -2,8 +2,12 @@
 
 ### Installation
 
-- Copy files to root folder and overwrite.
-- Ignore files that start with "_" (underscore). E.g. `_theme-paintbucket.jpg`
+- Copy files to root folder and overwrite.  
+
+Ignore:
+	- `README.md`
+	- `_theme-paintbucket.jpg`
+	- Other files that start with "_" (underscore).
 
 ### Sample Shots
 
