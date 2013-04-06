@@ -4,10 +4,11 @@
 
 - Copy files to root folder and overwrite.  
 
-Ignore:
-	- `README.md`
-	- `_theme-paintbucket.jpg`
-	- Other files that start with "_" (underscore).
+**Ignore:**
+
+- `README.md`
+- `_theme-paintbucket.jpg`
+- Other files that start with `_` (underscore).
 
 ### Sample Shots
 
