@@ -1,19 +1,31 @@
 ---
 layout: nil
+navigation: sidebarleft (HOME)
 ---
 <html>
-<head><title>Titel des Dokuments</title>
-<link rel="icon" href="./assets/icon/favicon.png" type="image/png">
+<head>
+  <title>Home</title>
+  <link rel="icon" href="./assets/icon/favicon.png" type="image/png">
 
 <style type="text/css">
+
+/* BOX MODEL TEST */
+/*
+* {border: 1px solid red !important;}
+*/
+.testred {border: 1px solid red !important;}
+.testblue {border: 1px solid blue !important;}
+.testgreen { margin: 10; border: 1px solid green !important;}
 
 /* DESIGN */
 
 body {
-  background-color: #555;
+  /* size */
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
-  height: 100%;
   /* font */
   font-family: menlo, helvetica, sans-serif;
   font-size: 13px;
@@ -25,25 +37,25 @@ body {
   line-height: 24px;
 }
 
-div {
-  display: block;
-}
+/* COLORS monokai soda theme*/
 
-#wrapperinnercontent {
-  height:auto;
-  width: auto;
-  color: #222;
-  background-color: #fff;
-}
+.bgdark   {background-color: #1e1e1e;}
+.bggrey   {background-color: #222222;}
+.bgsnow   {background-color: #d2d2d2;}
+.bgred    {background-color: #f32570;}
+.bgblue   {background-color: #5ec4d7;}
+.bgyellow {background-color: #e6db74;}
+.bggreen  {background-color: #96cc2c;}
+.bglila   {background-color: #ae81ff;}
 
-/* colors monokai soda */
-.greysnow { background-color: #1e1e1e; color: #d2d2d2;}
-.greymid { background-color: #222222; color: #8d8d8a;}
-.greyred { background-color: #222222; color: #f32570;}
-.greyblue { background-color: #222222; color: #5ec4d7;}
-.greylila { background-color: #222222; color: #ae81ff;}
-.greygreen { background-color: #222222; color: #96cc2c;}
-.greyyellow { background-color: #222222; color: #e6db74;}
+.fgdark   {color: #1e1e1e;}
+.fggrey   {color: #8d8d8a;}
+.fgsnow   {color: #d2d2d2;}
+.fgred    {color: #f32570;}
+.fgblue   {color: #5ec4d7;}
+.fgyellow {color: #e6db74;}
+.fggreen  {color: #96cc2c;}
+.fglila   {color: #ae81ff;}
 
 /* links */
 a:link {color:#767676; text-decoration:none;}    /* unvisited link */
@@ -54,8 +66,94 @@ a:active {color:#767676; text-decoration:underline;}  /* selected link */
 /*listings*/
 ul {margin:0px; padding: 0px;}
 .listing-seperator {list-style-type:none; margin-top: 1em; margin-bottom:1em;  border: 1px solid; 
-  padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px;}
+  padding-left: 20px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px;}
 .listing-item {list-style-type:none;}
+
+
+/* CONTAINERS */
+div {
+  display: block;
+}
+
+.bodywrapper {
+  min-height: 100%;
+  height:auto !important;
+  height: 100%;
+  overflow: hidden !important;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.slotwrapper {
+  position: absolute;
+  min-height: 100%;
+  height:auto !important;
+  height:100%;
+/*  overflow: hidden !important;*/
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: auto;
+}
+
+.slot {
+  position: absolute;
+  width: 100%;
+  /*overflow: auto;*/
+}
+
+/* 
+ border-top: 75 solid #222222; border-bottom: 250 solid #222222; /* vertical spacers
+   border-top: 75 solid #1e1e1e; border-bottom: 250 solid #1e1e1e; /* vertical spacers */
+
+
+/* SLOT BORDER */
+.slotborderright{ border-right: 1 solid #191919;}
+.slotborderleft{ border-left: 1 solid #191919;}
+
+/* SLOT DEPTH */
+
+.slotfixed{
+  position: fixed; /* no movement */
+  overflow: none; /* no scrolling */
+  z-index: 100; /* always on top */
+}
+
+/* SLOT POSITION */
+
+.slot000{left: 0;}
+.slot001{left: 300;}
+.slot002{left: 600;}
+.slot003{left: 900;}
+.slot004{left: 1200;}
+.slot005{left: 1500;}
+
+.slot099{right: 0;}
+
+/* SLOT SIZE */
+
+.slot250{width: 250;}
+.slot300{width: 300;}
+
+/* SLOT CONTENT ELEMENTS */
+
+.spacer50 {
+  height: 50;
+  width: 100%;
+}
+.spacer150 {
+  height: 150;
+  width: 100%;
+}
+.item300{
+  /*top: 0;*/ /* vertical offset */
+  width: 260; margin-left: 20; margin-right: 20; /* horizontal size */
+}
+.item250{
+  /*top: 0;  vertical offset */
+  width: 210; margin-left: 20; margin-right: 20; /* horizontal size */
+}
+
 
 /* ELEMENTS */
 
@@ -65,17 +163,8 @@ ul {margin:0px; padding: 0px;}
 
 /* sidebarleft */
 .sidebarleft{
-  position: fixed; /* no movement */
-  overflow: none; /* no scrolling */
-  z-index: 100; /* always on top */
   top: 0; /* vertical offset */
-  height: auto !important;
-  height: 100%; /* vertical size */
-  left: 0; /* horizontal offset */
-  width: 209; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
-  border-right: 1 solid #191919;
-  border-top: 75 solid #1e1e1e; border-bottom: 250 solid #1e1e1e; /* vertical spacers */
-  border-right: 1 solid #191919;
+  width: 100%; margin: 0; margin-left: 20; padding-right: 20; /* horizontal size */
 }
 
 /* sidebarright */
@@ -87,9 +176,9 @@ ul {margin:0px; padding: 0px;}
   height: auto !important;
   height: 100%; /* vertical size */
   right: 0; /* horizontal offset */
-  width: 209; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
+  width: 100%; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
   border-top: 75 solid #1e1e1e; border-bottom: 250 solid #1e1e1e; /* vertical spacers */
-  border-left: 1 solid #191919;
+ 
 }
 
 /* right end */
@@ -106,9 +195,6 @@ ul {margin:0px; padding: 0px;}
 .decobarleft{ 
   position: absolute; 
   top:0;
-  height: auto !important;
-  height: 100%;
-  overflow: none !important;
   left:250;
   width: 20; margin: 0; padding-left: 15; padding-right: 15;
   border-top: 75 solid #222222; border-bottom: 250 solid #222222; /* vertical spacers */
@@ -118,16 +204,11 @@ ul {margin:0px; padding: 0px;}
 .decobarright{ 
   position: absolute; 
   top:0;
-  min-height: 100%; /* Mindesthöhe für moderne Browser */
-  height:auto !important; /* Important Regel für moderne Browser */
-  height:100%; /* Mindesthöhe für den IE */ 
-  overflow: none !important; /* FF Scroll-leiste */ 
   left:1800;
   width: 20; margin: 0; padding-left: 15; padding-right: 15;
   border-top: 75 solid #222222; border-bottom: 250 solid #222222; /* vertical spacers */
 }
 
-/*
 .shadowright{
 -moz-box-shadow: 2px 0px 8px rgba(0,0,0,.65);
 -webkit-box-shadow: 2px 0px 8px rgba(0,0,0,.65);
@@ -138,129 +219,116 @@ box-shadow: 2px 0px 8px rgba(0,0,0,.65);
 -webkit-box-shadow: -2px 0px 8px rgba(0,0,0,.65);
 box-shadow: -2px 0px 8px rgba(0,0,0,.65);
 }
-*/
-
-.column001{
-  position: absolute; 
-  top: 0; /* vertical offset */
-  /*height: 100%; /* vertical size */
-  min-height: 100%; /* Mindesthöhe für moderne Browser */
-  height:auto !important; /* Important Regel für moderne Browser */
-  height:100%; /* Mindesthöhe für den IE */ 
-  overflow: none !important; /* FF Scroll-leiste */ 
-
-  left: 300; /* horizontal offset */
-  width: 260; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
-  border-top: 75 solid #222222; border-bottom: 250 solid #222222; /* vertical spacers */
-}
-.column002{
-  position: absolute; 
-  top: 0; /* vertical offset */
-  height: 100%; /* vertical size */
-  left: 600; /* horizontal offset */
-  width: 260; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
-  border-top: 75 solid #222222; border-bottom: 50 solid #222222; /* vertical spacers */
-}
-.column003{
-  position: absolute; 
-  top: 0; /* vertical offset */
-  height: 100%; /* vertical size */
-  left: 900; /* horizontal offset */
-  width: 260; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
-  border-top: 75 solid #222222; /*border-bottom: 250 solid #222222;*/ /* vertical spacers */
-}
-.column004{
-  position: absolute; 
-  top: 0; /* vertical offset */
-  height: 100%; /* vertical size */
-  left: 1200; /* horizontal offset */
-  width: 260; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
-  border-top: 75 solid #222222; border-bottom: 50 solid #222222; /* vertical spacers */
-}
-.column005{
-  position: absolute; 
-  top: 0; /* vertical offset */
-  height: 100%; /* vertical size */
-  left: 1500; /* horizontal offset */
-  width: 260; margin: 0; padding-left: 20; padding-right: 20; /* horizontal size */
-  border-top: 75 solid #222222; border-bottom: 50 solid #222222; /* vertical spacers */
-}
 
 </style>
 </head>
-<body> 
-<div class="sidebarleft greysnow">
-{% capture sidebarleft %}{% include sidebarleft.md %}{% endcapture %}
-{{ sidebarleft | markdownify }}
-</div>
+<body>
+  <!-- <div class="bodywrapper bggrey testgreen"> -->
 
-<!-- <div class="sidebarright greysnow">
-{% capture sidebarleft %}{% include sidebarleft.md %}{% endcapture %}
-{{ sidebarleft | markdownify }}
-</div>
--->
-
-<div id="wrapperinnercontent">
-
-  <div class="decobarleft greymid">
-  {% capture decobarleft %}{% include decobarleft.md %}{% endcapture %}
-  {{ decobarleft | markdownify }}
+  <div class="slotwrapper slot300 slot000 slotfixed slotborderright shadowright bgsnow">
+    <div class="spacer50"></div>
+    <div class="slot bgdark">
+      <div class="spacer50"></div>
+      <div class="item300 fgsnow">
+        {% capture sidebarleft %}{% include sidebarleft.md %}{% endcapture %}
+        {{ sidebarleft | markdownify }}
+      </div>
+      <div class="spacer50"></div>
+      <div class="spacer150 bgsnow"></div>
+    </div>
+    
   </div>
 
-  <div class="column001 greygreen">
-  {% capture box01 %}{% include customize-root-index/box001.md %}{% endcapture %}
-  {{ box01 | markdownify }}
+<!--   <div class="decobarwrapper">
+    <div class="spacerbottom"/>
+    <div class="decobarleft fggrey">
+      {% capture decobarleft %}{% include decobarleft.md %}{% endcapture %}
+      {{ decobarleft | markdownify }}
+    </div>
+    <div class="spacerbottom"/>
+  </div> -->
+
+  <div class="slotwrapper slot300 slot001 bggreen">
+    <div class="spacer50"></div>
+    <div class="slot bggrey">
+      <div class="spacer50"></div>
+      <div class="item300 fggreen">
+        {% capture box01 %}{% include customize-root-index/box001.md %}{% endcapture %}
+        {{ box01 | markdownify }}
+      </div>
+      <div class="spacer50"></div>
+      <div class="spacer150 bggreen"></div>
+    </div>
   </div>
 
-
-  <div class="column002 greyred">
-  {% capture box002 %}{% include customize-root-index/box002.md %}{% endcapture %}
-  {{ box002 | markdownify }}
+  <div class="slotwrapper slot300 slot002 bgred">
+    <div class="spacer50"> </div>
+    <div class="slot bggrey">
+      <div class="spacer50"></div>
+      <div class="item300 fgred">
+      {% capture box002 %}{% include customize-root-index/box002.md %}{% endcapture %}
+      {{ box002 | markdownify }}
+      </div>
+      <div class="spacer50"></div>
+      <div class="spacer150 bgred"></div>
+    </div>
   </div>
 
-  <div class="column003 greyblue">
-  {% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
-  {{ box001 | markdownify }}
+  <div class="slotwrapper slot300 slot003 bgblue">
+    <div class="spacer50"></div>
+    <div class="slot bggrey">
+      <div class="spacer50"></div>
+      <div class="item300 fgblue">
+      {% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
+      {{ box001 | markdownify }}
+      </div>
+      <div class="spacer50"></div>
+      <div class="spacer150 bgblue"></div>
+    </div>
   </div>
 
-  <div class="column004 greylila">
-  {% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
-  {{ box001 | markdownify }}
+  <div class="slotwrapper slot300 slot004 bglila">
+    <div class="spacer50"></div>
+    <div class="slot bggrey">
+      <div class="spacer50"></div>
+      <div class="item300 fglila">
+      {% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
+      {{ box001 | markdownify }}
+      </div>
+      <div class="spacer50"></div>
+      <div class="spacer150 bglila"></div>
+    </div>
   </div>
 
-  <div class="column005 greyyellow">
-  {% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
-  {{ box001 | markdownify }}
+  <div class="slotwrapper slot300 slot005 bgyellow">
+    <div class="spacer50"></div>
+    <div class="slot bggrey">
+      <div class="spacer50"></div>
+      <div class="item300 fgyellow">
+      {% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
+      {{ box001 | markdownify }}
+      </div>
+      <div class="spacer50"></div>
+      <div class="spacer150 bgyellow"></div>
+    </div>
   </div>
 
-  <div class="decobarright greymid">
-  {% capture decobarright %}{% include decobarleft.md %}{% endcapture %}
-  {{ decobarright | markdownify }}
-  </div>
-</div>
+<!--   <div class="decobarwrapper">
+    <div class="spacertop"/>
+    <div class="decobarright greymid">
+      {% capture decobarright %}{% include decobarleft.md %}{% endcapture %}
+      {{ decobarright | markdownify }}
+    </div>
+    <div class="spacerbottom"/>
+  </div> -->
+<!-- </div> -->
 
-<div class="sidebarrightend greysnow"></div>
+<!-- <div class="sidebarrightend greysnow"></div> -->
 
-<!-- <div class="columna greygreen">
-{% capture box001 %}{% include sidebarleft.md %}{% endcapture %}
-{{ box001 | markdownify }}
-</div>
--->
-
-<!-- <div class="column top pos2 greyred ">
-{% capture box002 %}{% include customize-root-index/box002.md %}{% endcapture %}
-{{ box002 | markdownify }}
-</div>
-
-<div class="column top pos3">
-{% capture box003 %}{% include customize-root-index/box003.md %}{% endcapture %}
-{{ box003 | markdownify }}
-</div>
-
-<div class="sidebarright sidebarshadow greylila">
+<!-- <div class="sidebarright sidebarshadow greylila">
 {% capture box004 %}{% include /customize-root-index/box004.md %}{% endcapture %}
 {{ box004 | markdownify }}
 </div> -->
 
 </body>
-<html>
+</html>

@@ -21,14 +21,21 @@ author :
   twitter : username
   feedburner : feedname
 
-
-
 # Site Logo Path
 # big (landing page, jpg/png, 32x32 or 48x48) 
 # small (topbar, jpg/png 24x24)
 
 # Site Favicon Path (must be: 16x16)
 # Site Favicon Type (see wikipedia)
+
+####################
+# YAML Frontmatter #
+####################
+
+# navigation: sidebarleft, sidebarright topbar, bottombar
+# box: boxname (foldername)
+# help: boxname (file contains yaml frontmatter of box)
+
 
 #################################
 # Global Navigation Definitions #
