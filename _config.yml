@@ -34,7 +34,8 @@ author :
 
 # navigation: sidebarleft, sidebarright topbar, bottombar
 # box: boxname (foldername)
-# help: boxname (file contains yaml frontmatter of box)
+# boxhelp: boxname (file contains yaml frontmatter of box)
+
 
 
 #################################

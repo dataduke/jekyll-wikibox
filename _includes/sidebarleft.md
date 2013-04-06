@@ -4,7 +4,8 @@
 TBD [BOX 1](/blog1/index.html)  
 TBD [BOX 2](/blog2/index.html)  
 TBD [BOX 3](/blog3/index.html)  
-TBD [BOX 4](/blog4/index.html)
+TBD [BOX 4](/blog4/index.html)  
+TBD [BOX 5](/blog5/index.html)
 
 **INSPECT BOX**
 
@@ -12,6 +13,7 @@ TBD [BOX 4](/blog4/index.html)
 [BOX 2](/blog2/index.html)  
 [BOX 3](/blog3/index.html)  
 [BOX 4](/blog4/index.html)  
+[BOX 5](/blog5/index.html)
 
 **CHANGE VIEW **
 
@@ -36,20 +38,3 @@ TBD [600 PX](/name.html)
 
 {{ site.time | date: '%Y' }} dataduke  
 Version alpha.02
-
-## Long list Scroll testing
-
-- a
-- a
-- a
-- a
-- a
-- a
-- a
-- a
-- a
-- a
-- a
-- x
-- y
-- z
