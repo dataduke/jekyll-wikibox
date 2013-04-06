@@ -3,9 +3,6 @@
 This project is supposed to serve as foundation of a responsive and flexible guerilla wiki for hackers.
 It transfers your markdown/textile notes to satic html layout inspired by sublime text editor.
 
-<!-- ![Version alpha.01](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/snapshot-version-a01.jpg) -->
-![Version alpha.02](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/snapshot-version-a02.jpg)
-
 - Manual
   - Live Demo
   - Installation
@@ -51,6 +48,18 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 
     ./_config.yml           # configuration
     ./_themes/themename     # themes; move all files/folders contained in a theme to root folder (and override)
+
+### Themes
+
+<!-- ![Version alpha.01](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/snapshot-version-a01.jpg) -->
+
+Sublime Text Theme
+
+![Version alpha.02](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/snapshot-version-a02.jpg)
+
+Paintbucket Theme
+
+![Version alpha.03](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/snapshot-version-a03.jpg)
 
 ### Structure
 

@@ -17,3 +17,23 @@
 {% endfor %}
 {% assign year = "0" %}
 </ul>
+
+All Pages with YAML and title
+
+<ul class="listing">
+{% for x in site.pages %}
+    <li class="listing-item">
+      <a href="{{ site.url }}{{ x.url }}" title="{{ x.title }}">{{ x.title }}</a>
+    </li>
+{% endfor %}
+</ul>
+
+All Pages with YAML url only
+
+<ul class="listing">
+{% for x in site.pages %}
+    <li class="listing-item">
+      {{ x.url }}
+    </li>
+{% endfor %}
+</ul>

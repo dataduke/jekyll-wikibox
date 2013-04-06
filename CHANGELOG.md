@@ -1,5 +1,9 @@
 # jekyll-wikibox: Version History
 
+### Alpha 03 / 2013-04-06
+
+![added tag](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/tag-added.png) Paint Pucket Theme
+
 ### Alpha 02 / 2013-04-03
 
 ![improved](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/tag-improved.png) Project Structure  
