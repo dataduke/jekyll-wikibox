@@ -1,7 +1,7 @@
 # jekyll-wikibox
 
 This project is supposed to serve as foundation of a responsive and flexible guerilla wiki for hackers.
-It transfers your markdown/textile notes to satic html layout inspired by sublime text editor.
+It transfers your markdown/textile notes to satic html. The default theme is inspired by sublime text editor.
 
 - **[Features](#features)** or what is it about?
   - Functional Features

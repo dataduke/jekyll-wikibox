@@ -1,5 +1,7 @@
 # jekyll-wikibox
 
+This project is supposed to serve as foundation of a responsive and flexible guerilla wiki for hackers. It transfers your markdown/textile notes to satic html.
+
 ## Initial Feature Backlog
 
   - basic layout  
