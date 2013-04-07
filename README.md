@@ -3,21 +3,36 @@
 This project is supposed to serve as foundation of a responsive and flexible guerilla wiki for hackers.
 It transfers your markdown/textile notes to satic html layout inspired by sublime text editor.
 
+- Features
+  - Functional Features
+  - Appearance
 - Manual
   - Live Demo
   - Installation
   - Local Deployment
   - Web Deployment
   - Customization
-  - Project Structure
+  - Themes
 - Project Planning
-  - Current Features
+  - Structure
 - References
   - Core Technologies
   - Related Technologies
   - Feature Inspirations
   - Design Inspirations
   - Markup Languages
+
+## Features
+
+### Functional Features
+
+  - multiple boxes/repositories (blogs) for notes (markdown, textile)
+  - sort by date created
+
+### Appearance
+  
+  - Sublime Text Theme
+  - Paint Bucket Theme
 
 ## Manual
 
@@ -58,6 +73,15 @@ Paint Bucket Theme
 
 ![Version alpha.03 - Paint Bucket](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/snapshot-version-a03-paintbucket.jpg)
 
+## Project Planning
+
+Please refer to the following files:
+
+    ./README.md                       # contains general information
+    ./CHANGELOG.md                    # contains version history
+    ./BACKLOG.taskpaper               # contains initial feature backlog (backup/reminder)
+    ./JEKYLL-WIKIBOX.taskpaper        # contains planned features and current backlog
+
 ### Structure
 
     .
@@ -92,21 +116,6 @@ Paint Bucket Theme
     |-- _config.yml
     |-- index.html
     |-- atom.xml
-
-## Project Planning
-
-Please refer to the following files:
-
-    ./README.md                       # contains general information
-    ./CHANGELOG.md                    # contains version history
-    ./BACKLOG.taskpaper               # contains initial feature backlog (backup/reminder)
-    ./JEKYLL-WIKIBOX.taskpaper        # contains planned features and current backlog
-
-
-### Current Features
-
-- multiple boxes/repositories (blogs) for notes (markdown, textile)
-- sort by date created
 
 ## References
 
