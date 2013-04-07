@@ -160,16 +160,11 @@ Paint Bucket [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_th
 
 ### Feature Inspirations
 
- - **PoIC** (Pile of Index Cards)
-    - [Wiki](http://pileofindexcards.org/)
-    - [Blog](http://pileofindexcards.org/blog/)
+ - **PoIC** (Pile of Index Cards), [Wiki](http://pileofindexcards.org/), [Blog](http://pileofindexcards.org/blog/)
 
 ### Design Inspirations
 
-- Theme **sublimetext** (default)
-  - [Sublime Text Editor](http://www.sublimetext.com/)
-  - [Soda-Dark.sublime-theme](https://github.com/buymeasoda/soda-theme)
-  - [Monokai-Soda.tmtheme](https://github.com/simeonv/st2-color-schemes)
+- **Sublime Text** Theme, [Sublime Text Editor](http://www.sublimetext.com/), [Soda-Dark.sublime-theme](https://github.com/buymeasoda/soda-theme), [Monokai-Soda.tmtheme](https://github.com/simeonv/st2-color-schemes)
 
 ### Design Frameworks
 
