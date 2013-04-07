@@ -35,6 +35,7 @@ A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpap
   
   - Sublime Text Theme
   - Paint Bucket Theme
+  - iOS Linen Theme
 
 ## Usage
 
