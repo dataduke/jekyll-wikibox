@@ -12,4 +12,4 @@
 
 ### Sample Shots
 
-![iOS Linen Theme](https://raw.github.com/dataduke/jekyll-wikibox/master/_themes/ioslinen/_ioslinen..jpg)
+![iOS Linen Theme](https://raw.github.com/dataduke/jekyll-wikibox/master/_themes/ioslinen/_ioslinen.jpg)
