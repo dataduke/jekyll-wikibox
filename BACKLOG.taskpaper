@@ -1,0 +1,71 @@
+Initial Feature Backlog:
+
+  - basic layout  
+    - fix horizontal scrolling
+    - post layout
+    - box layout
+  - advanced layout
+    - card stack view
+    - show/hide box column by selesction in main view
+    - allow drag and drop to sort columns
+  - sorting
+    - sort by date modified
+    - sort by category
+    - sort by tags
+    - sort by name
+  - set box/post/content column width
+    - 300px
+    - 600px
+    - 900px
+  - switch scrolling for post
+    - horizontal
+    - vertical 
+  - markup
+    - add syntax highlighting
+    - add mathjs
+  - special cards
+    - add support for .taskpaper files
+    - add support for .rst file (reStructuredText)
+    - add support for learning card attribute (POI pile of index cards)
+  - attachment and image support
+    - attachment folder has same name as post (sits in same directory)
+    - create automatic links to images in attachment folders
+    - add support for post/card attachments (contained in post-name-folders)
+  - add top bar
+    - add search box on left
+    - add breadcrumb path
+    - filter box (for highlighting words in content area)
+  - add config file
+    - global font with font size
+    - contains attributes for each box (box name, relative box path, box foreground color, box background color)
+  - themes
+    - finish sublime text theme
+    - build theme Simple Github / jekyll-bootstrap with [twitter theme](http://themes.jekyllbootstrap.com/)
+    - build theme [Apple Developer Wiki](https://developer.apple.com/technologies/ios/)
+    - build theme [FoldingText Website](http://www.foldingtext.com/)
+    - build theme [docs](https://readthedocs.org/)
+    - build theme paint-pot-like (website suitable)
+    - build theme scientific thesis (website suitable)
+    - add theme switcher
+  - individual columns
+    - show/hide boxes on landing page
+    - change view/sorting of each box individually
+  - small appify
+    - launch local website in safari or fluid.app via alfred app
+    - search local website in safari or fluid.app via alfred app
+    - only create local relative links that don't need a webserver (static html only), like:
+      `<a href='./folder/2011-12-29-jekyll-introduction.html' title='Jekyll Introduction'>Jekyll Introduction</a>`
+    - use [fluid.app](http://fluidapp.com) and [fake.app](http://fakeapp.com/)
+  - big appify/headless running
+    - create gem for jekyllwiki
+    - wiki tructure: `~/wikiroot/box/category/note.md` 
+    - wiki usage: `cd ~/wikiroot` and `jekyllwiki --server 4444` and webbrowser `http://localhost:4444`
+    - alternative appify wiki with fluid.app 
+    - create browser app which wraps all dependencies (jekyll, ruby)
+    - implement toggle to source view on post layout
+    - allow editing inside source view
+    - separate/strip boxes to folders outside of app
+    - allow only custom folder path for boxes outside of wiki instance
+  - mobile appify
+    - make it deployable via dropbox for mobile use (ios, android)
+    - every box has its own feed which is usable by rss-reader apps
