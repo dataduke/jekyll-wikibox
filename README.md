@@ -97,10 +97,11 @@ Paint Bucket Theme
 
 Please refer to the following files:
 
-    ./CHANGELOG.md                    # contains version history
-    ./JEKYLL-WIKIBOX.taskpaper        # contains planned features and current backlog
-    ./BACKLOG.taskpaper               # contains initial feature backlog (backup/reminder)
     ./README.md                       # contains general information
+    ./CHANGELOG.md                    # contains version history
+    ./BACKLOG.taskpaper               # contains initial feature backlog (backup/reminder)
+    ./JEKYLL-WIKIBOX.taskpaper        # contains planned features and current backlog
+
 
 ### Current Features
 
