@@ -62,7 +62,7 @@ A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpap
     - use [fluid.app](http://fluidapp.com) and [fake.app](http://fakeapp.com/)
   - big appify/headless running
     - create gem for jekyllwiki
-    - wiki tructure: `~/wikiroot/box/category/note.md` 
+    - wiki structure: `~/wikiroot/box/category/note.md` 
     - wiki usage: `cd ~/wikiroot` and `jekyllwiki --server 4444` and webbrowser `http://localhost:4444`
     - alternative appify wiki with fluid.app 
     - create browser app which wraps all dependencies (jekyll, ruby)

@@ -10,6 +10,7 @@ A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpap
   - Installation
   - Local Deployment
   - Web Deployment
+  - Magic Tricks
   - Customization
   - Themes
 - **[Project Planning](#project-planning)** or how can I hack it?
@@ -60,6 +61,11 @@ A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpap
 
 - GitHub Hosting: Please refer to github pages help.
 - Other web hoster: Please refer to jekyll wiki/help.
+
+### Magic Tricks
+
+- Interactive Wallpaper: [desktopr.app](http://mac.appstorm.net/reviews/internet-reviews/desktopr-put-a-website-on-your-desktop/) (Mac OS X )
+- Individual App: [fluid.app](http://fluidapp.com) (Mac OS X ), [fake.app](http://fakeapp.com/) (Mac OS X )
 
 ### Customization
 

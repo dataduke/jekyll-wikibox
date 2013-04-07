@@ -81,6 +81,7 @@ Backlog:
 
 	- wallpaper appify
 		- let website be used as interactive fullscreen wallpaper
+		@sticky for mac os x use: Desktopr http://mac.appstorm.net/reviews/internet-reviews/desktopr-put-a-website-on-your-desktop/
 
 	- small appify
 		- launch local website in safari via alfred app
