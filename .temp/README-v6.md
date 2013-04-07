@@ -6,14 +6,14 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 - **[Features](#features)** or what is it about?
   - Functional Features
   - Appearance
-- **[Usage](#usage)** or how can I exploit it?
+- **[Usage](#usage)** or how can I use it?
   - Live Demo
   - Installation
   - Local Deployment
   - Web Deployment
   - Customization
   - Themes
-- **[Project Planning](#project-planning)** or how can I hack it?
+- **[Project Planning](#project-planning)** or how can I improve it?
   - Important Files
   - Project Structure
 - **[References](#references)** or how does it work?
