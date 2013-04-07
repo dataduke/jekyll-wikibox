@@ -1,5 +1,22 @@
 jekyll-wikibox:
 	A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpaper) transformed into static html by jekyll. The default theme is inspired by sublime text editor. @sticky
+Goals:
+	- 1 App to rule them all approach
+	- finshed product name: uberbox, uberwiki
+	- default theme things taskpaper
+Use Cases:
+	- Option for Setup:
+		- Sidebar on all spaces: persomal calender, 
+		- Space 0: PiM: Tasks, Groceries, Breakdowns.
+		- Space 1: PIM: Notes
+		- Space 2: Kanban Board for Sotware Development
+		- Space 3: Synced back Webservices: Code Snippets (gists), Bookmarks (pinboard)
+		- Space 4: Learning Cards (Pile of Index Card Method)
+	- Option for Setup:
+		- Space 0: Management
+		- Space 1: Professional/Work/Business
+		- Space 2: Privat/Home/Life
+		- Space 4: Public Board/Website
 Iteration 1:
 	current cycle for next 2 weeks @sticky
 	- basic layout  
@@ -14,8 +31,36 @@ Iteration 1:
 
 	- global asset path
 	- sublimetext theme index.html include decor.md to asset txt/decobar.md
+	- create theme: Minimal (black on grey or white): no colors/bold/underline, 
 Iteration 2:
+	- deprecate theme development (basic ideas are there, everybody can adapt them if wanted)
+	- focus on pure feature support
+	- use minimal theme or things theme
+	- write promotion blogpost: the case against task management apps 
+		- reference: alex panye everything in pockets
+		- reference: pocket information douglas amberv posts in scrivener forums
+		- what I wanr to achieve
+		- present wikibox
 Backlog:
+	- live search/command line input field for content interaction (bottombar)
+		- use known cli tools and command names for interaction (dont reinvent the wheel)
+		- filter viewed content/items (columns stay in postion put only show results) all fields, by name, by category, by tags, by abstract, by file content (grep)
+		- add box (past link to external directory, all files need to have yaml with boxname), box gets added dynamically
+		- add note to box with timestamp date
+		- delete note
+		- delete box by name
+		- change view
+		- shrink sidebar to icons only as it isnt needed anymore
+		- command show hide sidebar
+		- switch space
+		- switch theme
+
+	- decided on javascript framework for interactive content
+		- use angular ui
+
+	- iintroduce boards/spaces/areas = set of boxes
+		- each space has these preferences: name, icon, theme, boxes (folder paths).
+	
 	- advanced layout
 		- card stack view
 		- post line view  
