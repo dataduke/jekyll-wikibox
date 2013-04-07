@@ -88,9 +88,9 @@ Paint Bucket [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_th
 ### Project Structure
 
     .
-    |-- .info               # can be ignored; used for project information only
-    |-- .temp               # can be ignored; used at development for backup of important files
-    |-- _includes           # used for building index pages
+    |-- .info                         # can be ignored; used for project information only
+    |-- .temp                         # can be ignored; used at development for backup of important files
+    |-- _includes                     # used for building index pages
     |   |-- main-index-sidebar.md
     |   |-- main-index-box-N.md
     |   |-- box-N-index-sidebar.md
@@ -99,16 +99,16 @@ Paint Bucket [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_th
     |   |-- default.html
     |   |-- post.html
     |-- _themes             
-    |-- _site               # not checked in; created by jekyll as deployment directory
+    |-- _site                         # not checked in; created by jekyll as deployment directory
     |-- _plugins 
     |   |-- additional-feature-X
-    |-- assets              # for layout dependencies only
+    |-- assets                        # for layout dependencies only
     |   |-- css
     |       |-- style.css
     |   |-- img
     |   |-- js
     |   |-- favicon.ico
-    |-- box000               # box001-005 for testing; more boxes can be added/renamed/deleted
+    |-- box000                        # box001-005; more boxes can be added/renamed/deleted
     |   |-- _posts
     |   |   |-- 2013-01-01-hello-world.markdown    # .md or .textile or .taskpaper
     |   |   |-- 2013-01-01-hello-world             # folder for post attachments
