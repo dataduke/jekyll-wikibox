@@ -4,6 +4,10 @@ A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpap
 
 ## Version History
 
+### Alpha 04 / 2013-04-07
+
+![added tag](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/tag-added.png) iOS Linen Theme  
+
 ### Alpha 03 / 2013-04-06
 
 ![added tag](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/tag-added.png) Sublime Text Theme  
