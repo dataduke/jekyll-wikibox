@@ -14,7 +14,7 @@
 
 Paint Bucket Favicon
 
-![Paint Bucket Favicon](https://github.com/dataduke/jekyll-wikibox/raw/master/_themes/paintpucket/_paintbucket-favicon.jpg)
+![Paint Bucket Favicon](https://raw.github.com/dataduke/jekyll-wikibox/master/_themes/paintpucket/_paintbucket-favicon.png)
 
 Paint Bucket Desktop
 
