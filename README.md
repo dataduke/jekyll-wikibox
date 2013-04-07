@@ -3,20 +3,20 @@
 This project is supposed to serve as foundation of a responsive and flexible guerilla wiki for hackers.
 It transfers your markdown/textile notes to satic html layout inspired by sublime text editor.
 
-- **[Features](#features)**
+- **[Features](#features)** (What is it about?)
   - Functional Features
   - Appearance
-- **[Usage](#usage)**
+- **[Usage](#usage)** (How can I use it?)
   - Live Demo
   - Installation
   - Local Deployment
   - Web Deployment
   - Customization
   - Themes
-- **[Project Planning](#project-planning)**
+- **[Project Planning](#project-planning)** (How can I improve it?)
   - Important Files
   - Project Structure
-- **[References](#references)**
+- **[References](#references)** (How does it work?)
   - Core Technologies
   - Related Technologies
   - Markup Languages
