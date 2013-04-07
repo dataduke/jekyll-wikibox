@@ -4,6 +4,9 @@ Goals:
 	- 1 App to rule them all approach
 	- finshed product name: uberbox, uberwiki
 	- default theme things taskpaper
+Requirements:
+	- use all space of 30 inch monitor (2560x1600) but also look good on iphone in portrait mode
+	- be usable as wallpaper app
 Use Cases:
 	- Option for Setup:
 		- Sidebar on all spaces: persomal calender, 
@@ -23,6 +26,8 @@ Iteration 1:
 		- fix horizontal scrolling
 		- post layout
 		- box layout
+	- theme minimal
+	- theme daring fireball
 
 	- split _config.yaml exclude theming parts to other .yaml file
 	themes change colors and background of items but do never touch the structure of the weblayout webapplication @sticky 
