@@ -11,6 +11,9 @@ Iteration 1:
 	themes change colors and background of items but do never touch the structure of the weblayout webapplication @sticky 
 	- enable support for taskpaper themes for taskpaper files
 	- enable support for highlight.js themes for code highlighting
+
+	- global asset path
+	- sublimetext theme index.html include decor.md to asset txt/decobar.md
 Iteration 2:
 Backlog:
 	- advanced layout

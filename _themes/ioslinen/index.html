@@ -30,7 +30,7 @@ body {
   padding: 0;
   /* font */
   font-family: menlo, helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -40,7 +40,7 @@ body {
 }
 
 /* COLORS */
-/* monokai soda theme colors*/
+/* monokai soda theme colors */
 
 /* background colors */
 .bgdark   {background-color: #1e1e1e;}
@@ -62,16 +62,33 @@ body {
 .fggreen  {color: #96cc2c;}
 .fglila   {color: #ae81ff;}
 
-/* link colors and style */
-a:link {color:#767676; text-decoration:none;}         /* unvisited link */
-a:visited {color:#767676; text-decoration:none;}      /* visited link */
-a:hover {color:#767676; text-decoration:underline;}   /* mouse over link */
-a:active {color:#767676; text-decoration:underline;}  /* selected link */
+/* COLORS */
+/* ios linen colors*/
 
-/* listing colors and style*/
+/* background image */
+.bgioslinen {background-image: url(./assets/img/bgioslinen.png); background-repeat: repeat;}
+
+/* foreground colors */
+.fglicore     {color: #000000;}
+.fglead       {color: #212121;}
+.fgmagnesium  {color: #c0c0c0;}
+.fgmercury    {color: #ebebeb;}
+
+/* TEXT ELEMENTS */
+
+/* headings, bold text */
+h1, h2, h3, h4, h5 {text-decoration:underline;}
+
+/* link colors and style */
+a:link {color:#212121; text-decoration:none; font-weight: bold;}         /* unvisited link */
+a:visited {color:#212121; text-decoration:none; font-weight: bold;}      /* visited link */
+a:hover {color:#212121; text-decoration:underline; font-weight: bold;}   /* mouse over link */
+a:active {color:#212121; text-decoration:underline; font-weight: bold;}  /* selected link */
+
+/* listing colors and style */
 ul {margin:0px; padding: 0px;}
-.listing-seperator {list-style-type:none; margin-top: 1em; margin-bottom:1em;  border: 1px solid; 
-  padding-left: 20px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px;}
+.listing-seperator{font-weight: bold; list-style-type:none; margin-top: 1em; margin-bottom:1em;
+  padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px;}
 .listing-item {list-style-type:none;}
 
 
@@ -165,83 +182,77 @@ box-shadow: -2px 0px 8px rgba(0,0,0,.65);
 
 </style>
 </head>
-<body class="bgdark">
+<body class="bgioslinen">
 
-  <div class="slotwrapper slot300 slot000 slotborderright bgsnow">
+  <div class="slotwrapper slot300 slot000">
     <div class="spacer50"></div>
-    <div class="slot bgdark">
+    <div class="slot">
       <div class="spacer50"></div>
-      <div class="item300 fgsnow">
+      <div class="item300 fgmercury">
         {% capture sidebarleft %}{% include sidebarleft.md %}{% endcapture %}
         {{ sidebarleft | markdownify }}
       </div>
-      <div class="spacer50"></div>
-      <div class="spacer150 bgsnow"></div>
+      <div class="spacer150"></div>
     </div>
   </div>
 
-  <div class="slotwrapper slot300 slot001 slotborderright bggreen">
+  <div class="slotwrapper slot300 slot001">
     <div class="spacer50"></div>
-    <div class="slot bggrey">
+    <div class="slot">
       <div class="spacer50"></div>
-      <div class="item300 fggreen">
+      <div class="item300 fgmercury">
         {% capture b01 %}{% include customize-root-index/box001.md %}{% endcapture %}
         {{ b01 | markdownify }}
       </div>
-      <div class="spacer50"></div>
-      <div class="spacer150 bggreen"></div>
+      <div class="spacer150"></div>
     </div>
   </div>
 
-  <div class="slotwrapper slot300 slot002 slotborderright bgred">
+  <div class="slotwrapper slot300 slot002">
     <div class="spacer50"> </div>
-    <div class="slot bgdark">
+    <div class="slot">
       <div class="spacer50"></div>
-      <div class="item300 fgred">
+      <div class="item300 fgmercury">
       {% capture b02 %}{% include customize-root-index/box002.md %}{% endcapture %}
       {{ b02 | markdownify }}
       </div>
-      <div class="spacer50"></div>
-      <div class="spacer150 bgred"></div>
+      <div class="spacer150"></div>
     </div>
   </div>
 
-  <div class="slotwrapper slot300 slot003 slotborderright bgblue">
+  <div class="slotwrapper slot300 slot003">
     <div class="spacer50"></div>
-    <div class="slot bggrey">
+    <div class="slot">
       <div class="spacer50"></div>
-      <div class="item300 fgblue">
+      <div class="item300 fgmercury">
       {% capture b03 %}{% include customize-root-index/box003.md %}{% endcapture %}
       {{ b03 | markdownify }}
       </div>
-      <div class="spacer50"></div>
-      <div class="spacer150 bgblue"></div>
+      <div class="spacer150"></div>
     </div>
   </div>
 
-  <div class="slotwrapper slot300 slot004 slotborderright bglila">
+  <div class="slotwrapper slot300 slot004">
     <div class="spacer50"></div>
-    <div class="slot bgdark">
+    <div class="slot">
       <div class="spacer50"></div>
-      <div class="item300 fglila">
+      <div class="item300 fgmercury">
       {% capture b04 %}{% include customize-root-index/box004.md %}{% endcapture %}
       {{ b04 | markdownify }}
       </div>
-      <div class="spacer50"></div>
-      <div class="spacer150 bglila"></div>
+      <div class="spacer150"></div>
     </div>
   </div>
 
-  <div class="slotwrapper slot300 slot005 slotborderright shadowright bgyellow">
+  <div class="slotwrapper slot300 slot005">
     <div class="spacer50"></div>
-    <div class="slot bggrey">
+    <div class="slot">
       <div class="spacer50"></div>
-      <div class="item300 fgyellow">
+      <div class="item300 fgmercury">
       {% capture b05 %}{% include customize-root-index/box005.md %}{% endcapture %}
       {{ b05 | markdownify }}
       </div>
-      <div class="spacer50"></div>
-      <div class="spacer150 bgyellow"></div>
+      <div class="spacer150"></div>
     </div>
   </div>
 

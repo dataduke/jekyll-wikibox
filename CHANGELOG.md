@@ -1,6 +1,6 @@
 # jekyll-wikibox
 
-A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpaper) transfered to static html by jekyll. The default theme is inspired by sublime text editor.
+A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpaper) transformed into static html by jekyll. The default theme is inspired by sublime text editor.
 
 ## Version History
 

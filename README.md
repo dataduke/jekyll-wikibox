@@ -73,7 +73,11 @@ Sublime Text [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_th
 
 Paint Bucket [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_themes/paintpucket)  
 
-![Version alpha.03 - Paint Bucket](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/snapshot-version-a03-paintbucket.jpg)
+![Version alpha.03 - Paint Bucket](https://raw.github.com/dataduke/jekyll-wikibox/master/_themes/paintbucket/_paintbucket.jpg)
+
+iOS Linen [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_themes/ioslinen)  
+
+![Version alpha.03 - iOS Linen](https://raw.github.com/dataduke/jekyll-wikibox/master/_themes/ioslinen/_ioslinen.jpg)
 
 ## Project Planning
 

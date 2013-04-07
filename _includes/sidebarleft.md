@@ -1,4 +1,4 @@
-### Paint Bucket Theme
+### iOS Linen Theme
 
 Welcome at this site. Horizontal and vertical scrolling is fun!
 

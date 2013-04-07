@@ -1,4 +1,4 @@
-## Sublime Text Theme
+## iOS Linen Theme
 
 ### Installation
 
@@ -7,9 +7,9 @@
 ### Ignore these files!
 
 - `README.md`
-- `_sublimetext.jpg`
+- `_ioslinen.jpg`
 - Other files that start with `_` (underscore).
 
 ### Sample Shots
 
-![Sublime Text Theme](https://raw.github.com/dataduke/jekyll-wikibox/master/_themes/sublimetext/_sublimetext.jpg)
+![iOS Linen Theme](https://raw.github.com/dataduke/jekyll-wikibox/master/_themes/ioslinen/_ioslinen..jpg)
