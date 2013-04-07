@@ -82,7 +82,7 @@ Paint Bucket Theme
     |   |-- img
     |   |-- js
     |   |-- favicon.ico
-    |-- box000               # box001-004 for testing; more boxes can be added/renamed/deleted
+    |-- box000               # box001-005 for testing; more boxes can be added/renamed/deleted
     |   |-- _posts
     |   |   |-- 2013-01-01-hello-world.markdown    # .md or .textile or .taskpaper
     |   |   |-- 2013-01-01-hello-world             # folder for post attachments
@@ -181,20 +181,36 @@ Please refer to the following files:
 
 ## References
 
+### Acknowledgments
+
 ### Core Technologies
 
 - [ruby](http://www.ruby-lang.org/en/)
 - [jekyll](https://github.com/mojombo/jekyll)
 
-### Supporting Technologies
+### Markup Languages
+
+- [markdown](http://daringfireball.net/projects/markdown/) by John Gruber
+- [multimarkdown](http://fletcherpenney.net/multimarkdown/) by Fletcher Penny
+- [github flavored markdown](https://help.github.com/articles/github-flavored-markdown) by GitHub
+- [textile](http://textism.com/tools/textile/) by Dean Allan
+- [taskpaper](http://www.hogbaysoftware.com/products/taskpaper) by Jesse Grosjea
+
+### Higher-Level Languages
 
 - [YAML](http://www.yaml.org): data serialization;
-- [{{ mustache }}](http://mustache.github.com): tag expansion;
+- [{{ mustache }}](http://mustache.github.com), [js github repho](https://github.com/janl/mustache.js): tag expansion;
 - [Sass](http://sass-lang.com): CSS3 abstraction; .scss or .sass;
 - [Haml](http://haml.info), [doc](http://haml.info/docs/yardoc/file.REFERENCE.html): HTML abstraction; .html.haml;
+- [less](http://lesscss.org/), [github repo](https://github.com/cloudhead/less.js): CSS3 extension for dynamic behaviour (variables etc.);
+- [liquid](http://www.liquidmarkup.org/), [help](https://github.com/mojombo/jekyll/wiki/liquid-extensions), [github repo](https://github.com/Shopify/liquid), [wiki](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers): template system;
+- [ERuby](http://de.wikipedia.org/wiki/ERuby), [erb](http://ruby-doc.org/stdlib-1.9.3/libdoc/erb/rdoc/ERB.html): Ruby templating; .erb, .html.erb, .xml.erb;
+- [CoffeeScript](http://coffeescript.org/)
 
 ### Related Technologies
 
+- [jekyll-asset-pipeline](https://github.com/matthodan/jekyll-asset-pipeline), [blog](http://matthodan.com/2012/11/22/jekyll-asset-pipeline.html)
+- [jekkll-asset_bundler](https://github.com/moshen/jekyll-asset_bundler)
 - [jekyll-bootstrap](https://github.com/plusjade/jekyll-bootstrap) 
 - [multi-blog-jekyll](https://github.com/ggarron/multi-blog-jekyll)
 - [github pages](http://pages.github.com/), [help](https://help.github.com/categories/20/articles) 
@@ -214,10 +230,7 @@ Please refer to the following files:
   - [Soda-Dark.sublime-theme](https://github.com/buymeasoda/soda-theme)
   - [Monokai-Soda.tmtheme](https://github.com/simeonv/st2-color-schemes)
 
-### Markup Languages
+## Design Frameworks
 
-- [markdown](http://daringfireball.net/projects/markdown/) by John Gruber
-- [multimarkdown](http://fletcherpenney.net/multimarkdown/) by Fletcher Penny
-- [github flavored markdown](https://help.github.com/articles/github-flavored-markdown) by GitHub
-- [textile](http://textism.com/tools/textile/) by Dean Allan
-- [taskpaper](http://www.hogbaysoftware.com/products/taskpaper) by Jesse Grosjea
+- jQuery
+- Bootstrap

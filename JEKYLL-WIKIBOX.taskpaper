@@ -4,6 +4,7 @@ Iteration 1:
 		- fix horizontal scrolling
 		- post layout
 		- box layout
+
 	- split _config.yaml exclude theming parts to other .yaml file
 	themes change colors and background of items but do never touch the structure of the weblayout webapplication @sticky 
 	- enable support for taskpaper themes for taskpaper files
@@ -15,38 +16,49 @@ Backlog:
 		- post line view  
 		- show/hide box column by selesction in main view
 		- allow drag and drop to sort columns
+
 	- sorting
 		- sort by date modified
 		- sort by category
 		- sort by tags
 		- sort by name
+
 	- set box/post/content column width
 		- 300px
 		- 600px
 		- 900px
 		- dynamic slider
+
 	- switch scrolling for post
 		- horizontal
 		- vertical 
+
 	- markup
 		- add syntax highlighting
 		- add mathjs
+
 	- special cards
 		- add support for .taskpaper files
 		- add support for .rst file (reStructuredText)
 		- add support for learning card attribute (see PoIC - Pile of Index Cards - http://pileofindexcards.org/ and http://pileofindexcards.org/blog/)
+
 	- attachment and image support
 		- attachment folder has same name as post (sits in same directory)
 		- create automatic links to images in attachment folders
 		- add support for post/card attachments (contained in post-name-folders)
+
 	- add top bar
 		- add search box on left
 		- add breadcrumb path
 		- filter box (for highlighting words in content area)
+
 	- add config file
 		- global font with font size
 		- contains attributes for each box (box name, relative box path, box foreground color, box background color)
+		
 	- themes
+		- seperate color compostions from theme layout
+		- add mobile version (without fixed sidebars/topbars)
 		- finish sublime text theme
 		- build theme Simple Github / jekyll-bootstrap with [twitter theme](http://themes.jekyllbootstrap.com/)
 		- build theme [Apple Developer Wiki](https://developer.apple.com/technologies/ios/)
@@ -54,21 +66,30 @@ Backlog:
 		- build theme [docs](https://readthedocs.org/)
 		- build theme paint-pot-like (website suitable)
 		- build theme scientific thesis (website suitable)
+		- build theme iOS linen
+		- build theme Bianchi Celeste
 		- add theme switcher
+		
 	- individual columns
 		- show/hide boxes on landing page
 		- change view/sorting of each box individually
+
+	- wallpaper appify
+		- let website be used as interactive fullscreen wallpaper
+
 	- small appify
 		- launch local website in safari via alfred app
 		- search local website in safari via alfred app
 		- only create local relate links that don't need a webserver (static html only), like:
 		    <a href='./folder/2011-12-29-jekyll-introduction.html' title='Jekyll Introduction'>Jekyll Introduction</a> @sticky
+		
 	- big appify (maybe not to be done)
 		- create browser app which wraps all dependencies (jekyll, ruby)
 		- implement toggle to source view on post layout
 		- allow editing inside source view
 		- separate/strip boxes to folders outside of app
 		- allow only custom folder path for boxes outside of wiki instance
+
 	- mobile appify
 		- make it deployable via dropbox for mobile use (ios, android)
 		- every box has its own feed which is usable by rss-reader apps

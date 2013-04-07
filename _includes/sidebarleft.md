@@ -24,10 +24,9 @@ TBD [Category](/category.html)
 TBD [Tags](/tags.html)  
 TBD [Name](/name.html)  
 
-**SET COLUMN WIDTH**
+**CHANGE COLUMN**
 
-TBD [300 PX](#)  
-TBD [600 PX](#) 
+Width [300](#) [400](#) [600](#) [900](#) [1200](#) 
 
 **INFO**
 
