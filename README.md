@@ -6,7 +6,7 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 - [Features](#features)
   - Functional Features
   - Appearance
-- [Manual](#manual)
+- [Usage](#usage)
   - Live Demo
   - Installation
   - Local Deployment
@@ -37,7 +37,7 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
   - Sublime Text Theme
   - Paint Bucket Theme
 
-## Manual
+## Usage
 
 ### Live Demo
 
