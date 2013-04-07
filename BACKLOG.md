@@ -1,4 +1,6 @@
-Initial Feature Backlog:
+# jekyll-wikibox
+
+## Initial Feature Backlog
 
   - basic layout  
     - fix horizontal scrolling

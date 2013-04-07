@@ -82,7 +82,7 @@ Paint Bucket [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_th
 
     ./README.md                       # contains general information
     ./CHANGELOG.md                    # contains version history
-    ./BACKLOG.taskpaper               # contains initial feature backlog (backup/reminder)
+    ./BACKLOG.md                      # contains initial feature backlog (backup/reminder)
     ./JEKYLL-WIKIBOX.taskpaper        # contains planned features and current backlog
 
 ### Project Structure

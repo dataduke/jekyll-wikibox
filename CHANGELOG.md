@@ -1,4 +1,6 @@
-# jekyll-wikibox: Version History
+# jekyll-wikibox
+
+## Version History
 
 ### Alpha 03 / 2013-04-06
 
