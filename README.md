@@ -14,7 +14,8 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
   - Customization
   - Themes
 - Project Planning
-  - Structure
+  - Important Files
+  - Project Structure
 - References
   - Core Technologies
   - Related Technologies
@@ -75,14 +76,14 @@ Paint Bucket Theme
 
 ## Project Planning
 
-Please refer to the following files:
+## Important Files
 
     ./README.md                       # contains general information
     ./CHANGELOG.md                    # contains version history
     ./BACKLOG.taskpaper               # contains initial feature backlog (backup/reminder)
     ./JEKYLL-WIKIBOX.taskpaper        # contains planned features and current backlog
 
-### Structure
+### Project Structure
 
     .
     |-- .info               # can be ignored; used for project information only
