@@ -12,4 +12,4 @@
 
 ### Sample Shots
 
-![Sublime Text Theme](https://github.com/dataduke/jekyll-wikibox/raw/master/_themes/sublimetext/_theme-sublimetext.jpg)
+![Sublime Text Theme](https://raw.github.com/dataduke/jekyll-wikibox/master/_themes/sublimetext/_sublimetext.jpg)
