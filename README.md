@@ -19,9 +19,11 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 - [References](#references)
   - Core Technologies
   - Related Technologies
+  - Markup Languages
+  - Higher-Level Languages
   - Feature Inspirations
   - Design Inspirations
-  - Markup Languages
+  - Design Frameworks
 
 ## Features
 
@@ -127,6 +129,16 @@ Paint Bucket Theme
 - [ruby](http://www.ruby-lang.org/en/)
 - [jekyll](https://github.com/mojombo/jekyll)
 
+### Related Technologies
+
+- [jekyll-asset-pipeline](https://github.com/matthodan/jekyll-asset-pipeline), [blogpost](http://matthodan.com/2012/11/22/jekyll-asset-pipeline.html)
+- [jekkll-asset_bundler](https://github.com/moshen/jekyll-asset_bundler)
+- [jekyll-bootstrap](https://github.com/plusjade/jekyll-bootstrap) 
+- [multi-blog-jekyll](https://github.com/ggarron/multi-blog-jekyll)
+- [github pages](http://pages.github.com/), [help](https://help.github.com/categories/20/articles) 
+- [octopress](https://github.com/imathis/octopress)
+- [ruhoh](http://ruhoh.com)
+
 ### Markup Languages
 
 - [markdown](http://daringfireball.net/projects/markdown/) by John Gruber
@@ -146,16 +158,6 @@ Paint Bucket Theme
 - [ERuby](http://de.wikipedia.org/wiki/ERuby), [erb](http://ruby-doc.org/stdlib-1.9.3/libdoc/erb/rdoc/ERB.html): Ruby templating; .erb, .html.erb, .xml.erb;
 - [CoffeeScript](http://coffeescript.org/): JavaScript abstraction;
 
-### Related Technologies
-
-- [jekyll-asset-pipeline](https://github.com/matthodan/jekyll-asset-pipeline), [blog](http://matthodan.com/2012/11/22/jekyll-asset-pipeline.html)
-- [jekkll-asset_bundler](https://github.com/moshen/jekyll-asset_bundler)
-- [jekyll-bootstrap](https://github.com/plusjade/jekyll-bootstrap) 
-- [multi-blog-jekyll](https://github.com/ggarron/multi-blog-jekyll)
-- [github pages](http://pages.github.com/), [help](https://help.github.com/categories/20/articles) 
-- [octopress](https://github.com/imathis/octopress)
-- [ruhoh](http://ruhoh.com)
-
 ### Feature Inspirations
 
  - **PoIC** (Pile of Index Cards)
@@ -165,11 +167,11 @@ Paint Bucket Theme
 ### Design Inspirations
 
 - Theme **sublimetext** (default)
-  - [Sublime Text](http://www.sublimetext.com/)
+  - [Sublime Text Editor](http://www.sublimetext.com/)
   - [Soda-Dark.sublime-theme](https://github.com/buymeasoda/soda-theme)
   - [Monokai-Soda.tmtheme](https://github.com/simeonv/st2-color-schemes)
 
 ### Design Frameworks
 
-- jQuery
-- Bootstrap
+- [jQuery UI](http://jqueryui.com/)
+- [Twitter Bootstrap](http://twitter.github.io/bootstrap/), [github-repo](https://github.com/twitter/bootstrap)
