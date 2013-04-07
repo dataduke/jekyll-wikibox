@@ -76,7 +76,7 @@ Paint Bucket Theme
 
 ## Project Planning
 
-## Important Files
+### Important Files
 
     ./README.md                       # contains general information
     ./CHANGELOG.md                    # contains version history
