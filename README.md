@@ -68,11 +68,11 @@ It transfers your markdown/textile notes to satic html layout inspired by sublim
 
 ### Themes
 
-Sublime Text Theme
+Sublime Text [README](https://github.com/dataduke/jekyll-wikibox/_themes/sublimetext/README.md)  
 
-![Version alpha.03 - Sublime Text](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/snapshot-version-a03-sublimetext.jpg)
+![Version alpha.03 - Sublime Text](https://github.com/dataduke/jekyll-wikibox/raw/master/_themes/sublimetext/_sublimetext.jpg)
 
-Paint Bucket Theme
+Paint Bucket [README](https://github.com/dataduke/jekyll-wikibox/_themes/paintbucket/README.md)  
 
 ![Version alpha.03 - Paint Bucket](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/snapshot-version-a03-paintbucket.jpg)
 
