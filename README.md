@@ -57,7 +57,7 @@ Sublime Text Theme
 
 Paint Bucket Theme
 
-![Version alpha.03](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/snapshot-version-a03.jpg)
+![Version alpha.03 - Paint Bucket](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/snapshot-version-a03-paintbucket.jpg)
 
 ### Structure
 

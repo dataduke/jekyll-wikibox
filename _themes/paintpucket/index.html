@@ -6,10 +6,19 @@ navigation: Home
 
 <html>
 <head>
-  <title>Website Home</title>
+  <title>Wikibox Home</title>
   <link rel="icon" href="./assets/icon/favicon.png" type="image/png">
 
 <style type="text/css">
+
+/* BOX MODEL TESTING 
+
+* {border: 1px solid red !important;}
+.testred {border: 1px solid red !important;}
+.testblue {border: 1px solid blue !important;}
+.testyellow {border: 1px solid yellow !important;}
+.testgreen {border: 1px solid green !important;}
+*/
 
 /* BODY */
 body {
@@ -84,6 +93,7 @@ div {
   min-height: 100%;
   height:auto !important;
   height:100%;
+  /*overflow: hidden !important;*/
   margin: 0;
   padding: 0;
   width: auto;
@@ -92,29 +102,37 @@ div {
 .slot {
   position: absolute;
   width: 100%;
+  /*overflow: auto;*/
 }
 
 /* SLOT WIDTH */
+.slot50{width: 50;}
 .slot250{width: 250;}
 .slot300{width: 300;}
 
 /* SLOT POSITION */
 .slot099{right: 0;}
 .slot000{left: 0;}
+.slotdecoleft{left: 250;}
 .slot001{left: 300;}
 .slot002{left: 600;}
 .slot003{left: 900;}
 .slot004{left: 1200;}
 .slot005{left: 1500;}
+.slotdecoright{left: 1800;}
+.slotdecorightend{left: 1850;}
 
 /* SLOT CONTENT SPACERS */
+.spacer10 { height: 10; width: 100%;}
 .spacer50 { height: 50; width: 100%;}
 .spacer150 { height: 150; width: 100%; }
+.spacer1000 { height: 150; width: 100%; }
 
 /* SLOT CONTENT ITEMS */
 /* must fit to slot width */
 .item300 { width: 260; margin-left: 20; margin-right: 20;}
 .item250 { width: 210; margin-left: 20; margin-right: 20;}
+.item50 { width: 20; margin: 0; padding-left: 15; padding-right: 15;}
 
 /* SIDEBAR OPTIONS */
 
@@ -220,6 +238,13 @@ box-shadow: -2px 0px 8px rgba(0,0,0,.65);
       </div>
       <div class="spacer50"></div>
       <div class="spacer150 bgyellow"></div>
+    </div>
+  </div>
+
+  <div class="slotwrapper slot50 slotdecoright slotborderleft bgdark">
+    <div class="slot"> 
+      <div class="item50"></div>
+      <div class="spacer1000"></div>
     </div>
   </div>
 

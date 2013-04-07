@@ -163,20 +163,29 @@ box-shadow: -2px 0px 8px rgba(0,0,0,.65);
 </head>
 <body class="bgdark">
 
-  <div class="slotwrapper slot300 slot000 slotfixed slotborderright shadowright bgsnow">
+  <div class="slotwrapper slot250 slot000 slotfixed slotborderright bgdark">
     <div class="spacer50"></div>
     <div class="slot bgdark">
       <div class="spacer50"></div>
-      <div class="item300 fgsnow">
+      <div class="item250 fgsnow">
         {% capture sidebarleft %}{% include sidebarleft.md %}{% endcapture %}
         {{ sidebarleft | markdownify }}
       </div>
       <div class="spacer50"></div>
-      <div class="spacer150 bgsnow"></div>
     </div>
   </div>
 
-  <div class="slotwrapper slot300 slot001 bggreen">
+  <div class="slotwrapper slot50 slotdecoleft bggrey">
+    <div class="slot bggrey">
+      <!-- <div class="spacer10"></div> -->
+      <div class="item50 fggrey">
+        {% capture decobar %}{% include decobar.md %}{% endcapture %}
+        {{ decobar | markdownify }}
+      </div>
+    </div>
+  </div>
+
+  <div class="slotwrapper slot300 slot001 bggrey">
     <div class="spacer50"></div>
     <div class="slot bggrey">
       <div class="spacer50"></div>
@@ -184,12 +193,11 @@ box-shadow: -2px 0px 8px rgba(0,0,0,.65);
         {% capture b01 %}{% include customize-root-index/box001.md %}{% endcapture %}
         {{ b01 | markdownify }}
       </div>
-      <div class="spacer50"></div>
-      <div class="spacer150 bggreen"></div>
+      <div class="spacer150"></div>
     </div>
   </div>
 
-  <div class="slotwrapper slot300 slot002 bgred">
+  <div class="slotwrapper slot300 slot002 bggrey">
     <div class="spacer50"> </div>
     <div class="slot bggrey">
       <div class="spacer50"></div>
@@ -197,12 +205,11 @@ box-shadow: -2px 0px 8px rgba(0,0,0,.65);
       {% capture b02 %}{% include customize-root-index/box002.md %}{% endcapture %}
       {{ b02 | markdownify }}
       </div>
-      <div class="spacer50"></div>
-      <div class="spacer150 bgred"></div>
+      <div class="spacer150"></div>
     </div>
   </div>
 
-  <div class="slotwrapper slot300 slot003 bgblue">
+  <div class="slotwrapper slot300 slot003 bggrey">
     <div class="spacer50"></div>
     <div class="slot bggrey">
       <div class="spacer50"></div>
@@ -210,12 +217,11 @@ box-shadow: -2px 0px 8px rgba(0,0,0,.65);
       {% capture b03 %}{% include customize-root-index/box003.md %}{% endcapture %}
       {{ b03 | markdownify }}
       </div>
-      <div class="spacer50"></div>
-      <div class="spacer150 bgblue"></div>
+      <div class="spacer150"></div>
     </div>
   </div>
 
-  <div class="slotwrapper slot300 slot004 bglila">
+  <div class="slotwrapper slot300 slot004 bggrey">
     <div class="spacer50"></div>
     <div class="slot bggrey">
       <div class="spacer50"></div>
@@ -223,12 +229,11 @@ box-shadow: -2px 0px 8px rgba(0,0,0,.65);
       {% capture b04 %}{% include customize-root-index/box004.md %}{% endcapture %}
       {{ b04 | markdownify }}
       </div>
-      <div class="spacer50"></div>
-      <div class="spacer150 bglila"></div>
+      <div class="spacer150"></div>
     </div>
   </div>
 
-  <div class="slotwrapper slot300 slot005 bgyellow">
+  <div class="slotwrapper slot300 slot005 bggrey">
     <div class="spacer50"></div>
     <div class="slot bggrey">
       <div class="spacer50"></div>
@@ -236,12 +241,21 @@ box-shadow: -2px 0px 8px rgba(0,0,0,.65);
       {% capture b05 %}{% include customize-root-index/box005.md %}{% endcapture %}
       {{ b05 | markdownify }}
       </div>
-      <div class="spacer50"></div>
-      <div class="spacer150 bgyellow"></div>
+      <div class="spacer150"></div>
     </div>
   </div>
 
-  <div class="slotwrapper slot50 slotdecoright slotborderleft bgdark">
+  <div class="slotwrapper slot50 slotdecoright bggrey">
+    <div class="slot bggrey">
+      <!-- <div class="spacer10"></div> -->
+      <div class="item50 fggrey">
+        {% capture decobar %}{% include decobar.md %}{% endcapture %}
+        {{ decobar | markdownify }}
+      </div>
+    </div>
+  </div>
+
+  <div class="slotwrapper slot50 slotdecorightend slotborderleft bgdark">
     <div class="slot"> 
       <div class="item50"></div>
       <div class="spacer1000"></div>

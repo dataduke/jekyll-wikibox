@@ -1,4 +1,4 @@
-### Sublime Text Theme
+### Paint Bucket Theme
 
 Welcome at this site. Horizontal and vertical scrolling is fun!
 

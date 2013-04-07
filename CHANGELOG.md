@@ -12,4 +12,4 @@
 
 ### Alpha 01 / 2013-04-02
 
-![added tag](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/tag-added.png) Inital Layout  
+![added tag](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/tag-added.png) Initial Layout  
