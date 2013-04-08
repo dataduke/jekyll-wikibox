@@ -10,7 +10,7 @@ Requirements:
 Use Cases:
 	- Option for Setup:
 		- Sidebar on all spaces: persomal calender, 
-		- Space 0: PiM: Tasks, Groceries, Breakdowns.
+		- Space 0: PIM: Tasks, Groceries, Breakdowns.
 		- Space 1: PIM: Notes
 		- Space 2: Kanban Board for Sotware Development
 		- Space 3: Synced back Webservices: Code Snippets (gists), Bookmarks (pinboard)
@@ -28,6 +28,7 @@ Iteration 1:
 		- box layout
 	- theme minimal
 	- theme daring fireball
+	- add mosaic view
 
 	- split _config.yaml exclude theming parts to other .yaml file
 	themes change colors and background of items but do never touch the structure of the weblayout webapplication @sticky 
