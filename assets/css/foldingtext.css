@@ -1,0 +1,208 @@
+html {
+	/* Setting the baseline font */
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+	font-family: Courier, monospace;
+	font-size: 1.6rem;
+	padding: 0 2rem;
+	color: rgb(20%,20%,20%);
+	background: rgb(97%,97%,97%);
+	/*
+	padding-bottom:7.5rem;
+	background-image:url('/static/keyboardfade.png');
+	background-repeat:no-repeat;
+	background-position:center bottom;
+	background-size:100%;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1.6rem;
+	margin:1rem 0;
+}
+
+h1.title:before {
+	font-weight:normal;
+	content:"# ";
+}
+
+h1.title {
+	text-indent: -2rem;
+}
+
+small {
+	font-size: 1.6rem;	
+}
+
+h1 {
+	margin:2rem 0;
+}
+
+h1 img {
+	border:none;
+}
+
+h1 span {
+	margin:auto;
+	display:none;
+}
+
+.screencast img {
+	padding-right:1rem;
+	height:1.6rem;
+	vertical-align:-20%;
+}
+
+hr {
+	border:none;
+	display:hidden;
+	margin: 2rem 0;
+	clear:both;
+}
+
+hr:after {
+	display:block;
+	text-align:center;
+	content: "✦ ✦ ✦";
+	color: rgb(20%,20%,20%);
+}
+
+ul, ol {
+	padding: 0;
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+h1 a:link, h2 a:link, h3 a:link { 
+	text-decoration:none; 
+}
+
+pre {
+	font-family: Courier, monospace;
+	font-size: 1.6rem;
+	padding:1rem;
+	background: rgb(90%,90%,90%);
+}
+
+code {
+	font-family: Courier, monospace;
+	font-size: 1.6rem;
+	background: rgb(90%,90%,90%);
+}
+
+#breadcrumb {
+	list-style-type: none;
+	text-transform:capitalize;
+}
+
+blockquote a {
+	text-decoration:none;
+	color: rgb(20%,20%,20%);;
+}
+
+blockquote .author:before {
+	content: " – "; 	
+}
+
+blockquote:before { 
+content: "\201C"; 
+float: left;
+margin-left:-1rem;
+}
+
+blockquote .quote:after { 
+content: "\201D";
+}
+
+ul {
+	padding:0;
+	list-style-type: none;
+}
+li:before {
+	content:none;
+}
+.listing-seperator{font-weight: bold; list-style-type:none; margin-top: 1em; margin-bottom:1em;
+  padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px;}
+
+footer {
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+	max-width: 100rem;
+	min-width: 100rem;
+	margin:auto;
+}
+
+.row {
+	max-width: 100rem;
+	min-width: 100rem;
+	max-height: 70rem;
+	min-height: 70rem;
+	margin: auto;
+}
+
+.col {
+	width:25rem;
+	float:left;
+}
+
+.col h3 {
+	font-weight:normal;
+	font-style:italic;
+}
+
+blockquote {
+	width:52rem;
+	margin:2rem auto;
+	//margin-right:10rem;
+	font-style:italic;
+	clear:both;
+}
+
+footer h4 {
+	font-weight:normal;
+	clear:both;
+	text-align:center;
+	font-size:1.25rem;
+}
+
+.at300bs {
+	height:0;
+	background:none;
+}
+
+@media all and (min-width: 50em) {
+	body {
+		padding-top:2rem;
+	}
+}
+
+@media all and (min-width: 70em) {
+	body {
+		padding-top:8rem;
+	}
+}
+
+.fancybox-nav span {
+	width: 36px !important;
+	height: 36px !important;
+}
+
+.fancybox-close {
+	background-image: url('/static/close.svg') !important;
