@@ -74,17 +74,21 @@ A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpap
 
 ### Themes
 
-Sublime Text [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_themes/sublimetext)  
+Folding Text [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_themes/foldingtext)
 
-![Version alpha.03 - Sublime Text](https://raw.github.com/dataduke/jekyll-wikibox/master/_themes/sublimetext/_sublimetext.jpg)
-
-Paint Bucket [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_themes/paintpucket)  
-
-![Version alpha.03 - Paint Bucket](https://github.com/dataduke/jekyll-wikibox/raw/master/_themes/paintpucket/_paintbucket.jpg)
+![Folding Text](https://github.com/dataduke/jekyll-wikibox/raw/master/_themes/foldingtext/_foldingtext.jpg)
 
 iOS Linen [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_themes/ioslinen)  
 
-![Version alpha.03 - iOS Linen](https://raw.github.com/dataduke/jekyll-wikibox/master/_themes/ioslinen/_ioslinen.jpg)
+![iOS Linen](https://raw.github.com/dataduke/jekyll-wikibox/master/_themes/ioslinen/_ioslinen.jpg)
+
+Paint Bucket [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_themes/paintpucket)  
+
+![Paint Bucket](https://github.com/dataduke/jekyll-wikibox/raw/master/_themes/paintpucket/_paintbucket.jpg)
+
+Sublime Text [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_themes/sublimetext)  
+
+![Sublime Text](https://raw.github.com/dataduke/jekyll-wikibox/master/_themes/sublimetext/_sublimetext.jpg)
 
 ## Project Planning
 
