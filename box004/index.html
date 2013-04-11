@@ -10,6 +10,7 @@ navigation: Box 4
 	<div class="post">
 		<h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
 		<p class="meta">| Date: {{ post.date | date:"%Y-%m-%d" }} |
+      Day : {{ post.date | date:"%A" }} |
     {% if t != "0000" %} Time: {{ post.date | date:"%H:%M" }} |
     {% endif %}
 		{% if post.tags %}
