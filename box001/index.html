@@ -13,12 +13,13 @@ navigation: Box 1
     {% assign year = y %}
         <h2>{{ y }}</h2>
     {% endif %}
-    <h3 class="title">
-      <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-      <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </h3>
-    <div class="entry">
-      {{ post.content | strip_html | truncatewords: 100 }}
+      <div> 
+      <h3 class="title">
+          <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> 
+      </h3>
+      <span>
+      <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time> | {{ post.content | strip_html | truncatewords: 100 }}
+      </span>
     </div>
   {% endif %}
 {% endfor %}
