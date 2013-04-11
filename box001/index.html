@@ -5,19 +5,20 @@ box: box001
 navigation: Box 1
 ---
 
-<ul class="listing">
 {% for post in site.posts %}
-  {% capture c %}{{post.category}}{% endcapture %}
-  {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
-  {% if c == "blog1" %}
+  {% capture b %}{{ post.box }}{% endcapture %}
+  {% capture y %}{{ post.date | date:"%Y" }}{% endcapture %}
+  {% if b == "box001" %}
     {% if year != y %}
-      {% assign year = y %}
-      <li class="listing-seperator">{{ y }}</li>
+    {% assign year = y %}
+        <h2>{{ y }}</h2>
     {% endif %}
-    <li class="listing-item">
+    <h3 class="title">
       <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
       <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li>
-    {% endif %}
+    </h3>
+    <div class="entry">
+      {{ post.content | strip_html | truncatewords: 100 }}
+    </div>
+  {% endif %}
 {% endfor %}
-</ul>

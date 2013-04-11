@@ -8,18 +8,7 @@ Requirements:
 	- use all space of 30 inch monitor (2560x1600) but also look good on iphone in portrait mode
 	- be usable as wallpaper app
 Use Cases:
-	- Option for Setup:
-		- Sidebar on all spaces: persomal calender, 
-		- Space 0: PIM: Tasks, Groceries, Breakdowns.
-		- Space 1: PIM: Notes
-		- Space 2: Kanban Board for Sotware Development
-		- Space 3: Synced back Webservices: Code Snippets (gists), Bookmarks (pinboard)
-		- Space 4: Learning Cards (Pile of Index Card Method)
-	- Option for Setup:
-		- Space 0: Management
-		- Space 1: Professional/Work/Business
-		- Space 2: Privat/Home/Life
-		- Space 4: Public Board/Website
+	- store notes
 Iteration 1:
 	current cycle for next 2 weeks @sticky
 	- basic layout  
@@ -38,6 +27,8 @@ Iteration 1:
 	- global asset path
 	- sublimetext theme index.html include decor.md to asset txt/decobar.md
 	- create theme: Minimal (black on grey or white): no colors/bold/underline, 
+	- foldable headers, clean
+	- linking notes
 Iteration 2:
 	- deprecate theme development (basic ideas are there, everybody can adapt them if wanted)
 	- focus on pure feature support

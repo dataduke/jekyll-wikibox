@@ -85,7 +85,7 @@ a:hover {
 	text-decoration: underline;
 }
 
-h1 a:link, h2 a:link, h3 a:link { 
+h1 a:link, h2 a:link, h3 a:link, header a:link { 
 	text-decoration:none; 
 }
 

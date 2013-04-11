@@ -1,33 +1,40 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html>
+---
+layout: nil
+title: Home
+navigation: Home
+---
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
-<meta name="description" content="description"/>
-<meta name="keywords" content="keywords"/> 
-<meta name="author" content="author"/> 
-<link rel="stylesheet" type="text/css" href="/default.css" media="screen"/>
-<title>Wiki</title>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<meta charset="utf-8">
+	<title>WikiBox</title>
+	<meta name="description" content="This is a wiki.">
+	<link rel="alternate" type="application/atom+xml" title="WikiBox Posts" href="#/atom.xml">
+	<link href="/assets/icon/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+	<link href="/assets/css/foldingtext.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-
 <div class="container">
-
+	
+	<header>
+		<h1>
+			<a href="/index.html"><img src="/assets/icon/logo.png" height="64px"/></a>
+			<a href="/index.html"><br /><br />WikiBox</a>
+		</h1>
 	<div class="navigation">
 		<a href="/index.html">Home</a>
-		<a href="/blog1/index.html">Blog 1</a>
-		<a href="/blog2/index.html">Blog 2</a>
-		<a href="/blog3/index.html">Blog 3</a>
-		<a href="/blog4/index.html">Blog 4</a>
+		<a href="/box001/index.html">Box 1</a>
+		<a href="/box002/index.html">Box 2</a>
+		<a href="/box003/index.html">Box 3</a>
+		<a href="/box004/index.html">Box 4</a>
 		<div class="clearer"><span></span></div>
 	</div>
-	<div class="holder_top"></div>
+	</header>
 
-	<div class="holder">
-		{{ content }}		
-	</div>
+	{{ content }}		
 
 	<!-- 	<div class="footer">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} 
 		<a href="index.html">Website.com</a>. Valid <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> &amp; <a href="http://validator.w3.org/check?uri=referer">XHTML</a>
