@@ -18,32 +18,40 @@ navigation: Home
 <body>
 <div class="container">
 	<header>
-		<h1><a href="./index.html"><img src="./assets/icon/logo.png" height="64px"/>
-		<span>WikiBox – A guerilla wiki for hackers</span></a></h1>
+		<h1>
+			<a href="./index.html"><img src="./assets/icon/logo.png" height="64px"/></a>
+			<a href="./index.html"><br /><br />WikiBox<br /><br />- A guerilla wiki for hackers -<br /><br /></a>
+		</h1>
 	</header>
 	
 	<div class="row">
 		<div class="col">
-		<h3>Box 1</h3>
 		{% capture b01 %}{% include customize-root-index/box001.md %}{% endcapture %}
 	    {{ b01 | markdownify }}
-	    </div>
+		</div>
+
 		<div class="col">
-		<h3>Box 2</h3>
 		{% capture b02 %}{% include customize-root-index/box002.md %}{% endcapture %}
 	    {{ b02 | markdownify }}
 		</div>
+		
 		<div class="col">
-		<h3>Box 3</h3>
 		{% capture b03 %}{% include customize-root-index/box003.md %}{% endcapture %}
 	    {{ b03 | markdownify }}
+	    </div>
+
+	    <div class="col">
+		{% capture b04 %}{% include customize-root-index/box004.md %}{% endcapture %}
+	    {{ b04 | markdownify }}
 	    </div>
 	</div>
 
 	<footer>
+		<h4>
 		<a href="#/atom.xml">Posts</a>
 		<a href="https://twitter.com/intent/user?screen_name=dataduke">Twitter</a>
 		<a href="https://github.com/dataduke">Github</a>
+		</h4>
 	</footer>
 </div>
 </body>

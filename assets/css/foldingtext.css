@@ -15,12 +15,6 @@ body {
 	padding: 0 2rem;
 	color: rgb(20%,20%,20%);
 	background: rgb(97%,97%,97%);
-	/*
-	padding-bottom:7.5rem;
-	background-image:url('/static/keyboardfade.png');
-	background-repeat:no-repeat;
-	background-position:center bottom;
-	background-size:100%;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -39,6 +33,10 @@ h1.title {
 
 small {
 	font-size: 1.6rem;	
+}
+
+header {
+	text-align:center;
 }
 
 h1 {

@@ -15,12 +15,6 @@ body {
 	padding: 0 2rem;
 	color: rgb(20%,20%,20%);
 	background: rgb(97%,97%,97%);
-	/*
-	padding-bottom:7.5rem;
-	background-image:url('/static/keyboardfade.png');
-	background-repeat:no-repeat;
-	background-position:center bottom;
-	background-size:100%;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -39,6 +33,10 @@ h1.title {
 
 small {
 	font-size: 1.6rem;	
+}
+
+header {
+	text-align:center;
 }
 
 h1 {
@@ -87,6 +85,10 @@ a:hover {
 	text-decoration: underline;
 }
 
+h1 a:link, h2 a:link, h3 a:link { 
+	text-decoration:none; 
+}
+
 pre {
 	font-family: Courier, monospace;
 	font-size: 1.6rem;
@@ -124,30 +126,37 @@ blockquote .quote:after {
 content: "\201D";
 }
 
-footer ul {
+ul {
 	padding:0;
 	list-style-type: none;
 }
-
-footer li:before {
+li:before {
 	content:none;
+}
+.listing-seperator{font-weight: bold; list-style-type:none; margin-top: 1em; margin-bottom:1em;
+  padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px;}
+
+footer {
+	margin-left: auto;
+    margin-right: auto;
 }
 
 .container {
-	max-width: 66rem;
-	min-width: 66rem;
+	max-width: 100rem;
+	min-width: 100rem;
 	margin:auto;
 }
 
 .row {
-	max-width: 66rem;
-	min-width: 66rem;
-	height: auto;
+	max-width: 100rem;
+	min-width: 100rem;
+	max-height: 70rem;
+	min-height: 70rem;
 	margin: auto;
 }
 
 .col {
-	width:16.5rem;
+	width:25rem;
 	float:left;
 }
 
