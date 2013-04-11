@@ -31,6 +31,34 @@ h1.title {
 	text-indent: -2rem;
 }
 
+
+h1:before {
+	font-weight:normal;
+	content:"# ";
+}
+
+h1 {
+	text-indent: -2rem;
+}
+
+h2:before {
+	font-weight:normal;
+	content:"## ";
+}
+
+h2 {
+	text-indent: -3rem;
+}
+
+h3:before {
+	font-weight:normal;
+	content:"### ";
+}
+
+h3 {
+	text-indent: -4rem;
+}
+
 small {
 	font-size: 1.6rem;	
 }
@@ -126,10 +154,7 @@ blockquote .quote:after {
 content: "\201D";
 }
 
-ul {
-	padding:0;
-	list-style-type: none;
-}
+u
 li:before {
 	content:none;
 }
