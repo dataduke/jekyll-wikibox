@@ -20,10 +20,13 @@ navigation: Box 4
       	{% if forloop.last %} | {% endif %}
     	{% endfor %}
   	{% endif %}
+    Words: {{ post.content | number_of_words }} |
 		</p>
 		<div class="entry">
 			{{ post.content | strip_html | truncatewords: 100 }}
 		</div>
+
+
 	</div>
   {% endif %}
 {% endfor %}
