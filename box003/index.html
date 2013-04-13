@@ -4,21 +4,21 @@ title: Box 3
 box: box003
 navigation: Box 3
 ---
-
+<style type="text/css">
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+</style>
 {% for post in site.posts %}
   {% capture b %}{{ post.box }}{% endcapture %}
-  {% capture y %}{{ post.date | date:"%Y" }}{% endcapture %}
   {% if b == "box003" %}
-    {% if year != y %}
-    {% assign year = y %}
-        <h2>{{ y }}</h2>
-    {% endif %}
-    <h3 class="title">
-      <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-      <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </h3>
-    <div class="entry">
-      {{ post.content | strip_html | truncatewords: 100 }}
-    </div>
+    <div>
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d " }}</time>
+    <b><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </b>
+  </div>
   {% endif %}
 {% endfor %}
