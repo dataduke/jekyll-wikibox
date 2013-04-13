@@ -18,6 +18,7 @@ body {
 }
 
 /* HEADINGS */
+
 h1, h2, h3, h4, h5, h6 {
 	font-size: 1.6rem;
 	margin:1rem 0;
@@ -54,13 +55,11 @@ small {
 
 a, a:link {
 	color: black;
+	text-decoration: underline;
 }
 a:hover {
 	color: black;
-	text-decoration: underline;
-}
-h1 a:link, h2 a:link, h3 a:link { 
-	text-decoration:none; 
+	text-decoration: none;
 }
 
 /* LISTS */
