@@ -1,12 +1,10 @@
 ---
 layout: default
 type: layout
-description: A layout with post tables with all metadata (column 1) and title and preview (column 2).  
+description: An index layout with post tables with all metadata (column 1) and title and preview (column 2). 
 ---
 <index>
 {% for post in site.posts %}
-  {% capture b %}{{ post.box }}{% endcapture %}
-  {% if content contains b %}
   <br />
   <div class="post">
     <table border="0" width="100%">
@@ -51,6 +49,5 @@ description: A layout with post tables with all metadata (column 1) and title an
   </tr>
   </table>
   </div>
-  {% endif %}
 {% endfor %}
 </index>

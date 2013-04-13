@@ -7,7 +7,7 @@ html {
 	font-smoothing: antialiased;
 }
 html, body {
-  min-height: 100%;
+  	min-height: 100%;
 }
 body {
 	font-family: Courier, monospace;
