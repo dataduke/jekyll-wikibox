@@ -10,11 +10,9 @@ layout: default
   }
 </style>
 
-<!-- parameter list-->
-<!-- parameter list-->
-
-{% for post in site.posts %}      
-  {% if post.categories contains content %}
+{% for post in site.posts %}
+  {% capture b %}{{ post.box }}{% endcapture %}
+  {% if content contains b %}
   <br />
 	<div class="post">
     <table border="0" width="100%">

@@ -4,7 +4,7 @@ layout: default
 {% for post in site.posts %}
   {% capture b %}{{ post.box }}{% endcapture %}
   {% capture y %}{{ post.date | date:"%Y" }}{% endcapture %}
-  {% if b == "box001" %}
+  {% if content contains b %}
     {% if year != y %}
     {% assign year = y %}
         <h2>{{ y }}</h2>

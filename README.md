@@ -72,6 +72,31 @@ A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpap
     ./_config.yml           # configuration
     ./_themes/themename     # themes; move all files/folders contained in a theme to root folder (and override)
 
+#### Layouts with Parameters*: 
+
+The files `./index.html` and `./box000/index.html` define the index pages. There (ex: `./box004.index.html`) the choosen layout (in YAML frontmatter, ex: `post-list-1`) and a parameter list for the choosen layout (as content, ex: `box004`) can be defined:
+
+    ---
+    layout: post-list-1
+    title: Box 4
+    nav-title: Box 4
+    nav-positon: 5 
+    ---
+    box004 showday
+
+Inside the choosen layout file (ex: `./_layouts/posts-list-1.html`) the parameter list is refereed to by the `content` liquid variable in line 3:
+
+    {% for post in site.posts %}
+      {% capture b %}{{ post.box }}{% endcapture %}
+      {% if content contains b %}
+        <!-- do something with every posts with YAML "box: box004" -->
+        {% if content contains "showday" %}
+          <!-- do something with dates, like display day -->
+          Day : {{ post.date | date:"%A" }
+        {% endif}
+      {% endif %}
+    {% endfor %}
+
 ### Themes
 
 Folding Text [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_themes/foldingtext)
