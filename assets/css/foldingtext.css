@@ -22,16 +22,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin:1rem 0;
 }
 
-h1.title:before {
-	font-weight:normal;
-	content:"# ";
-}
-
-h1.title {
-	text-indent: -2rem;
-}
-
-
 h1:before {
 	font-weight:normal;
 	content:"# ";
@@ -61,29 +51,6 @@ h3 {
 
 small {
 	font-size: 1.6rem;	
-}
-
-header {
-	text-align:center;
-}
-
-h1 {
-	margin:2rem 0;
-}
-
-h1 img {
-	border:none;
-}
-
-h1 span {
-	margin:auto;
-	display:none;
-}
-
-.screencast img {
-	padding-right:1rem;
-	height:1.6rem;
-	vertical-align:-20%;
 }
 
 hr {
@@ -117,22 +84,10 @@ h1 a:link, h2 a:link, h3 a:link, header a:link {
 	text-decoration:none; 
 }
 
-/*pre {
-	font-family: Courier, monospace;
-	font-size: 1.6rem;
-	padding:1rem;
-	background: rgb(90%,90%,90%);
-}*/
-
 code {
 	font-family: Courier, monospace;
 	font-size: 1.3rem;
 	/*background: rgb(90%,90%,90%);*/
-}
-
-#breadcrumb {
-	list-style-type: none;
-	text-transform:capitalize;
 }
 
 blockquote a {
@@ -154,7 +109,6 @@ blockquote .quote:after {
 content: "\201D";
 }
 
-u
 li:before {
 	content:none;
 }
@@ -171,61 +125,10 @@ footer {
 	min-width: 100rem;
 	margin:auto;
 }
-
-.row {
-	max-width: 100rem;
-	min-width: 100rem;
-	max-height: 70rem;
-	min-height: 70rem;
-	margin: auto;
-}
-
-.col {
-	width:25rem;
-	float:left;
-}
-
-.col h3 {
-	font-weight:normal;
-	font-style:italic;
-}
-
 blockquote {
 	width:52rem;
 	margin:2rem auto;
-	//margin-right:10rem;
+	margin-right:10rem;
 	font-style:italic;
 	clear:both;
 }
-
-footer h4 {
-	font-weight:normal;
-	clear:both;
-	text-align:center;
-	font-size:1.25rem;
-}
-
-.at300bs {
-	height:0;
-	background:none;
-}
-
-@media all and (min-width: 50em) {
-	body {
-		padding-top:2rem;
-	}
-}
-
-@media all and (min-width: 70em) {
-	body {
-		padding-top:8rem;
-	}
-}
-
-.fancybox-nav span {
-	width: 36px !important;
-	height: 36px !important;
-}
-
-.fancybox-close {
-	background-image: url('/static/close.svg') !important;

@@ -1,21 +1,23 @@
 ---
 layout: default
+type: layout
+description: A very simple list layout.
 ---
+<style type="text/css">
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+</style>
 {% for post in site.posts %}
   {% capture b %}{{ post.box }}{% endcapture %}
-  {% capture y %}{{ post.date | date:"%Y" }}{% endcapture %}
   {% if content contains b %}
-    {% if year != y %}
-    {% assign year = y %}
-        <h2>{{ y }}</h2>
-    {% endif %}
-      <div> 
-      <h3 class="title">
-          <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> 
-      </h3>
-      <span>
-      <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time> | {{ post.content | strip_html | truncatewords: 100 }}
-      </span>
-    </div>
+    <div>
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d " }}</time>
+    <b><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </b>
+  </div>
   {% endif %}
 {% endfor %}

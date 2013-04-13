@@ -1,24 +1,8 @@
 ---
-layout: default
+layout: post-list-2
 title: Box 3
-box: box003
-navigation: Box 3
+type: index navigation
+navtitle: Box 3
+navpos: 3
 ---
-<style type="text/css">
-  a {
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: none;
-  }
-</style>
-{% for post in site.posts %}
-  {% capture b %}{{ post.box }}{% endcapture %}
-  {% if b == "box003" %}
-    <div>
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d " }}</time>
-    <b><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </b>
-  </div>
-  {% endif %}
-{% endfor %}
+box003

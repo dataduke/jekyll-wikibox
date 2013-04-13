@@ -1,0 +1,12 @@
+---
+layout: default
+type: layout
+description: Lists all pages with type index.
+---
+<ul class="listing">
+{% for x in site.pages %}
+    <li class="listing-item">
+      <a href="{{ site.url }}{{ x.url }}" title="{{ x.title }}">{{ x.title }}</a>
+    </li>
+{% endfor %}
+</ul>

@@ -16,6 +16,7 @@ A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpap
 - **[Project Planning](#project-planning)** or how can I hack it?
   - Important Files
   - Project Structure
+  - Theme Development
 - **[References](#references)** or how does it work?
   - Core Technologies
   - Related Technologies
@@ -79,8 +80,9 @@ The files `./index.html` and `./box000/index.html` define the index pages. There
     ---
     layout: post-list-1
     title: Box 4
-    nav-title: Box 4
-    nav-positon: 5 
+    navigation: true
+    navtitle: Box 4
+    navpos: 5 
     ---
     box004 showday
 
@@ -159,14 +161,27 @@ Sublime Text [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_th
     |-- index.html
     |-- atom.xml
 
+### Theme Development
+
+**Best Practices and Conventions:**
+
+1. **Markdown Editing:** Build a basic `theme.css` by styling a simple markdown text file (with the help of Marked.app this is superfast). Typically this stylesheet includes fonts, h1-h4 styling, lists, links, blockquotes, . This will be your `theme.css`, which can be used for general text editing, post previewing, printing etc. (Your basic theme.css should/could be print and mobile friendly.)
+
+2. **Desktop Browsing:** Now create a `theme-ext.css`. This file will extend your basic `theme.css` to style navigation and external media elements. It should include the styling for header, navigation (bars), footer, index (page body content), embedded media, maybe a different background. etc. For desktop browsing load both created stylesheets: `theme.css`, which renders your post texts, and `theme-ext.css` for nice navigation.
+
+3. **Mobile Browsing:** If your basic `theme.css` doesn't satisfy the mobile browsing experience. Build a separate, custom and minimal `theme-mobile.css` without any dependencies on `theme.css` or `theme-extensions.css`.
+
+
 ## References
 
 ### Acknowledgments
 
+To all jekyll builders.
+
 ### Core Technologies
 
 - [ruby](http://www.ruby-lang.org/en/)
-- [jekyll](https://github.com/mojombo/jekyll)
+- [jekyll](https://github.com/mojombo/jekyll), [Stackoverflow](http://stackoverflow.com/questions/tagged/jekyll)
 
 ### Related Technologies
 

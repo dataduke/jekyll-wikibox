@@ -1,62 +1,30 @@
 ---
 layout: default
+type: layout
+description: A layout with a post list with metadata and preview.
 ---
-<style type="text/css">
-  a {
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: none;
-  }
-</style>
-
 {% for post in site.posts %}
-  {% capture b %}{{ post.box }}{% endcapture %}
+  {% capture b %}{{ post.box }}{% endcapture %}  
   {% if content contains b %}
-  <br />
+  {% capture t %}{{ post.date | date:"%H%M" }}{% endcapture %}
 	<div class="post">
-    <table border="0" width="100%">
-      <colgroup>
-        <col width="40%">
-        <col width="60%">
-      </colgroup>
-		<tr valign="top">
-    <td></td><td> 
-    <b><a href="{{ post.url }}">{{ post.title }}</a> <br /></b>
-    </td>
-    </tr>
-    <tr valign="top">
-    <td>  
-    <div class="meta">
-    Date: {{ post.date | date:"%Y-%m-%d" }} <br />
-    {% capture tags %}{{ post.tags }}{% endcapture %}
-    {% if tags == "" %}
-      Tags: none <br />
-    {% else %}
+    <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		<p class="meta">| Date: {{ post.date | date:"%Y-%m-%d" }} |
+      Day : {{ post.date | date:"%A" }} |
+    {% if t != "0000" %} Time: {{ post.date | date:"%H:%M" }} |
+    {% endif %}
+		{% if post.tags %}
       {% for tag in post.tags %}
         {% if forloop.first %}Tags: {% endif %}
-        {{ tag }}{% unless forloop.last %}, {% endunless %}
-        {% if forloop.last %} <br />{% endif %}
-      {% endfor %}
-    {% endif %}
-    Day : {{ post.date | date:"%A" }}<br />
-    {% capture time %}{{ post.date | date:"%H:%M" }}{% endcapture %}
-    {% if time == "00:00" %}
-      Time: --:-- <br /> 
-      {% else %}
-      Time: {{ time }} <br />
-      {% endif %}
-    Word: {{ post.content | number_of_words }}
-		</div>
-    </td>
-		<td>
+      	{{ tag }}{% unless forloop.last %}, {% endunless %}
+      	{% if forloop.last %} | {% endif %}
+    	{% endfor %}
+  	{% endif %}
+    Words: {{ post.content | number_of_words }} |
+		</p>
     <div class="entry">
-      <a href="{{ post.url }}">{{ post.content | strip_html | truncatewords: 40 }}</a>
+			{{ post.content | strip_html | truncatewords: 100 }}
 		</div>
-  </td>
-  </tr>
-  </table>
-
 	</div>
   {% endif %}
 {% endfor %}
