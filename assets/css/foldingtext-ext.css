@@ -51,7 +51,7 @@ footer a, footer a:link{
 #navigation a:hover {
 	color: black;
 	text-decoration: none;
-	background-color: yellow;
+	/*background-color: yellow;*/
 }
 #navigation a:visited {
 	/*text-decoration: underline;*/
