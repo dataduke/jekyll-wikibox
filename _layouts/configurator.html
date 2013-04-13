@@ -1,0 +1,39 @@
+---
+laxout: nil
+type: configuration
+description: forwards request to a layout based by on parameter list ("box000" or "all", "timeline" or "category" or "tags", "short or "medium" or "full". "separator" or "continuous"). Every layout template handles "box000" or "full" and "separator" or "continuous" by itself. In this file the other parameters are run through a decision tree to find the fitting layout file. In the end there will be (3x3x2=) 18 index-files for each box/all boxes. If you have 5 boxes jekyll creates (18x6=) 108 total layouts.
+----
+
+	{% if content contains "timeline" %}
+		{% if content contains "short" %}
+			<!-- choose include file with fitting layout -->
+		{% endif %}
+		{% if content contains "medium" %}
+
+		{% endif %}
+		{% if content contains "full" %}
+
+		{% endif %}
+	{% endif %}
+	{% if content contains "category" %}
+		{% if content contains "short" %}
+
+		{% endif %}
+		{% if content contains "medium" %}
+
+		{% endif %}
+		{% if content contains "full" %}
+
+		{% endif %}
+	{% endif %}
+	{% if content contains "tags" %}
+		{% if content contains "short" %}
+
+		{% endif %}
+		{% if content contains "medium" %}
+
+		{% endif %}
+		{% if content contains "full" %}
+
+		{% endif %}
+	{% endif %}
