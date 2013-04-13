@@ -84,7 +84,7 @@ The files `./index.html` and `./box000/index.html` define the index pages. There
     ---
     box004 showday
 
-Inside the choosen layout file (ex: `./_layouts/posts-list-1.html`) the parameter list is refereed to by the `content` liquid variable in line 3:
+Inside the choosen layout file (ex: `./_layouts/posts-list-1.html`) the parameter list is refereed to by the `content` liquid template variable in line 3 and 5:
 
     {% for post in site.posts %}
       {% capture b %}{{ post.box }}{% endcapture %}
