@@ -32,18 +32,20 @@ footer a, footer a:link{
 }
 
 /* NAVIGATION */
-navigation{
+
+#navigation {
 	text-align: center;
 }
-navigation a, navigation a:link{
+
+#navigation a, #navigation a:link{
 	text-decoration: none;
 }
-navigation a:hover {
+#navigation a:hover {
 	color: black;
 	text-decoration: none;
 }
 
-breadcrumb{
+#breadcrumb{
 	list-style-type: none;
 	text-transform: capitalize;
 }
