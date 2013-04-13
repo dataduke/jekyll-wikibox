@@ -10,9 +10,8 @@ header {
 }
 header .site-title {
 	text-indent: 0rem;
-	font-weight: bold;
 	font-size: 1.6rem;
-	margin:1rem 0;
+	font-weight: bold;
 }
 header a, header a:link {
 	color: black;
@@ -27,8 +26,8 @@ footer {
     margin-right: auto;
 	text-align:center;
 	clear:both;
-	font-weight:normal;
 	font-size:1.3rem;
+	font-weight:normal;
 }
 footer a, footer a:link{
 	color: black;
@@ -39,7 +38,6 @@ footer a, footer a:link{
 #navigation {
 	text-align: center;
 	font-size: 1.6rem;
-	margin:1rem 0;
 }
 
 #navigation a, #navigation a:link{
@@ -110,10 +108,9 @@ index .col {
 }
 
 /* PAGE BODY */
-page {}
-page .post-entry{
-
-}
+#page-title{}
+#page-meta{}
+#page-entry{}
 
 /* MEDIA */
 .fancybox-nav span {

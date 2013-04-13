@@ -26,6 +26,7 @@ description: A layout with a post list with metadata and preview.
     <div class="post-preview">
 			{{ post.content | strip_html | truncatewords: 100 }}
 		</div>
+    <br />
 	</div>
   {% endif %}
 {% endfor %}

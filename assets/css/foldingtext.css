@@ -68,6 +68,9 @@ h1 a:link, h2 a:link, h3 a:link {
 ul, ol {
 	padding: 0;
 }
+ul {
+	list-style-type: circle;
+}
 li:before {
 	content:none;
 }

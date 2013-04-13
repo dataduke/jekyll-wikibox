@@ -3,9 +3,9 @@ layout: default
 type: layout
 description: A post with metadata.
 ---
-<div class="post">
-	<p class="post-title">{{ page.title }}</p>
-	<p class="post-meta">
+<div class="page">
+	<p class="page-title">{{ page.title }}</p>
+	<p class="page-meta">
     Date: {{ page.date | date:"%Y-%m-%d" }} <br />
     {% capture tags %}{{ page.tags }}{% endcapture %}
     {% if tags == "" %}
@@ -27,7 +27,7 @@ description: A post with metadata.
     Word: {{ page.content | number_of_words }}
 	</p>
 
-	<div class="post-entry">
+	<div class="page-entry">
 		{{ content }}
 	</div>
 
