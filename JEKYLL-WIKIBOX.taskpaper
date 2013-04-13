@@ -22,7 +22,7 @@ Iteration 1:
 	- add index navigation bar 2 = tags: short, medium, full.
 	- (add index navigation bar 3 = category: short, medium, full.)
 	or
-	- box nav bar 1: sort: date, timeline (no seperation), tags, category.
+	- box nav bar 1: sort: date, timeline (no seperation), tags, category, (created, modified, name)
 	- box nav bar 2: view: short, medium, full, cards.
 	- add mosaic view
 	- add page navigation bar: view: full width, 2 columns
