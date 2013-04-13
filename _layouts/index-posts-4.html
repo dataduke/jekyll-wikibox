@@ -3,13 +3,14 @@ layout: default
 type: layout
 description: A layout with a post list with metadata and preview.
 ---
+<index>
 {% for post in site.posts %}
   {% capture b %}{{ post.box }}{% endcapture %}  
   {% if content contains b %}
   {% capture t %}{{ post.date | date:"%H%M" }}{% endcapture %}
 	<div class="post">
-    <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-		<p class="meta">| Date: {{ post.date | date:"%Y-%m-%d" }} |
+    <p class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+		<p class="post-meta">| Date: {{ post.date | date:"%Y-%m-%d" }} |
       Day : {{ post.date | date:"%A" }} |
     {% if t != "0000" %} Time: {{ post.date | date:"%H:%M" }} |
     {% endif %}
@@ -22,9 +23,10 @@ description: A layout with a post list with metadata and preview.
   	{% endif %}
     Words: {{ post.content | number_of_words }} |
 		</p>
-    <div class="entry">
+    <div class="post-preview">
 			{{ post.content | strip_html | truncatewords: 100 }}
 		</div>
 	</div>
   {% endif %}
 {% endfor %}
+</index>

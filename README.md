@@ -75,10 +75,10 @@ A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpap
 
 #### Layouts with Parameters*: 
 
-The files `./index.html` and `./box000/index.html` define the index pages. There (ex: `./box004.index.html`) the choosen layout (in YAML frontmatter, ex: `post-list-1`) and a parameter list for the choosen layout (as content, ex: `box004`) can be defined:
+The files `./index.html` and `./box000/index.html` define the index pages. There (ex: `./box004/index.html`), the choosen layout (in YAML frontmatter, ex: `index-posts-1`) and a parameter list for the choosen layout (as content, ex: `box004`) have to be defined:
 
     ---
-    layout: post-list-1
+    layout: index-posts-1
     title: Box 4
     navigation: true
     navtitle: Box 4
@@ -86,12 +86,12 @@ The files `./index.html` and `./box000/index.html` define the index pages. There
     ---
     box004 showday
 
-Inside the choosen layout file (ex: `./_layouts/posts-list-1.html`) the parameter list is refereed to by the `content` liquid template variable in line 3 and 5:
+Inside the choosen layout file (ex: `./_layouts/index-posts-1.html`) the parameter list is refereed to by the liquid template variable `content` in line 3 and 5:
 
     {% for post in site.posts %}
       {% capture b %}{{ post.box }}{% endcapture %}
       {% if content contains b %}
-        <!-- do something with every posts with YAML "box: box004" -->
+        <!-- do something with every post with YAML frontmatter of "box: box004" -->
         {% if content contains "showday" %}
           <!-- do something with dates, like display day -->
           Day : {{ post.date | date:"%A" }
@@ -165,12 +165,13 @@ Sublime Text [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_th
 
 **Best Practices and Conventions:**
 
-1. **Markdown Editing:** Build a basic `theme.css` by styling a simple markdown text file (with the help of Marked.app this is superfast). Typically this stylesheet includes fonts, h1-h4 styling, lists, links, blockquotes, . This will be your `theme.css`, which can be used for general text editing, post previewing, printing etc. (Your basic theme.css should/could be print and mobile friendly.)
+1. **Markdown Editing:** Build a basic `theme.css` by styling a simple markdown text file (with the help of Marked.app this is superfast). Typically this stylesheet includes the styling of body fonts, headings (h1-h4), links, lists, sourcecode, blockquotes, definitions, tables, columns, dividers (hr) etc. This file can be used for general text editing, post previewing, printing etc. (Your basic theme.css should/could be print and mobile friendly.)
 
-2. **Desktop Browsing:** Now create a `theme-ext.css`. This file will extend your basic `theme.css` to style navigation and external media elements. It should include the styling for header, navigation (bars), footer, index (page body content), embedded media, maybe a different background. etc. For desktop browsing load both created stylesheets: `theme.css`, which renders your post texts, and `theme-ext.css` for nice navigation.
+2. **Desktop Browsing:** Now create a `theme-ext.css` (or `theme-web.css`). This file will extend your basic `theme.css` to style navigation and external media elements. It should include the styling for header, navigation (bars, breadcrumb), footer, index (page body content), embedded media, etc. and maybe overwrite `theme.css` with a different background etc. For desktop browsing load both created stylesheets: `theme.css`, which renders your post texts, and `theme-ext.css` for nice navigation.
 
 3. **Mobile Browsing:** If your basic `theme.css` doesn't satisfy the mobile browsing experience. Build a separate, custom and minimal `theme-mobile.css` without any dependencies on `theme.css` or `theme-extensions.css`.
 
+4. Throw everything away and just use `bootstrap`!
 
 ## References
 

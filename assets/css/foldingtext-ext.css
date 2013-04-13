@@ -1,0 +1,129 @@
+/* PAGE WIDTH */
+.container {
+	max-width: 100rem;
+	min-width: 100rem;
+	margin:auto;
+}
+/* HEADER */
+header {
+	text-align: center;
+}
+header .site-title {
+	text-indent: 0rem;
+	font-weight: bold;
+}
+header a, header a:link {
+	color: black;
+	text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+	margin-left: auto;
+    margin-right: auto;
+	font-weight:normal;
+	clear:both;
+	text-align:center;
+	font-size:1.3rem;
+}
+footer a, footer a:link{
+	color: black;
+	text-decoration: none;
+}
+
+/* NAVIGATION */
+navigation{
+	text-align: center;
+}
+navigation a, navigation a:link{
+	text-decoration: none;
+}
+navigation a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+breadcrumb{
+	list-style-type: none;
+	text-transform: capitalize;
+}
+
+/* INDEX BODY */
+index{}
+index a, index a:link{
+	text-decoration: none;
+}
+index a:hover{
+	text-decoration: underline;
+}
+index .box-title{
+	color: black;
+	font-style: italic;
+}
+index .post{
+	
+}
+index .post-seperator{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-weight: bold;
+}
+time {
+	color: black;
+ 	font-weight: normal;
+}
+index .post-title{
+	color: black;
+	font-weight: bold;
+}
+index .post-meta{
+
+}
+index .post-preview a:hover{
+	text-decoration: none;
+}
+index ul {
+	list-style-type: none; 
+}
+index .listing{}
+index .listing-seperator{
+	font-weight: bold; list-style-type:none; margin-top: 1em; margin-bottom:1em;
+  	padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px;}
+}
+index .listing-item {}
+index .row {
+	max-width: 100rem;
+	min-width: 100rem;
+	max-height: 70rem;
+	min-height: 70rem;
+	margin: auto;
+}
+index .col {
+	width:25rem;
+	float:left;
+}
+
+
+/* MEDIA */
+.fancybox-nav span {
+	width: 36px !important;
+	height: 36px !important;
+}
+.fancybox-close {
+	background-image: url('/static/close.svg') !important;
+}
+.screencast img {
+	padding-right:1rem;
+	height:1.6rem;
+	vertical-align:-20%;
+}
+@media all and (min-width: 50em) {
+	body {
+		padding-top:2rem;
+	}
+}
+@media all and (min-width: 70em) {
+	body {
+		padding-top:8rem;
+	}
+}

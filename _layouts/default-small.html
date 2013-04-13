@@ -3,6 +3,7 @@ layout: nil
 type: layout
 description:  A small header with tagline and footer.
 ---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,27 +12,28 @@ description:  A small header with tagline and footer.
 	<title>WikiBox</title>
 	<meta name="description" content="This is a wiki.">
 	<link rel="alternate" type="application/atom+xml" title="WikiBox Posts" href="#/atom.xml">
+	
 	<link href="/assets/icon/favicon.png" rel="shortcut icon" type="image/x-icon"/>
 	<link href="/assets/css/foldingtext.css" rel="stylesheet" type="text/css" />
+	<link href="/assets/css/foldingtext-ext.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
 <div class="container">
 	<header>
-		<h1>
+		<div class="site-title">
 			<a href="./index.html"><img src="./assets/icon/logo.png" height="64px"/></a>
 			<a href="./index.html"><br /><br />WikiBox<br /><br />
 				- A guerilla wiki for hackers -<br /><br /></a>
-		</h1>
+		</div>
 	</header>
 
-	{{ content }}
+{{ content }}
 	
 	<footer>
-		<h4>
 		<a href="#/atom.xml">Posts</a>
 		<a href="https://twitter.com/intent/user?screen_name=dataduke">Twitter</a>
 		<a href="https://github.com/dataduke">Github</a>
-		</h4>
 	</footer>
 </div>
 </body>

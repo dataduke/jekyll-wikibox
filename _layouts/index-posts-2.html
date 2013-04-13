@@ -3,21 +3,22 @@ layout: default
 type: layout
 description: A layout with year seperation.
 ---
+<index>
 {% for post in site.posts %}
   {% capture b %}{{ post.box }}{% endcapture %}
   {% capture y %}{{ post.date | date:"%Y" }}{% endcapture %}
   {% if content contains b %}
     {% if year != y %}
     {% assign year = y %}
-        <h2>{{ y }}</h2>
-    {% endif %}
-      <div> 
-      <h3 class="title">
+      <p class="post-seperator">{{ y }}</p>
+    {% endif %} 
+      <div class="post-title">
           <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> 
-      </h3>
+      </div>
       <span>
       <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time> | {{ post.content | strip_html | truncatewords: 100 }}
       </span>
     </div>
   {% endif %}
 {% endfor %}
+</index>

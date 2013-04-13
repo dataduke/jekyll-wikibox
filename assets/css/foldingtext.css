@@ -1,3 +1,5 @@
+/* HTML BODY */
+
 html {
 	/* Setting the baseline font */
 	font-size: 62.5%;
@@ -16,6 +18,8 @@ body {
 	color: rgb(20%,20%,20%);
 	background: rgb(97%,97%,97%);
 }
+
+/* HEADINGS */
 
 h1, h2, h3, h4, h5, h6 {
 	font-size: 1.6rem;
@@ -53,25 +57,9 @@ small {
 	font-size: 1.6rem;	
 }
 
-hr {
-	border:none;
-	display:hidden;
-	margin: 2rem 0;
-	clear:both;
-}
+/* LINKS */
 
-hr:after {
-	display:block;
-	text-align:center;
-	content: "✦ ✦ ✦";
-	color: rgb(20%,20%,20%);
-}
-
-ul, ol {
-	padding: 0;
-}
-
-a {
+a, a:link {
 	color: black;
 }
 
@@ -80,14 +68,35 @@ a:hover {
 	text-decoration: underline;
 }
 
-h1 a:link, h2 a:link, h3 a:link, header a:link { 
+h1 a:link, h2 a:link, h3 a:link { 
 	text-decoration:none; 
 }
+
+/* LISTS */
+
+ul, ol {
+	padding: 0;
+}
+li:before {
+	content:none;
+}
+
+/* SOURCECODE */
 
 code {
 	font-family: Courier, monospace;
 	font-size: 1.3rem;
 	/*background: rgb(90%,90%,90%);*/
+}
+
+/* BLOCKQUOTES */
+
+blockquote {
+	width:52rem;
+	margin:2rem auto;
+	margin-right:10rem;
+	font-style:italic;
+	clear:both;
 }
 
 blockquote a {
@@ -109,26 +118,18 @@ blockquote .quote:after {
 content: "\201D";
 }
 
-li:before {
-	content:none;
-}
-.listing-seperator{font-weight: bold; list-style-type:none; margin-top: 1em; margin-bottom:1em;
-  padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px;}
+/* DIVIDERS */
 
-footer {
-	margin-left: auto;
-    margin-right: auto;
-}
-
-.container {
-	max-width: 100rem;
-	min-width: 100rem;
-	margin:auto;
-}
-blockquote {
-	width:52rem;
-	margin:2rem auto;
-	margin-right:10rem;
-	font-style:italic;
+hr {
+	border:none;
+	display:hidden;
+	margin: 2rem 0;
 	clear:both;
+}
+
+hr:after {
+	display:block;
+	text-align:center;
+	content: "✦ ✦ ✦";
+	color: rgb(20%,20%,20%);
 }

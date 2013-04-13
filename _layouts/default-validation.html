@@ -12,8 +12,11 @@ description: A plain layout with a footer for w3.org validation.
 	<title>WikiBox</title>
 	<meta name="description" content="This is a wiki.">
 	<link rel="alternate" type="application/atom+xml" title="WikiBox Posts" href="#/atom.xml">
+	
 	<link href="/assets/icon/favicon.png" rel="shortcut icon" type="image/x-icon"/>
 	<link href="/assets/css/foldingtext.css" rel="stylesheet" type="text/css" />
+	<link href="/assets/css/foldingtext-ext.css" rel="stylesheet" type="text/css" />
+
 
 	<link rel="stylesheet" href="/assets/highlight/styles/zenburn.css">
 	<script src="/assets/highlight/highlight.pack.js"></script>
@@ -26,9 +29,18 @@ description: A plain layout with a footer for w3.org validation.
 
 <body>
 <div class="container">
+	<navigation>
+		<a href="/index.html">Home</a>
+		<a href="/box001/index.html">Box 1</a>
+		<a href="/box002/index.html">Box 2</a>
+		<a href="/box003/index.html">Box 3</a>
+		<a href="/box004/index.html">Box 4</a>
+		<a href="/box005/index.html">Box 5</a>
+		<!-- <div class="clearer"><span></span></div> -->
+	</navigation>
 	{{ content }}
 	<footer>
-	<div class="footer">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} 
+		&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} 
 		<a href="index.html">Website.com</a>. Valid <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> &amp; <a href="http://validator.w3.org/check?uri=referer">XHTML</a>
 	</footer>
 </div>

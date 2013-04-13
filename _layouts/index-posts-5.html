@@ -3,15 +3,7 @@ layout: default
 type: layout
 description: A layout with post tables with all metadata (column 1) and title and preview (column 2).  
 ---
-<style type="text/css">
-  a {
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: none;
-  }
-</style>
-
+<index>
 {% for post in site.posts %}
   {% capture b %}{{ post.box }}{% endcapture %}
   {% if content contains b %}
@@ -24,12 +16,12 @@ description: A layout with post tables with all metadata (column 1) and title an
       </colgroup>
     <tr valign="top">
     <td></td><td> 
-    <b><a href="{{ post.url }}">{{ post.title }}</a> <br /></b>
+    <div class="post-title"><a href="{{ post.url }}">{{ post.title }}</a> <br /></div>
     </td>
     </tr>
     <tr valign="top">
     <td>  
-    <div class="meta">
+    <div class="post-meta">
     Date: {{ post.date | date:"%Y-%m-%d" }} <br />
     {% capture tags %}{{ post.tags }}{% endcapture %}
     {% if tags == "" %}
@@ -52,13 +44,13 @@ description: A layout with post tables with all metadata (column 1) and title an
     </div>
     </td>
     <td>
-    <div class="entry">
+    <div class="post-preview">
       <a href="{{ post.url }}">{{ post.content | strip_html | truncatewords: 40 }}</a>
     </div>
   </td>
   </tr>
   </table>
-
   </div>
   {% endif %}
 {% endfor %}
+</index>
