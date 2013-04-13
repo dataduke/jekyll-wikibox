@@ -11,8 +11,8 @@ description: A layout with post tables with all metadata (column 1) and title an
   <div class="post">
     <table border="0" width="100%">
       <colgroup>
-        <col width="40%">
-        <col width="60%">
+        <col width="30%">
+        <col width="70%">
       </colgroup>
     <tr valign="top">
     <td></td><td> 
@@ -39,7 +39,7 @@ description: A layout with post tables with all metadata (column 1) and title an
       Time: --:-- <br /> 
       {% else %}
       Time: {{ time }} <br />
-      {% endif %}
+    {% endif %}
     Word: {{ post.content | number_of_words }}
     </div>
     </td>

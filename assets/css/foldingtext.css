@@ -6,11 +6,9 @@ html {
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 }
-
 html, body {
   min-height: 100%;
 }
-
 body {
 	font-family: Courier, monospace;
 	font-size: 1.6rem;
@@ -20,41 +18,36 @@ body {
 }
 
 /* HEADINGS */
-
 h1, h2, h3, h4, h5, h6 {
 	font-size: 1.6rem;
 	margin:1rem 0;
 }
-
 h1:before {
 	font-weight:normal;
 	content:"# ";
 }
-
 h1 {
 	text-indent: -2rem;
 }
-
 h2:before {
 	font-weight:normal;
 	content:"## ";
 }
-
 h2 {
 	text-indent: -3rem;
 }
-
 h3:before {
 	font-weight:normal;
 	content:"### ";
 }
-
 h3 {
 	text-indent: -4rem;
 }
-
+h4 {
+	font-weight: bold;
+}
 small {
-	font-size: 1.6rem;	
+	font-size: 1.3rem;	
 }
 
 /* LINKS */
@@ -62,12 +55,10 @@ small {
 a, a:link {
 	color: black;
 }
-
 a:hover {
 	color: black;
 	text-decoration: underline;
 }
-
 h1 a:link, h2 a:link, h3 a:link { 
 	text-decoration:none; 
 }
@@ -91,6 +82,11 @@ code {
 
 /* BLOCKQUOTES */
 
+blockquote:before { 
+content: "\201C"; 
+float: left;
+margin-left:-1rem;
+}
 blockquote {
 	width:52rem;
 	margin:2rem auto;
@@ -98,21 +94,14 @@ blockquote {
 	font-style:italic;
 	clear:both;
 }
-
 blockquote a {
 	text-decoration:none;
 	color: rgb(20%,20%,20%);;
 }
-
 blockquote .author:before {
 	content: " – "; 	
 }
 
-blockquote:before { 
-content: "\201C"; 
-float: left;
-margin-left:-1rem;
-}
 
 blockquote .quote:after { 
 content: "\201D";

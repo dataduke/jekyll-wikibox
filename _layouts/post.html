@@ -1,13 +1,33 @@
 ---
 layout: default
 type: layout
-description: A simple post.
+description: A post with metadata.
 ---
 <div class="post">
-	<h3 class="title">{{ page.title }}</h3>
-	<p class="meta">Date: {{ page.date }}</p>
+	<p class="post-title">{{ page.title }}</p>
+	<p class="post-meta">
+    Date: {{ page.date | date:"%Y-%m-%d" }} <br />
+    {% capture tags %}{{ page.tags }}{% endcapture %}
+    {% if tags == "" %}
+      Tags: none <br />
+    {% else %}
+      {% for tag in page.tags %}
+        {% if forloop.first %}Tags: {% endif %}
+        {{ tag }}{% unless forloop.last %}, {% endunless %}
+        {% if forloop.last %} <br />{% endif %}
+      {% endfor %}
+    {% endif %}
+    Day : {{ page.date | date:"%A" }}<br />
+    {% capture time %}{{ page.date | date:"%H:%M" }}{% endcapture %}
+    {% if time == "00:00" %}
+      Time: --:-- <br /> 
+      {% else %}
+      Time: {{ time }} <br />
+    {% endif %}
+    Word: {{ page.content | number_of_words }}
+	</p>
 
-	<div class="entry">
+	<div class="post-entry">
 		{{ content }}
 	</div>
 

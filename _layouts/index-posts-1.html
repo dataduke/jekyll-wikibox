@@ -7,12 +7,10 @@ description: A very simple list layout.
 {% for post in site.posts %}
   {% capture b %}{{ post.box }}{% endcapture %}
   {% if content contains b %}
-    <div>
    	<p class="post-title">
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d " }}</time>
     	<a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </p>
-  </div>
   {% endif %}
 {% endfor %}
 </index>

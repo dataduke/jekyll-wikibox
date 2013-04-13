@@ -18,7 +18,6 @@ description: A layout with year seperation.
       <span>
       <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time> | {{ post.content | strip_html | truncatewords: 100 }}
       </span>
-    </div>
   {% endif %}
 {% endfor %}
 </index>

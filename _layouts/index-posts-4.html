@@ -9,9 +9,9 @@ description: A layout with a post list with metadata and preview.
   {% if content contains b %}
   {% capture t %}{{ post.date | date:"%H%M" }}{% endcapture %}
 	<div class="post">
-    <p class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+    <p class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></p>
 		<p class="post-meta">| Date: {{ post.date | date:"%Y-%m-%d" }} |
-      Day : {{ post.date | date:"%A" }} |
+      Day: {{ post.date | date:"%A" }} |
     {% if t != "0000" %} Time: {{ post.date | date:"%H:%M" }} |
     {% endif %}
 		{% if post.tags %}

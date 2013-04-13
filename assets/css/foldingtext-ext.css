@@ -11,6 +11,8 @@ header {
 header .site-title {
 	text-indent: 0rem;
 	font-weight: bold;
+	font-size: 1.6rem;
+	margin:1rem 0;
 }
 header a, header a:link {
 	color: black;
@@ -19,11 +21,13 @@ header a, header a:link {
 
 /* FOOTER */
 footer {
+	margin-top:3em;
+	margin-bottom:3em;
 	margin-left: auto;
     margin-right: auto;
-	font-weight:normal;
-	clear:both;
 	text-align:center;
+	clear:both;
+	font-weight:normal;
 	font-size:1.3rem;
 }
 footer a, footer a:link{
@@ -32,9 +36,10 @@ footer a, footer a:link{
 }
 
 /* NAVIGATION */
-
 #navigation {
 	text-align: center;
+	font-size: 1.6rem;
+	margin:1rem 0;
 }
 
 #navigation a, #navigation a:link{
@@ -44,7 +49,6 @@ footer a, footer a:link{
 	color: black;
 	text-decoration: none;
 }
-
 #breadcrumb{
 	list-style-type: none;
 	text-transform: capitalize;
@@ -71,7 +75,7 @@ index .post-seperator{
 	font-weight: bold;
 }
 time {
-	color: black;
+	/*color: black;*/
  	font-weight: normal;
 }
 index .post-title{
@@ -105,6 +109,11 @@ index .col {
 	float:left;
 }
 
+/* PAGE BODY */
+page {}
+page .post-entry{
+
+}
 
 /* MEDIA */
 .fancybox-nav span {
