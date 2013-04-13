@@ -16,9 +16,17 @@ Iteration 1:
 		- post layout
 		- box layout
 	- theme minimal
+	- for offline: you have to use relative links wit ./ or ../ prefix. => all compiled htmls need same navigation depth.
 	- theme daring fireball
+	- add index navigation bar 1 = timeline: short, medium, full.
+	- add index navigation bar 2 = tags: short, medium, full.
+	- (add index navigation bar 3 = category: short, medium, full.)
+	or
+	- box nav bar 1: sort: date, timeline (no seperation), tags, category.
+	- box nav bar 2: view: short, medium, full, cards.
 	- add mosaic view
-
+	- add page navigation bar: view: full width, 2 columns
+	- add card count for box and all boxes
 	- split _config.yaml exclude theming parts to other .yaml file
 	themes change colors and background of items but do never touch the structure of the weblayout webapplication @sticky 
 	- enable support for taskpaper themes for taskpaper files
