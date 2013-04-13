@@ -117,17 +117,17 @@ h1 a:link, h2 a:link, h3 a:link, header a:link {
 	text-decoration:none; 
 }
 
-pre {
+/*pre {
 	font-family: Courier, monospace;
 	font-size: 1.6rem;
 	padding:1rem;
 	background: rgb(90%,90%,90%);
-}
+}*/
 
 code {
 	font-family: Courier, monospace;
-	font-size: 1.6rem;
-	background: rgb(90%,90%,90%);
+	font-size: 1.3rem;
+	/*background: rgb(90%,90%,90%);*/
 }
 
 #breadcrumb {
