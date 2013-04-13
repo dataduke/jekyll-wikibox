@@ -1,9 +1,10 @@
 ---
-layout: default-small
+layout: default
 type: layout
 description: An index layout listing all posts by date (Timeline)
 ---
-<index>
+<div class="center">
+<index> 
 {% for post in site.posts %}
    	<p class="post-title">
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d " }}</time>
@@ -11,3 +12,4 @@ description: An index layout listing all posts by date (Timeline)
     </p>
 {% endfor %}
 </index>
+</div>
