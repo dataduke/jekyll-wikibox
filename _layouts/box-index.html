@@ -11,13 +11,10 @@ layout: default
 </style>
 
 <!-- parameter list-->
-{{ content }}
-<!-- {% assign parameter = "{{ content }}" %} -->
-<!-- {% assign parameter = "box004" %} -->
 <!-- parameter list-->
 
 {% for post in site.posts %}      
-  {% if post.categories contains parameter %}
+  {% if post.categories contains content %}
   <br />
 	<div class="post">
     <table border="0" width="100%">

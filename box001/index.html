@@ -1,25 +1,6 @@
 ---
-layout: default
+layout: box-index
 title: Box 1
-box: box001
 navigation: Box 1
 ---
-
-{% for post in site.posts %}
-  {% capture b %}{{ post.box }}{% endcapture %}
-  {% capture y %}{{ post.date | date:"%Y" }}{% endcapture %}
-  {% if b == "box001" %}
-    {% if year != y %}
-    {% assign year = y %}
-        <h2>{{ y }}</h2>
-    {% endif %}
-      <div> 
-      <h3 class="title">
-          <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> 
-      </h3>
-      <span>
-      <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time> | {{ post.content | strip_html | truncatewords: 100 }}
-      </span>
-    </div>
-  {% endif %}
-{% endfor %}
+box001
