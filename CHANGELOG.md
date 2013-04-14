@@ -4,6 +4,14 @@ A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpap
 
 ## Version History
 
+### Alpha 06 / 2013-04-13
+
+![added tag](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/tag-added.png) parameters inside layout files which are injected via index files containing a parameter list
+
+### Alpha 05 / 2013-04-12
+
+![added tag](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/tag-added.png) Folding Text Theme  
+
 ### Alpha 04 / 2013-04-07
 
 ![added tag](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/tag-added.png) iOS Linen Theme  
