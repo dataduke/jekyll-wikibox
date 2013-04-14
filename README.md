@@ -49,13 +49,13 @@ A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpap
 ### Installation
 
 1. install ruby
-2. install jekyll `sudo gem install jekyll`
-3. fork/clone/check out this github project
+2. install jekyll `$ sudo gem install jekyll`
+3. fork/clone/check out this github project `$ git clone git://github.com/dataduke/jekyll-wikibox.git`
 
 ### Local Deployment
 
-1. change to `cd ~/github/jekyll-wiki`
-2. run `jekyll --server` 
+1. change to `$ cd ~/github/jekyll-wiki`
+2. run `$ jekyll --server` 
 3. open `http://localhost:4000/`
 
 ### Web Deployment
