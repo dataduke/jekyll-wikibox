@@ -2,7 +2,7 @@ jekyll-wikibox:
 	A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpaper) transformed into static html by jekyll. The default theme is inspired by sublime text editor. @sticky
 Goals:
 	- 1 App to rule them all approach
-	- finshed product name: uberbox, uberwiki
+	- finished product name: uberbox, uberwiki
 	- default theme things taskpaper
 Requirements:
 	- use all space of 30 inch monitor (2560x1600) but also look good on iphone in portrait mode
