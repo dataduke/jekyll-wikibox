@@ -4,6 +4,7 @@ type: layout
 description: A very simple list layout.
 ---
 <div class="center">
+	{{ content }}
 <index>
 {% for post in site.posts %}
   {% capture b %}{{ post.box }}{% endcapture %}
