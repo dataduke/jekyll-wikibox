@@ -29,6 +29,20 @@ description: A header with navigation and small footer.
 			<a href="/index.html"><img src="/assets/icon/logo.png" height="64px"/></a>
 			<a href="/index.html"><br /><br />WikiBox<br /><br /></a>
 	</div>
+		{% for post in site.posts %}
+  		{% capture b %}{{ post.box }}{% endcapture %}
+  			{% if b == "box001" %}
+  			{% capture posts_b1 %} {{posts_b1 | plus:1 }} {% endcapture %}{% endif %}
+			{% if b == "box002" %}
+			{% capture posts_b2 %} {{ posts_b2 | plus:1 }} {% endcapture %}{% endif %}
+			{% if b == "box003" %}
+			{% capture posts_b3%} {{ posts_b3 | plus:1 }} {% endcapture %}{% endif %}
+			{% if b == "box004" %}
+			{% capture posts_b4 %} {{ posts_b4 | plus:1 }} {% endcapture %}{% endif %}
+			{% if b == "box005" %}
+			{% capture posts_b5 %} {{ posts_b5 | plus:1 }} {% endcapture %}{% endif %}
+		{% endfor %}
+
 	<div id="navigation">
 		<a href="/index.html">Board</a>
 		<a href="/box001/index.html">Box 1</a>
@@ -36,7 +50,13 @@ description: A header with navigation and small footer.
 		<a href="/box003/index.html">Box 3</a>
 		<a href="/box004/index.html">Box 4</a>
 		<a href="/box005/index.html">Box 5</a>
-		<br /><br />
+		<br />{{ site.posts | size }} 
+		 {{ posts_b1 | remove:' ' }}
+		 {{ posts_b2 | remove:' ' }}
+		 {{ posts_b3 | remove:' ' }}
+		 {{ posts_b4 | remove:' ' }}
+		 {{ posts_b5 | remove:' ' }}
+		<br />
 	</div>
 	</header>
 
