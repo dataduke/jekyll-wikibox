@@ -1,0 +1,36 @@
+---
+layout: default
+type: layout
+description: A post with metadata.
+---
+<div class="page articlewidth">
+	<p class="page-title">{{ page.title }}</p>
+	<p class="page-meta">
+    Date: {{ page.date | date:"%Y-%m-%d" }} <br />
+    Edit: {{ page.edit | date:"%Y-%m-%d" }} <br />
+    {% capture tags %}{{ page.tags }}{% endcapture %}
+    {% if tags == "" %}
+      Tags: none <br />
+    {% else %}
+      {% for tag in page.tags %}
+        {% if forloop.first %}Tags: {% endif %}
+        {{ tag }}{% unless forloop.last %}, {% endunless %}
+        {% if forloop.last %} <br />{% endif %}
+      {% endfor %}
+    {% endif %}
+    Day : {{ page.date | date:"%A" }}<br />
+    {% capture time %}{{ page.date | date:"%H:%M" }}{% endcapture %}
+    {% if time == "00:00" %}
+      Time: --:-- <br /> 
+      {% else %}
+      Time: {{ time }} <br />
+    {% endif %}
+    Text: {{ page.content | number_of_words }} words
+	</p>
+
+	<div class="page-entry">
+		{{ content }}
+	</div>
+
+</div>
+

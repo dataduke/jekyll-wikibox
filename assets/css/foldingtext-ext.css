@@ -1,11 +1,16 @@
 /* PAGE WIDTH */
 .container {
-	max-width: 100rem;
-	min-width: 100rem;
+	max-width: 1024px;
+	min-width: 1024px;
 	margin:auto;
 }
- .center {
+.center {
  	width: 35%;
+	margin: auto;
+}
+
+.articlewidth {
+ 	width: 90%;
 	margin: auto;
 }
 
@@ -118,9 +123,11 @@ index .col {
 }
 
 /* PAGE BODY */
-#page-title{}
-#page-meta{}
-#page-entry{}
+.page-title{color:black;}
+.page-count{}
+.page-meta{}
+.page-line{color: black;}
+.page-entry{}
 
 /* MEDIA */
 .fancybox-nav span {

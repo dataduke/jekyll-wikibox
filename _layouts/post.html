@@ -3,33 +3,25 @@ layout: default
 type: layout
 description: A post with metadata.
 ---
-<div class="page">
-	<p class="page-title">{{ page.title }}</p>
-	<p class="page-meta">
-    Date: {{ page.date | date:"%Y-%m-%d" }} <br />
+<div class="page articlewidth">
+	<p><span class="page-title">{{ page.title }}</span>&#160;<span class="page-count">{{ page.content | number_of_words }}</span></p>
+	<p><div class="page-meta">
+    {% capture createdtime %}{{ page.date | date:"%H:%M" }}{% endcapture %}   
+    {% capture changedtime %}{{ page.edit | date:"%H:%M" }}{% endcapture %}
+    {% capture changed %}{{ page.edit | date:"%Y-%m-%d" }}{% endcapture %}
+    {% if createdtime == "00:00" %}
+      <!-- Date:  -->{{ page.date | date:"%Y-%m-%d --:-- %A" }} <br /> {% else %}
+      <!-- Date:  -->{{ page.date | date:"%Y-%m-%d %H:%M %A" }} <br /> {% endif %}
+    {% if changed != "" %} {% if changedtime == "00:00" %}
+      <!-- Edit:  -->{{ page.edit | date:"%Y-%m-%d --:-- %A" }} <br /> {% else %}
+      <!-- Edit:  -->{{ page.edit | date:"%Y-%m-%d %H:%M %A" }} <br /> {% endif %}{% endif %}
     {% capture tags %}{{ page.tags }}{% endcapture %}
-    {% if tags == "" %}
-      Tags: none <br />
-    {% else %}
-      {% for tag in page.tags %}
-        {% if forloop.first %}Tags: {% endif %}
-        {{ tag }}{% unless forloop.last %}, {% endunless %}
-        {% if forloop.last %} <br />{% endif %}
-      {% endfor %}
-    {% endif %}
-    Day : {{ page.date | date:"%A" }}<br />
-    {% capture time %}{{ page.date | date:"%H:%M" }}{% endcapture %}
-    {% if time == "00:00" %}
-      Time: --:-- <br /> 
-      {% else %}
-      Time: {{ time }} <br />
-    {% endif %}
-    Text: {{ page.content | number_of_words }} words
-	</p>
-
-	<div class="page-entry">
-		{{ content }}
-	</div>
-
+    {% for tag in page.tags %}
+      {% if forloop.first %}<br /><!-- Tags: --> {% endif %}
+      {{ tag }}{% unless forloop.last %}<!-- , -->{% endunless %}
+      {% if forloop.last %} <br />{% endif %}
+     {% endfor %}<div></p>  
+    {% if page.line %}
+    <p><div class="page-line"><!-- Line:  -->{{ page.line }}<br/></div></p>{% endif %} 
+	<div class="page-entry"> {{ content }} </div>
 </div>
-
