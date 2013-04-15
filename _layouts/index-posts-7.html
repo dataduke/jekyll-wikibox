@@ -3,17 +3,16 @@ layout: default
 type: layout
 description: A very simple list layout.
 ---
-<div class="center">
+<div id="view-navigation" class="center60">
 	{{ content }}
-<index>
+</div>	
+<div id="index" class="center60">		
 {% for post in site.posts %}
   {% capture b %}{{ post.box }}{% endcapture %}
   {% if content contains b %}
-   	<p class="post-title">
+   	<p><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d " }}</time>
-    	<a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </p>
+    <span class="post-title">{{ post.title }}</span>&#160;<span class="page-count">{{ post.content | number_of_words }}</span></a></p>
   {% endif %}
 {% endfor %}
-</index>
 </div>

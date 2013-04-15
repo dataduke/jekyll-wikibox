@@ -25,12 +25,16 @@ description: A header with navigation and small footer.
 <body>
 <div class="container">	
 	<header>
-	<div class="site-title">
+		<div class="site-title">
 			<a href="/index.html"><img src="/assets/icon/logo.png" height="64px"/></a>
 			<a href="/index.html"><br /><br />WikiBox<br /><br /></a>
-	</div>
+		</div>
+	</header>
+		
 		{% for post in site.posts %}
   		{% capture b %}{{ post.box }}{% endcapture %}
+  			{% if b == "wikibox" %}
+  			{% capture posts_wb %} {{posts_wb | plus:1 }} {% endcapture %}{% endif %}
   			{% if b == "box001" %}
   			{% capture posts_b1 %} {{posts_b1 | plus:1 }} {% endcapture %}{% endif %}
 			{% if b == "box002" %}
@@ -43,28 +47,39 @@ description: A header with navigation and small footer.
 			{% capture posts_b5 %} {{ posts_b5 | plus:1 }} {% endcapture %}{% endif %}
 		{% endfor %}
 
-	<div id="navigation">
-		<a href="/index.html">Board</a>
-		<a href="/box001/index.html">Box 1</a>
-		<a href="/box002/index.html">Box 2</a>
-		<a href="/box003/index.html">Box 3</a>
-		<a href="/box004/index.html">Box 4</a>
-		<a href="/box005/index.html">Box 5</a>
-		<br />{{ site.posts | size }} 
-		&#160;&#160;&#160;&#160;{{ posts_b1 | remove:' ' }}
-		&#160;&#160;&#160;&#160;{{ posts_b2 | remove:' ' }}
-		&#160;&#160;&#160;&#160;{{ posts_b3 | remove:' ' }}
-		&#160;&#160;&#160;&#160;{{ posts_b4 | remove:' ' }}
-		&#160;&#160;&#160;&#160;{{ posts_b5 | remove:' ' }}
+	<div id="board-navigation" class="center60">
+		<a href="/index.html">HomeBoard</a>
+		<a href="#">ScrumBoard</a>
+		<br />
+		&#160;&#160;&#160;&#160;{{ site.posts | size }} 
+		&#160;&#160;&#160;&#160;&#160;&#160;&#160;0 
 		<br />
 		<br />
 	</div>
-	</header>
+
+	<div id="box-navigation" class="center60">
+		<a href="/wikibox/index.html">WikiBox</a>
+		<a href="/box001/index.html">BoxOne</a>
+		<a href="/box002/index.html">BoxTwo</a>
+		<a href="/box003/index.html">BoxThree</a>
+		<a href="/box004/index.html">BoxFour</a>
+		<a href="/box005/index.html">BoxFive</a>
+		<br />
+		&#160;&#160;&#160;&#160;{{ posts_wb | remove:' ' }}
+		&#160;&#160;&#160;&#160;&#160;{{ posts_b1 | remove:' ' }}
+		&#160;&#160;&#160;&#160;&#160;{{ posts_b2 | remove:' ' }}
+		&#160;&#160;&#160;&#160;&#160;&#160;{{ posts_b3 | remove:' ' }}
+		&#160;&#160;&#160;&#160;&#160;&#160;{{ posts_b4 | remove:' ' }}
+		&#160;&#160;&#160;&#160;&#160;&#160;{{ posts_b5 | remove:' ' }}
+		<br />
+		<br />
+	</div>
+
 
 {{ content }}
 
 	<footer>
-		<a href="/index/posts.html">Posts</a>
+		<a href="/index/posts.html">All Posts</a>
 		<a href="https://twitter.com/intent/user?screen_name=dataduke">Twitter</a>
 		<a href="https://github.com/dataduke">Github</a>
 	</footer>

@@ -1,20 +1,14 @@
-/* PAGE WIDTH */
-.container {
-	max-width: 1024px;
-	min-width: 1024px;
-	margin:auto;
-}
-.center {
- 	width: 35%;
-	margin: auto;
-}
 
-.articlewidth {
- 	width: 90%;
-	margin: auto;
-}
+/* ALL HORIZONTAL ALIGNMENT */
+
+.container { max-width: 1024px; min-width: 1024px; margin:auto; }
+.center { width: 60%; margin: auto; }
+.center50 { width: 50%; margin: auto; }
+.center60 { width: 60%; margin: auto; }
+.center90 { width: 90%; margin: auto; }
 
 /* HEADER */
+
 header {
 	text-align: center;
 }
@@ -29,6 +23,7 @@ header a, header a:link {
 }
 
 /* FOOTER */
+
 footer {
 	margin-top:3em;
 	margin-bottom:3em;
@@ -45,29 +40,43 @@ footer a, footer a:link{
 }
 
 /* NAVIGATION */
-#navigation {
-	text-align: center;
-	font-size: 1.6rem;
-}
 
-#navigation a, #navigation a:link{
-	text-decoration: none;
-}
-#navigation a:hover {
-	color: black;
-	text-decoration: none;
-	/*background-color: yellow;*/
-}
-#navigation a:visited {
-	/*text-decoration: underline;*/
-}
 #breadcrumb{
 	list-style-type: none;
 	text-transform: capitalize;
 }
+#board-navigation {
+	font-size: 1.6rem;
+}
+#board-navigation a, #board-navigation a:link{
+	text-decoration: none;
+}
+#board-navigation a:hover {
+	color: black;
+	text-decoration: none;
+	/*background-color: yellow;*/
+}
+#box-navigation {
+	font-size: 1.6rem;
+}
+#box-navigation a, #board-navigation a:link{
+	text-decoration: none;
+}
+#box-navigation a:hover {
+	color: black;
+	text-decoration: none;
+	/*background-color: yellow;*/
+}
+#view-navigation{
+
+}
 
 /* INDEX BODY */
-index{}
+
+#index a, a:link, a:hover{
+	text-decoration: none;
+	color: rgb(20%,20%,20%);
+}
 
 index a, index a:link{
 	text-decoration: none;
@@ -91,7 +100,7 @@ time {
 	/*color: black;*/
  	font-weight: normal;
 }
-index .post-title{
+.post-title{
 	color: black;
 	font-weight: bold;
 }
@@ -122,14 +131,22 @@ index .col {
 	float:left;
 }
 
-/* PAGE BODY */
-.page-title{color:black;}
-.page-count{}
-.page-meta{}
-.page-line{color: black;}
-.page-entry{}
+/* SINGLE ARTICLE PAGE */
+
+#page {
+}
+#page a, #page a:link {
+	color: black;
+	text-decoration: underline;
+}
+#page-title{color:black; font-weight: bold;}
+#page-count{}
+#page-meta{}
+#page-line{color: black;}
+#page-entry{}
 
 /* MEDIA */
+
 .fancybox-nav span {
 	width: 36px !important;
 	height: 36px !important;

@@ -3,9 +3,11 @@ layout: default
 type: layout
 description: A post with metadata.
 ---
-<div class="page articlewidth">
-	<p><span class="page-title">{{ page.title }}</span>&#160;<span class="page-count">{{ page.content | number_of_words }}</span></p>
-	<p><div class="page-meta">
+<div id="page" class="center90">
+	<p>
+    <span id="page-title">{{ page.title }}</span>&#160;<span id="page-count">{{ page.content | number_of_words }}</span>
+  </p>
+	<p id="page-meta">
     {% capture createdtime %}{{ page.date | date:"%H:%M" }}{% endcapture %}   
     {% capture changedtime %}{{ page.edit | date:"%H:%M" }}{% endcapture %}
     {% capture changed %}{{ page.edit | date:"%Y-%m-%d" }}{% endcapture %}
@@ -20,8 +22,10 @@ description: A post with metadata.
       {% if forloop.first %}<br /><!-- Tags: --> {% endif %}
       {{ tag }}{% unless forloop.last %}<!-- , -->{% endunless %}
       {% if forloop.last %} <br />{% endif %}
-     {% endfor %}<div></p>  
-    {% if page.line %}
-    <p><div class="page-line"><!-- Line:  -->{{ page.line }}<br/></div></p>{% endif %} 
-	<div class="page-entry"> {{ content }} </div>
+     {% endfor %}
+  </p>  
+  {% if page.line %}
+    <p id="page-line"><!-- Line:  -->{{ page.line }}<br/></p>
+  {% endif %} 
+	<p id="page-entry"> {{ content }} </p>
 </div>
