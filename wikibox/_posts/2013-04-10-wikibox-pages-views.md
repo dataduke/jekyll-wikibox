@@ -55,7 +55,7 @@ Two `Y` Icon/button:
 Bar has the appearance of a shelf for areas and boards and shows all areas/boards with a glyphicon and a card count (like at NFL Goal boards).
 
 	 !icon       !icon      !icon       !icon      !icon        !icon
-	AreaName    AreaName   AreaName   BoardName   BoardkName   BoardName
+	AreaName    AreaName   AreaName   BoardName   BoardName   BoardName
 	 #cards      #cards     #cards     #cards      #cards       #cards
 
 ### Boxes/Stacks Bar
