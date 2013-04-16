@@ -45,7 +45,7 @@ Bar shows navigation path. (maybe fixed position topbar)
 
 	SiteName > BoxName > Date-Title [Star] [Paperclip]       Y Y
 
-Two Y` Icon/button:
+Two `Y` Icon/button:
 
 - Collapse all headers = show table of contents (only available in card page).
 - Open original source file in external local text editor (via applescript)
