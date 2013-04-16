@@ -4,15 +4,76 @@ category: cat001
 comments: true/false.
 date: 2013-04-10 21:35
 edit: 2012-04-15
-title: Specification of Pages and Views
+title: Graphical Specification
 tags: ' #box(wikibox) #board(dev) #toc #star #prio(1) #study(5) #cat(dev) #public #share(Person)'
 line: Line can be used as description, synopsis, abstract, subtitle, preview, teaser or question answered in content. So this line can be very useful in many ways.
 box: wikibox
 ---
 
-# Pages, Views and their possible Use Cases
+# Navigation, Pages and Views
 
 Below follows a list of different views with a short description for their possible view.
+
+## Navigation
+
+Layout of header with breadcrumb-navigation, area-navigation, board-navigation, boxes-navigation and stack-navigation.
+	
+	Y Breadcrumb				
+	--------------------------------------------
+	X  !sitelogo 	|	Areas     /    Boards
+	X				|---------------------------
+	X	Sitename	|	Boxes     /     Stacks
+	-------------------------------------------
+	   			 	 		View / Sort
+	-------------------------------------------
+
+					Content
+
+	-------------------------------------------
+	   Command
+
+
+Three `X` icons/buttons: 
+
+- Toggle Breadcrumb Bar
+- Toggle Areas/Boards Bar
+- Toggle Boxes/Stacks Bar
+
+### Breadcrumb Bar
+
+Bar is a fixed position topbar
+
+	Y SiteName > BoxName > Date-Title
+
+One `Y` Icon/button:
+
+- Collapse all headers = show table of contents (only available in card page).
+
+### Areas/Boards Bars
+
+Bar has the appearance of a shelf for areas and boards and shows all areas/boards with a glyphicon and a card count (like at NFL Goal boards).
+
+	 !icon       !icon      !icon       !icon      !icon        !icon
+	AreaName    AreaName   AreaName   BoardName   BoardkName   BoardName
+	 #cards      #cards     #cards     #cards      #cards       #cards
+
+### Boxes/Stacks Bar
+
+Bar has the appearance of shelf for boxes and stacks and shows all boxes/stacks with a glyphicon and a card count (like at NFL Goal boards).
+
+	 !icon       !icon      !icon       !icon      !icon        !icon
+	BoxName     BoxName    BoxName    StackName   StackName   StackName
+	 #cards      #cards     #cards     #cards      #cards       #cards
+
+### View/Sort Bar
+
+Bar for changing the layout of the content or resort all shown cards.
+
+	View: List Card Full	Sort: Year Name Tags
+
+### Command Bar
+
+Consists of one big input field, for searching, filtering, navigating.
 
 ## Pages
 
@@ -65,19 +126,24 @@ Here a single card is rolled out (Focused View).
 
 ## Views
 
+
 ### List View (Board Page, Box Page)
 
 A list of all items (with a possible list seperator fitting to sorting type (e.g. year)).
 
-		 - Year - 
-	* Date Title Words
-	* Date Title Words
-	* Date Title Words
-	* Date Title Words
-		 - Year - 
-	* Date Title Words
-	* Date Title Words
-	* Date Title Words
+					- Year/Category - 
+	 [Paperclip] [Star] * Date Title Words [Boxname/icon]
+	 [Paperclip] [Star] * Date Title Words [Boxname/icon]
+	 [Paperclip] [Star] * Date Title Words [Boxname/icon]
+	 [Paperclip] [Star] * Date Title Words [Boxname/icon]
+					- Year/Category - 
+	 [Paperclip] [Star] * Date Title Words [Boxname/icon]
+	 [Paperclip] [Star] * Date Title Words [Boxname/icon]
+	 [Paperclip] [Star] * Date Title Words [Boxname/icon]
+
+- Star-Icon is only shown if a note is tagged with star.
+- Paperclip-Icon is only shown if there are file attachments to a card.
+- Boxnames or Box-Glypicons can be used to identify boxes, when all posts are viewed or cards from different boxes. (Add glypicon to navigation bars beside count of cards. or above boxnames)
 
 ### Card View (Box Page)
 
@@ -123,7 +189,7 @@ A simplified index card for learning purpose with question and answer in separat
 
 Maybe a simple markdown table in one file with 2 columns (question/answer) is better, where the answer column consists of covered/hidden fields, that can be opened. 
 
-## Content View (Board Page, Box Page)
+### Content View (Board Page, Box Page)
 
 Pure content view can be used for boards, like: next action board, scrum/kanban board, drafting a storyline for presentations etc.
 
@@ -137,7 +203,7 @@ Pure content view can be used for boards, like: next action board, scrum/kanban 
 
 			   - Next Card -
 
-## Meta View (Box Page)
+### Meta View (Box Page)
 
 A 2 column view showing all meta data.
 
@@ -146,7 +212,7 @@ A 2 column view showing all meta data.
 	| - Tags -					|	(- Table of Contents -) |
 	|							|							|	
 
-## Full View (Box Page)
+### Full View (Box Page)
 						
 A 2 column list of posts. Left column: All meta data. Right column:  content
 
@@ -160,7 +226,7 @@ A 2 column list of posts. Left column: All meta data. Right column:  content
 	| Contents:					| 							|
 	| - Table of Contents- 		|							|
 
-## Snippets :View (Box Page)
+### Snippets :View (Box Page)
 
 A 2 column view with a item list on the left and the selected item on the right like in travis web or notational velocity.
 
@@ -181,7 +247,7 @@ A 2 column view with a item list on the left and the selected item on the right 
 	| - Tags -					|							|
 	| -------------------------	|							|
 
-## Article View (Card Page)
+### Article View (Card Page)
 
 Article View displays the full file with all meta data and statistics of the file.
 
@@ -199,7 +265,7 @@ Article View displays the full file with all meta data and statistics of the fil
 	- Content -
 
 
-## Post View (Card Page)
+### Post View (Card Page)
 
 A view for a public blog post.
 
