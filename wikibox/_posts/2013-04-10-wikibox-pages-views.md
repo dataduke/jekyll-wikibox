@@ -1,18 +1,16 @@
 ---
 layout: post
-category: cat001
-comments: true/false.
 date: 2013-04-10 21:35
 edit: 2012-04-15
-title: Graphical Specification
-tags: ' #box(wikibox) #board(dev) #toc #star #prio(1) #study(5) #cat(dev) #public #share(Person)'
-line: Line can be used as description, synopsis, abstract, subtitle, preview, teaser or question answered in content. So this line can be very useful in many ways.
+title: Layouts Specification
+tags: ' #box(wikibox) #board(dev) #cat(dev) #public '
+line: Layouts are basically html files placed in `_layouts` folder that can use the liquid template engine.
 box: wikibox
 ---
 
 # Navigation, Pages and Views
 
-Below follows a list of different views with a short description for their possible view.
+Below follows a list of different layouts with a short description for their possible use.
 
 ## Navigation
 
@@ -22,9 +20,11 @@ Layout of header with breadcrumb-navigation, area-navigation, board-navigation, 
 	--------------------------------------------
 	X  !sitelogo 	|	Areas     /    Boards
 	X				|---------------------------
-	X	Sitename	|	Boxes     /     Stacks
+	X	Sitename	|	Boxes     /    Stacks
 	-------------------------------------------
-	   			 	 		View / Sort
+	   			 	 	[ View / Sort ]
+	-------------------------------------------
+	   			 	 	[ Description ]			
 	-------------------------------------------
 
 					Content
@@ -38,6 +38,9 @@ Three `X` icons/buttons:
 - Toggle Breadcrumb Bar
 - Toggle Areas/Boards Bar
 - Toggle Boxes/Stacks Bar
+
+Description and View/Sort are optional bars,
+that are only shown when a area/board/box/stack is opened.
 
 ### Breadcrumb Bar
 
@@ -127,6 +130,13 @@ Here a single card is rolled out (Focused View).
 
 ## Views
 
+### Simple View
+
+A list of all items
+
+	* Title
+	* Title
+	* Title
 
 ### List View (Board Page, Box Page)
 
@@ -227,7 +237,7 @@ A 2 column list of posts. Left column: All meta data. Right column:  content
 	| Contents:					| 							|
 	| - Table of Contents- 		|							|
 
-### Snippets View (Box Page)
+### Notational View (Box Page)
 
 A 2 column view with a item list on the left and the selected item on the right like in travis web or notational velocity.
 
@@ -248,6 +258,33 @@ A 2 column view with a item list on the left and the selected item on the right 
 	| - Tags -					|							|
 	| -------------------------	|							|
 
+### Paper View (Card Page)
+
+A 2 column view of a card in scientific paper publication form.
+
+	|	- title	-				|	   - continung -		|
+	|	- date -				|	 - content col 2 -		|
+	|							|							|
+	|	- line - 				|							|
+	|	(bold = abstract) 		|							|
+	|							|							|
+	|	Table of Contents   	|	  References:			|
+	|							|							|
+	|	- content col 1 - 		|							|
+
+### Thesis View (Card Page)
+
+	Title
+
+	Line (meta information like university, )
+
+	Table of Contents
+
+	Table of Figures
+
+
+### Book View (Card Page)
+
 ### Article View (Card Page)
 
 Article View displays the full file with all meta data and statistics of the file.
@@ -265,7 +302,6 @@ Article View displays the full file with all meta data and statistics of the fil
 
 	- Content -
 
-
 ### Post View (Card Page)
 
 A view for a public blog post.
@@ -274,4 +310,36 @@ A view for a public blog post.
 
 	- Contents -
 	
-	Comments:
+	[Comments:]
+
+Blog post are only shown when tagged with `#public`.
+Comments are only shown if YAML `comments: true` or if tagged with `#public(comments)`.
+
+### Page View (Card Page)
+
+	- Title -
+
+	- Line - 
+
+	- Contents -
+
+### Presentation View (Card Page)		
+
+Basically presentation view offers an endless scrolling html page. As plaintext format (html, css etc.) it is closer related to LaTeX Beamer or troff presentations than to the commonly known 
+presentation programs. 
+
+	- Slidetitle -
+
+	- Slidecontent -
+
+		NEXT 					// button to scroll down to next slide
+	-----------------
+	- Slidetitle -
+
+	- Slidecontent -
+
+	  NEXT/PREVIOUS 			// button to scroll up
+
+The buttons NEXT/PREVIOUS are always on the same place.
+
+It is supposed to be much quicker in creating and manipulating content then your typical presentation program and thus replaces the need for propriety formats like Microsoft Powerpoint `.ppsx` `.pptx`, Apple Keynote `.keynote`, and open formats like LibreOffice or NeoOffcie or Apache OpenOffice Impress `.odp` `.otp` `.sdd` `.sxi`, which make highly use of slow mouse interactions.

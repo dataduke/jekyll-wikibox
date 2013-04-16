@@ -1,0 +1,11 @@
+---
+layout: default
+type: layout
+description: A simple page.
+---
+<div class="post">
+	{{ content }}
+</div>
+{% if page.comments %}
+{% include comments.md %}
+{% endif %}

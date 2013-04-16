@@ -73,7 +73,7 @@ A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpap
     ./_config.yml           # configuration
     ./_themes/themename     # themes; move all files/folders contained in a theme to root folder (and override)
 
-#### Layouts with Parameters*: 
+### Hacking Layouts with Parameters
 
 The files `./index.html` and `./box000/index.html` define the index pages. There (ex: `./box004/index.html`), the choosen layout (in YAML frontmatter, ex: `index-posts-1`) and a parameter list for the choosen layout (as content, ex: `box004`) have to be defined:
 
@@ -171,7 +171,7 @@ Sublime Text [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_th
 
 3. **Mobile Browsing:** If your basic `theme.css` doesn't satisfy the mobile browsing experience. Build a separate, custom and minimal `theme-mobile.css` without any dependencies on `theme.css` or `theme-extensions.css`.
 
-4. Throw everything away and just use `bootstrap`!
+4. Throw everything away and just use `bootstrap`! Just kidding.
 
 ## References
 
