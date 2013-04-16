@@ -18,7 +18,7 @@ Below follows a list of different views with a short description for their possi
 
 Layout of header with breadcrumb-navigation, area-navigation, board-navigation, boxes-navigation and stack-navigation.
 	
-	Y Breadcrumb				
+	Breadcrumb                             Y Y				
 	--------------------------------------------
 	X  !sitelogo 	|	Areas     /    Boards
 	X				|---------------------------
@@ -43,11 +43,12 @@ Three `X` icons/buttons:
 
 Bar shows navigation path. (maybe fixed position topbar)
 
-	Y SiteName > BoxName > Date-Title [Star] [Paperclip]
+	SiteName > BoxName > Date-Title [Star] [Paperclip]       Y Y
 
-One `Y` Icon/button:
+Two Y` Icon/button:
 
 - Collapse all headers = show table of contents (only available in card page).
+- Open original source file in external local text editor (via applescript)
 
 ### Areas/Boards Bars
 
