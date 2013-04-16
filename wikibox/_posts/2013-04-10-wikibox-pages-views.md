@@ -41,9 +41,9 @@ Three `X` icons/buttons:
 
 ### Breadcrumb Bar
 
-Bar is a fixed position topbar
+Bar shows navigation path. (maybe fixed position topbar)
 
-	Y SiteName > BoxName > Date-Title
+	Y SiteName > BoxName > Date-Title [Star] [Paperclip]
 
 One `Y` Icon/button:
 
