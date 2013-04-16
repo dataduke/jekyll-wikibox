@@ -227,7 +227,7 @@ A 2 column list of posts. Left column: All meta data. Right column:  content
 	| Contents:					| 							|
 	| - Table of Contents- 		|							|
 
-### Snippets :View (Box Page)
+### Snippets View (Box Page)
 
 A 2 column view with a item list on the left and the selected item on the right like in travis web or notational velocity.
 
