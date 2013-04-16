@@ -205,7 +205,7 @@ To all jekyll builders.
 ### Higher-Level Languages
 
 - [YAML](http://www.yaml.org): data serialization;
-- [liquid](http://www.liquidmarkup.org/) [github-repo](https://github.com/Shopify/liquid) [github-wiki](https://github.com/Shopify/liquid/wiki): template engine;
+- [liquid](http://www.liquidmarkup.org/) [github-repo](https://github.com/Shopify/liquid) [github-wiki](https://github.com/Shopify/liquid/wiki) [guide](http://wiki.shopify.com/UsingLiquid): template engine;
 - [{{ mustache }}](http://mustache.github.com), [js-github-repo](https://github.com/janl/mustache.js): tag expansion;
 - [Sass](http://sass-lang.com): CSS3 abstraction; .scss or .sass;
 - [Haml](http://haml.info), [doc](http://haml.info/docs/yardoc/file.REFERENCE.html): HTML abstraction; .html.haml;
