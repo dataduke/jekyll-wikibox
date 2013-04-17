@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Presentations
+title: Cheatsheets
 tags: ' #box(wikibox) '
 box: wikibox
 ---
 
-# Creating simple reference papers
+# Creating simple and shareable quick references
 
 **Layout**
 
