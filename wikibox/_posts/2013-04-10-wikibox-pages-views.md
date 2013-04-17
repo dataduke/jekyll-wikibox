@@ -328,18 +328,47 @@ Comments are only shown if YAML `comments: true` or if tagged with `#public(comm
 Basically presentation view offers an endless scrolling html page. As plaintext format (html, css etc.) it is closer related to LaTeX Beamer or troff presentations than to the commonly known 
 presentation programs. 
 
-	- Slidetitle -
-
-	- Slidecontent -
-
-		NEXT 					// button to scroll down to next slide
 	-----------------
 	- Slidetitle -
 
 	- Slidecontent -
 
-	  NEXT/PREVIOUS 			// button to scroll up
+	 NR NEXT 				// button to scroll down to next slide
+	-----------------
+	- Slidetitle -
 
-The buttons NEXT/PREVIOUS are always on the same place.
+	- Slidecontent -
+
+	 NR NEXT PREVIOUS 		// button to scroll up
+	-----------------
+
+The silde `NR` and `NEXT`, `PREVIOUS` buttons have the same screen position when scrolled to divider line. They are generated automatically. Alternatively you can use a keyboard shortcut to scroll one slide up/down (eg. `SHIFT-UP/DOWN-ARROW`).
 
 It is supposed to be much quicker in creating and manipulating content then your typical presentation program and thus replaces the need for propriety formats like Microsoft Powerpoint `.ppsx` `.pptx`, Apple Keynote `.keynote`, and open formats like LibreOffice or NeoOffcie or Apache OpenOffice Impress `.odp` `.otp` `.sdd` `.sxi`, which make highly use of slow mouse interactions.
+
+### Cheatsheet View (Card Page)
+
+An optimized layout for viewing cheatsheets or quick reference sheets. 
+It uses a always identical column width with endless vertical scrolling.
+
+	- GROUP -  		   | - GROUP - 			| - GROUP -
+	TERM   EXPLANATION | TERM   EXPLANATION | TERM   EXPLANATION
+	TERM   EXPLANATION | TERM   EXPLANATION | TERM   EXPLANATION
+	TERM   EXPLANATION | TERM   EXPLANATION | TERM   EXPLANATION
+	TERM   EXPLANATION | TERM   EXPLANATION | TERM   EXPLANATION
+	TERM   EXPLANATION | TERM   EXPLANATION | 
+	TERM   EXPLANATION | TERM   EXPLANATION | - GROUP -
+					   | TERM   EXPLANATION | TERM   EXPLANATION
+	- GROUP -		   | TERM   EXPLANATION | TERM   EXPLANATION
+	TERM   EXPLANATION | 				    | 
+	TERM   EXPLANATION | 				    | 
+	TERM   EXPLANATION | 				    |
+
+- `TERM` can be a program shortcut, definition, term, vocabulary.  
+- `EXPLANATION` is the corresponding description.  
+- `GROUP` can be a command group, category, topic. Groups are organized in columns.  
+
+If a whole topic group doesn`t fit anymore in a column it gets shifted as a whole into the next column as its first item.
+
+Cheatsheets can be written in and converted into `markdown` (definition list), `XML` or `JSON`
+as they are more or less just grouped key-value pairs.
