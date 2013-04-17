@@ -20,7 +20,6 @@ Sharing the single html file with css and javascript included makes presentation
 Sharing is supposed to be done in one of these ways. 1. As single .html file. 2. As a zipped folder. Illustrated below.
 
 	.
-	|
 	|-- Presentation.zip
 		|-- Presenation Folder
 			|-- presentation.html 		// presentation
