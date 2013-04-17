@@ -350,24 +350,28 @@ The slide `NR` and `NEXT`, `PREVIOUS` buttons have the same screen position when
 
 An optimized layout for viewing cheatsheets or quick reference sheets. It uses columns and endless vertical scrolling. Each cheatsheet file can define its column count individually as parameter.	Columns are filled up in order under the condition to have approximately the same content height in the end.
 
-	- GROUP -  	   (1) | - GROUP - 		(3)	| - GROUP -      (5)
-	TERM   EXPLANATION | TERM   EXPLANATION | TERM   EXPLANATION
-	TERM   EXPLANATION | TERM   EXPLANATION | TERM   EXPLANATION
-	TERM   EXPLANATION | TERM   EXPLANATION | TERM   EXPLANATION
-	TERM   EXPLANATION | TERM   EXPLANATION | TERM   EXPLANATION
-	TERM   EXPLANATION | TERM   EXPLANATION | 
-	TERM   EXPLANATION | TERM   EXPLANATION | - GROUP -      (6)
-					   | TERM   EXPLANATION | TERM   EXPLANATION
-	- GROUP -	   (2) |  					| TERM   EXPLANATION
-	TERM   EXPLANATION | - BOX -	    (4) | 
-	TERM   EXPLANATION | DESCRIPTION	    | 
-	TERM   EXPLANATION | 				    |
+	TITLE
+	LINE
 
-- `TERM` can be a program shortcut, definition, term, vocabulary.  
-- `EXPLANATION` is the corresponding description.  
+	- GROUP -  	   (1) | - GROUP - 		(3)	| - GROUP -      (5)
+	TERM   DESCRIPTION | TERM   DESCRIPTION | TERM   DESCRIPTION
+	TERM   DESCRIPTION | TERM   DESCRIPTION | TERM   DESCRIPTION
+	TERM   DESCRIPTION | TERM   DESCRIPTION | TERM   DESCRIPTION
+	TERM   DESCRIPTION | TERM   DESCRIPTION | TERM   DESCRIPTION
+	TERM   DESCRIPTION | TERM   DESCRIPTION | 
+	TERM   DESCRIPTION | TERM   DESCRIPTION | - GROUP -      (6)
+					   | TERM   DESCRIPTION | TERM   DESCRIPTION
+	- GROUP -	   (2) |  					| TERM   DESCRIPTION
+	TERM   DESCRIPTION | - BOX -	    (4) | 
+	TERM   DESCRIPTION | TEXT	    		| 
+	TERM   DESCRIPTION | 				    |
+
+
 - `GROUP` can be a command group, category, topic. Groups are organized in columns.  
+	- `TERM` can be a program shortcut, definition, term, vocabulary.  
+	- `DESCRIPTION` is the corresponding explanation.  
 - `BOX` boxes can add additional value.
-- `DESCRIPTION` can be helpful facts or background information about groups. Written as automatically wrapped text (multi-line).
+	- `TEXT` can be helpful facts or background information about groups. Written as automatically wrapped text (multi-line).
 
 ### Training View
 
