@@ -15,6 +15,6 @@ tags: ' #box(wikibox) '
 
 3. **Mobile Browsing:** If your basic `theme.css` doesn't satisfy the mobile browsing experience. Build a separate, custom and minimal `theme-mobile.css` without any dependencies on `theme.css` or `theme-extensions.css`.
 
-4. **Special Views** If you included additional layouts (cheatsheets, presentation) to standard layouts (article, post). It is best to add an additional stylesheet for each e.g. `theme-cheatsheet.css`. These files can be loaded as "Scoped CSS" inside the body of your additional layout. 
+4. **Special Layouts** If you included additional layouts (cheatsheet view, presentation view) to standard layouts (article, post). It is best to add an additional stylesheet for each e.g. `theme-cheatsheet.css`. These files can be loaded as "Scoped CSS" inside the body of your additional layout. 
 
 5. Throw everything away and just use `bootstrap`! Just kidding.
