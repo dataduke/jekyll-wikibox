@@ -21,11 +21,11 @@ Sharing is supposed to be done in one of these ways. 1. As single .html file. 2.
 
 	.
 	|-- Presentation.zip
-		|-- Presenation Folder
+		|-- Presentation Folder
 			|-- presentation.html 		// presentation
 			|-- presentation.pdf 		// printed presentation
-			|-- attachment1.pdf 		// other pdfs
-			|-- attachment2.doc 		// other documents
+			|-- attachment.pdf 			// other pdfs
+			|-- attachment.doc 			// other documents
 			|-- attachment.java			// code snippets
 
 
