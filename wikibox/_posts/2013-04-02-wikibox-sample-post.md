@@ -8,6 +8,7 @@ title: Syntax Sample Post
 tags: ' #box(name) #board(name) #toc #star #prio(1) #study(5) #cat(dev) #public #share(Person)'
 line: Line can be used as description, synopsis, abstract, subtitle, preview, teaser or question answered in content. So this line can be very useful in many ways.
 box: wikibox
+attachments: ' Document.pdf Image.jpg Spreadsheet.xls '  
 ---
 # Heading 1
 

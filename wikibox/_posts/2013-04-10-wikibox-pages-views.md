@@ -289,14 +289,16 @@ A 2 column view of a card in scientific paper publication form.
 
 Article View displays the full file with all meta data and statistics of the file.
 
-	Title:
+	Title: WordCount
 
-	Created:				Day:
-	Changed:				Day:
+	Created:				
+	Changed:
+	
 	Tags:						
-	Line:
+	
+	Attachments:
 
-	Text: 000 words, O pomodoros
+	Line:
 
 	Contents:
 
