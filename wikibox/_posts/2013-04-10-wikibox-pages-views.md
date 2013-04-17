@@ -342,33 +342,35 @@ presentation programs.
 	 NR NEXT PREVIOUS 		// button to scroll up
 	-----------------
 
-The silde `NR` and `NEXT`, `PREVIOUS` buttons have the same screen position when scrolled to divider line. They are generated automatically. Alternatively you can use a keyboard shortcut to scroll one slide up/down (eg. `SHIFT-UP/DOWN-ARROW`).
-
-It is supposed to be much quicker in creating and manipulating content then your typical presentation program and thus replaces the need for propriety formats like Microsoft Powerpoint `.ppsx` `.pptx`, Apple Keynote `.keynote`, and open formats like LibreOffice or NeoOffcie or Apache OpenOffice Impress `.odp` `.otp` `.sdd` `.sxi`, which make highly use of slow mouse interactions.
+The slide `NR` and `NEXT`, `PREVIOUS` buttons have the same screen position when scrolled to divider line. They are generated automatically. Alternatively you can use a keyboard shortcut to scroll one slide up/down (eg. `SHIFT-UP/DOWN-ARROW`).
 
 ### Cheatsheet View (Card Page)
 
-An optimized layout for viewing cheatsheets or quick reference sheets. 
-It uses a always identical column width with endless vertical scrolling.
+An optimized layout for viewing cheatsheets or quick reference sheets. It uses columns and endless vertical scrolling. Each cheatsheet file can define its column count individually as parameter.	Columns are filled up in order under the condition to have approximately the same content height in the end.
 
-	- GROUP -  		   | - GROUP - 			| - GROUP -
+	- GROUP -  	   (1) | - GROUP - 		(3)	| - GROUP -      (5)
 	TERM   EXPLANATION | TERM   EXPLANATION | TERM   EXPLANATION
 	TERM   EXPLANATION | TERM   EXPLANATION | TERM   EXPLANATION
 	TERM   EXPLANATION | TERM   EXPLANATION | TERM   EXPLANATION
 	TERM   EXPLANATION | TERM   EXPLANATION | TERM   EXPLANATION
 	TERM   EXPLANATION | TERM   EXPLANATION | 
-	TERM   EXPLANATION | TERM   EXPLANATION | - GROUP -
+	TERM   EXPLANATION | TERM   EXPLANATION | - GROUP -      (6)
 					   | TERM   EXPLANATION | TERM   EXPLANATION
-	- GROUP -		   | TERM   EXPLANATION | TERM   EXPLANATION
-	TERM   EXPLANATION | 				    | 
-	TERM   EXPLANATION | 				    | 
+	- GROUP -	   (2) |  					| TERM   EXPLANATION
+	TERM   EXPLANATION | - BOX -	    (4) | 
+	TERM   EXPLANATION | DESCRIPTION	    | 
 	TERM   EXPLANATION | 				    |
 
 - `TERM` can be a program shortcut, definition, term, vocabulary.  
 - `EXPLANATION` is the corresponding description.  
 - `GROUP` can be a command group, category, topic. Groups are organized in columns.  
+- `BOX` boxes can add additional value.
+- `DESCRIPTION` can be helpful facts or background information about groups. Written as automatically wrapped text (multi-line).
 
-If a whole topic group doesn`t fit anymore in a column it gets shifted as a whole into the next column as its first item.
+### Training View
 
-Cheatsheets can be written in and converted into `markdown` (definition list), `XML` or `JSON`
-as they are more or less just grouped key-value pairs.
+For training plans.
+
+### Agenda View
+
+For events and calenders.
