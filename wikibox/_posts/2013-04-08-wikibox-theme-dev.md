@@ -17,4 +17,4 @@ tags: ' #box(wikibox) '
 
 4. **Special Layouts** If you included additional layouts (cheatsheet view, presentation view) to standard layouts (article, post). It is best to add an additional stylesheet for each e.g. `theme-cheatsheet.css`. These files can be loaded as "Scoped CSS" inside the body of your additional layout. 
 
-5. Throw everything away and just use `bootstrap`! Just kidding.
+5. Throw everything away and just use `twitter bootstrap`! Just kidding.
