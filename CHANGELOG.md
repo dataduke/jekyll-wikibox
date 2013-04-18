@@ -8,10 +8,10 @@ For details of version numbers see [Semantic Versioning](http://semver.org)
 
 ### 0.8.0 / 2013-04-17
 
-![improved](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/tag-improved.png) Project Structure Breakdown into Box, Stack, Area, Board
+![improved](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/tag-improved.png) Project Structure Breakdown into Box, Stack, Area, Board  
 ![added tag](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/tag-added.png) 
-added 4 new documentation files
-![added tag](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/tag-added.png) Welcome site for project
+added 4 new documentation files  
+![added tag](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/tag-added.png) Welcome site for project  
 
 ### 0.7.0 / 2013-04-15
 
