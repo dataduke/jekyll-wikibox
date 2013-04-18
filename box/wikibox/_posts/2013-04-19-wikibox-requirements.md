@@ -39,6 +39,7 @@ Having used a lot of information systems and currently using a Michale Douglas i
 - Keep advantages of cli and alfred usability of old system based on M. Douglas system.
 - in cooperate images and file attachments but not depend on them
 - avoid the pain points of enterprise wikis (confluence, sharepoint, docuwiki etc.)
+- save resources and keep the production code as small as possible (suckless software)
 
 # Foundation
 
