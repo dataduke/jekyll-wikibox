@@ -9,11 +9,13 @@ navpos: 0
 
 # Welcome
 
-Wikibox is an applied paradigm on building a well-organized and consistent wiki for yourself and your team. It is very flexible and can also manage tasks (with various systematic approaches), presentations, cheatsheets, code snippets and documents and last but not least boards (e.g. Scrum Board).
+Wikibox is an applied paradigm on building a well-organized and consistent wiki for yourself and your team. It is very flexible and can also manage tasks (with various systematic approaches), presentations, cheatsheets, code snippets and documents and last but not least boards (e.g. Scrum Board). Hell, it can even archive sent mails and tweets.
 
 ## Characteristics
 
-Wikibox is not your conventional wiki. In fact it is a foundation for a knowledge base with lifetime storage capabilities based on simple technologies (like plaintext only) available for every major operating system including iOS and Android.
+Wikibox is not your conventional wiki. In fact it is a foundation for a knowledge base with lifetime storage capabilities based on simple technologies (like plaintext only) available for every major operating system (including iOS and Android) which makes high usage of scripts.
+
+Probably it is the most magnificent personal information system and it's free to use and hack.
 
 ## Essentials
 
@@ -39,3 +41,7 @@ Check out the cards in `./box/wikibox` for installation, customizing, help and h
 ## Caution!
 
 At the moment the project development is still in alpha state.
+
+## Inspirations
+
+Wikibox incooperates the advantages and principles of Micheal Douglas Information system, and pile if index cards. 

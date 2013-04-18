@@ -4,7 +4,7 @@ category: cat001
 comments: false
 date: 2013-04-02 21:35 (created)
 edit: 2012-05-04  (changed)
-title: Syntax Sample Post
+title: Syntax Sample Card
 tags: ' #box(name) #board(name) #toc #star #prio(1) #study(5) #cat(dev) #public #share(Person)'
 line: Line can be used as description, synopsis, abstract, subtitle, preview, teaser or question answered in content. So this line can be very useful in many ways.
 box: wikibox
