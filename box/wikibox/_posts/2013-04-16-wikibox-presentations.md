@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Presentations
+title: Presentation Cards
 tags: ' #box(wikibox) '
 box: wikibox
 ---
 
-# Making presentations fun again
+# Making Presentations Fun Again
 
 **Layout**
 

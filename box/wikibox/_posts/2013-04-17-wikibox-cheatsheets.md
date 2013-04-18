@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cheatsheet Cards
+title: Cheatsheets and Reference Cards
 tags: ' #box(wikibox) '
 box: wikibox
 ---

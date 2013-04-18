@@ -57,6 +57,9 @@ Reserved hashtags:
 
 	#star		// starred card (used for highlighting via CSS)
 
+	#prio(3)	// card with priority (3 - burning, 2 - high, 1 - mid, 0 - none)
+	#prio 		// defaults to priority 1
+
 	#toc		//  adds a generated table of contents between frontmatter and content
 	#toc(2)		//	toc untill depth level of <h2> headlines
 
@@ -64,6 +67,8 @@ Reserved hashtags:
 	#share(person@mail.com) // share card url with title and line
 
 	#mail(person@mail.com) // sends title, line and content via mail to person
+
+	##ref(CardFile)		// references another card by its file title (without date and ext)
 
 **Item Type and Categories**
 

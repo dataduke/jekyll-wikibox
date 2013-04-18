@@ -6,6 +6,17 @@ A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpap
 
 For details of version numbers see [Semantic Versioning](http://semver.org)
 
+### 0.8.0 / 2013-04-17
+
+![improved](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/tag-improved.png) Project Structure Breakdown into Box, Stack, Area, Board
+![added tag](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/tag-added.png) 
+added 4 new documentation files
+![added tag](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/tag-added.png) Welcome site for project
+
+### 0.7.0 / 2013-04-15
+
+![added tag](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/tag-added.png) added 3 new documentation files (including layout documentation)
+
 ### 0.6.0 / 2013-04-13
 
 ![added tag](https://github.com/dataduke/jekyll-wikibox/raw/master/.info/tag-added.png) parameters inside layout files which are injected via index files containing a parameter list
