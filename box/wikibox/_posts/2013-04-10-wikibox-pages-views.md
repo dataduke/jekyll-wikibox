@@ -325,6 +325,12 @@ Comments are only shown if YAML `comments: true` or if tagged with `#public(comm
 
 	- Contents -
 
+### Plain View (Card Page)
+
+The most basic layout. Only shows the content.
+
+	- Content -
+
 ### Presentation View (Card Page)		
 
 Basically presentation view offers an endless scrolling html page. As plaintext format (html, css etc.) it is closer related to LaTeX Beamer or troff presentations than to the commonly known 
