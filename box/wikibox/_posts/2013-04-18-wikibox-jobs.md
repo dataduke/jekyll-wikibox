@@ -13,7 +13,7 @@ Scripts can be triggered:
 
 - by time: automatically every night (cron jobs)
 - by action: file movement (hazel)
-- manually: execution via launcher (alfred)
+- manually: execution via launcher (alfred) or via command bar (wikibox mobile app)
 
 # Available Scripts
 
