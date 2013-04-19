@@ -8,8 +8,12 @@ title: Syntax Sample Card
 tags: ' #box(name) #board(name) #toc #star #prio(1) #study(5) #cat(dev) #public #share(Person)'
 line: Line can be used as description, synopsis, abstract, subtitle, preview, teaser or question answered in content. So this line can be very useful in many ways.
 box: wikibox
-attachments: ' Document.pdf Image.jpg Spreadsheet.xls '  
+attachments: ' Wikipdia.pdf Document.pdf Image.jpg Spreadsheet.xls '  
 ---
+# Attachments
+
+[Wikipdia.pdf](./Wikipedia.pdf)
+
 # Heading 1
 
 Suspendisse sagittis dui in nisi feugiat ut semper ante viverra. Vestibulum quam dui, hendrerit sed lacinia a, lacinia id sapien. Nulla id nunc ut quam facilisis scelerisque. Aenean et velit ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra erat at augue elementum id tempor ipsum lacinia. Vivamus id tortor mi, ac porttitor arcu. Sed nec eros sem, et suscipit erat. Vivamus viverra felis at elit laoreet mattis. Cras dapibus facilisis mauris ut ultricies. Donec lectus metus, consequat pulvinar congue sed, tempus eu elit. Proin id lacinia magna. Sed imperdiet dui eu turpis tristique ultricies. Cras ullamcorper tempor nisl, ac porta purus hendrerit at. Phasellus in hendrerit dui.
