@@ -80,7 +80,7 @@ Bar for changing the layout of the content or resort all shown cards.
 
 ### (Web) Application
 
-See CardStackr Project.
+See CardStackr Project. Multiple Instances possible for website, tasks, cards, company repository / workspace.
 
 				 |
 	+ Add Tag	 |    |BOX___________________|	     	// COMMAND BAR
