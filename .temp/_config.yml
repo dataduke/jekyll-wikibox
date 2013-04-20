@@ -1,0 +1,185 @@
+
+###################
+# Jekyll Settings #
+###################
+
+# https://github.com/mojombo/jekyll/wiki/Configuration
+
+# excluded files and directories
+exclude: ['Rakefile', 'config.rb', 'CNAME', 'CHANGELOG.md', 'JEKYLL-WIKI.taskpaper', 'JEKYLL-WIKI.sublime-project', 'JEKYLL-WIKI.sublime-workspace']
+# site source
+source: .
+# site destination
+destination: ./_site
+# trunk url
+baseurl: /
+# url, port
+url: http://localhost:4000
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink: /:categories/:year-:month-:day-:title 
+# markdown engine
+markdown: rdiscount 		
+# syntax highlighting - use highlight
+pygments: false				
+# don't use custom plugins
+safe: true
+# regeneration files when changed
+auto: false
+# don't start the server
+server: true
+# don't produce a 'related posts' index
+lsi: false
+# posts per page
+paginate: 100
+
+#################
+# Site Settings #
+#################
+
+title : Site Name
+line: Site Line
+author :
+  name : Name Lastname
+  email : hello@testmail.com
+  github : username
+  twitter : username
+  feedburner : feedname
+
+# Site Logo Path
+# big (landing page, jpg/png, 32x32 or 48x48) 
+# small (topbar, jpg/png 24x24)
+
+# Site Favicon Path (must be: 16x16)
+# Site Favicon Type (see wikipedia)
+
+####################
+# YAML Frontmatter #
+####################
+
+# navigation: sidebarleft, sidebarright topbar, bottombar
+# box: boxname (foldername)
+# boxhelp: boxname (file contains yaml frontmatter of box)
+
+
+
+#################################
+# Global Navigation Definitions #
+#################################
+
+### Global Background Colour
+### Global Highlight Text Colour
+### Global Text Colour
+### Global Decobar Column Width
+### Global Sidebar Default Column Width
+### GLobal Sidebar Icon Path
+
+##########################
+# Navigation Definitions #
+##########################
+
+## TOPBAR
+
+### Background Colour
+### Highlight Text Colour
+### Text Colour
+
+## LEFT SIDEBAR
+
+### Background Colour
+### Highlight Text Colour
+### Text Colour
+### Default Column Width
+### Icon Path (topbar, jpg/png 24x24)
+### Sidebar Overlap (z-index)
+
+## LEFT DECOBAR
+
+### Background Colour
+### Show linenumbers
+### Text Colour
+### Column Width
+
+## RIGHT DECOBAR
+
+### Background Colour
+### Show linenumbers
+### Text Colour
+### Column Width
+
+## RIGHT SIDEBAR
+
+### Background Colour
+### Highlight Text Colour
+### Text Colour
+### Default Column Width
+### Icon Path (topbar, jpg/png 24x24)
+
+## BOTTOMBAR
+
+### Background Colour
+### Highlight Text Colour
+### Text Colour
+### Icon Path (topbar, jpg/png 24x24)
+
+##########################
+# Global Box Definitions #
+##########################
+
+# COLOURS
+
+### Global Box Background Colour (required)
+### Global Card Background Colour (required)
+### Global Card Highlight Text Colour (required)
+
+## COLUMNS
+
+### Global Column Top Offset
+### Global Box Default Column Width (required)
+### Global Card Default Column Width (required)
+
+## VIEW
+
+### Global Box Default Shown/Hidden (required)
+### Global Box Default Style (required)
+
+## CARD ATTRIBUTES
+
+### Global YAML-Frontmatter with optional default values (required)
+
+#######################
+# Box XXX Definitions #
+#######################
+
+## GENERAL
+
+### Box Order ID (required)
+### Box Title (required)
+### Box Folder Path (required)
+
+## ICONS
+
+### Box Logo/Icon Path (landing page, jpg/png, 32x32 or 48x48) 
+### Card Logo/Icon Path (post icon/global search, png/jpg, 16x16, example: bootstrap glyphicon)
+
+# COLOURS
+
+### Box Background Colour
+### Card Background Colour
+### Card Highlight Text Colour
+
+## COLUMNS
+
+### Column Top Offset
+### Box Default Column Width
+### Card Default Column Width
+
+## VIEW
+
+### Box Default Shown/Hidden
+### Box Default Style
+
+## CARD ATTRIBUTES (YAML-Frontmatter)
+
+### Default:
+#### Box, Title, Category, Tags/Keywords, Headline, Abstract/Description, Date Created, Date Modified, Date Last Opened, Kind, Comments.
+### Additional:
