@@ -55,7 +55,8 @@ Reserved hashtags:
 	#pom(1)		// counts the needed worktime of a card in pomodoros (time units of 25 min.)
 	#pom 		// pom without a value defaults to 1.
 
-	#star		// starred card (used for highlighting via CSS)
+	#star		// starred, favorite card (used for css highlighting, ex: star icon)
+	#pin 		// pinned, pin to top card (used for css highlighting & sorted always as first, ex: pin icon)
 
 	#prio(3)	// card with priority (3 - burning, 2 - high, 1 - mid, 0 - none)
 	#prio 		// defaults to priority 1

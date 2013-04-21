@@ -458,6 +458,10 @@ An optimized layout for viewing cheatsheets or quick reference sheets. It uses c
 - `BOX` boxes can add additional value.
 	- `TEXT` can be helpful facts or background information about groups. Written as automatically wrapped text (multi-line).
 
+### Report View
+
+Adds graphical bars for metrics [5/10].
+
 ### Training View
 
 For training plans.

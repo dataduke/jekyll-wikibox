@@ -35,6 +35,19 @@ After YAML Frontmatter:
 
 	TEXT
 
+OR
+
+	GROUP
+	=====
+
+	TERM 	: 	DESCRIPTION
+	TERM 	: 	DESCRIPTION
+
+	BOX
+	====
+
+	TEXT
+
 - [Pandoc - Markdown Definition Lists](http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html#definition-lists)
 - [Kramdown - Markdown Definition Lists](http://kramdown.rubyforge.org/syntax.html#definition-lists)
 
