@@ -12,7 +12,9 @@ box: wikibox
 
 Below follows a list of different layouts with a short description for their possible use.
 
-## Navigation
+## Navigation Layouts
+
+### Website
 
 Layout of header with breadcrumb-navigation, area-navigation, board-navigation, boxes-navigation and stack-navigation.
 	
@@ -42,7 +44,7 @@ Three `X` icons/buttons:
 Description and View/Sort are optional bars,
 that are only shown when a area/board/box/stack is opened.
 
-### Breadcrumb Bar
+**Breadcrumb Bar**
 
 Bar shows navigation path. (maybe fixed position topbar)
 
@@ -53,7 +55,7 @@ Two `Y` Icon/button:
 - Collapse all headers = show table of contents (only available in card page).
 - Open original source file in external local text editor (via applescript)
 
-### Areas/Boards Bars
+**Areas/Boards Bars**
 
 Bar has the appearance of a shelf for areas and boards and shows all areas/boards with a glyphicon and a card count (like at NFL Goal boards).
 
@@ -61,7 +63,7 @@ Bar has the appearance of a shelf for areas and boards and shows all areas/board
 	AreaName    AreaName   AreaName   BoardName   BoardName   BoardName
 	 #cards      #cards     #cards     #cards      #cards       #cards
 
-### Boxes/Stacks Bar
+**Boxes/Stacks Bar**
 
 Bar has the appearance of shelf for boxes and stacks and shows all boxes/stacks with a glyphicon and a card count (like at NFL Goal boards).
 
@@ -69,17 +71,111 @@ Bar has the appearance of shelf for boxes and stacks and shows all boxes/stacks 
 	BoxName     BoxName    BoxName    StackName   StackName   StackName
 	 #cards      #cards     #cards     #cards      #cards       #cards
 
-### View/Sort Bar
+**View/Sort Bar**
 
 Bar for changing the layout of the content or resort all shown cards.
 
 	View: List Card Full	Sort: Year Name Tags
 
-### Command Bar
 
-Consists of one big input field, for searching, filtering, navigating.
+### (Web) Application (Organize and Edit Mode)
 
-## Pages
+See CardStackr Project. Multiple Instances possible for website, tasks, cards, company repository / workspace.
+
+				 |
+	+ Add Tag	 |    |BOX___________________|	     	// COMMAND BAR
+				 |    
+	Tag          |      View |___| Sort |___|      		// View Sort (optional)
+	- Name (5)   |	          	  
+	- Name (1)   |	         CONTENT 	  
+			     | 
+	Box          |    |---------------------|
+    - Inbox (20) |    |       Card        X |
+    - Journal(5) |    |---------------------|
+	- Gymlog(3)  |   
+	...	         |    |---------------------|
+    	         |    |       Card        X |
+	Project      |    |---------------------|
+    - Name(3)    |
+	...          |    |---------------------|
+                 |    |       Card        X |
+    Area         |    |---------------------|
+    - Fitness (9)|
+    - Dev (2)    |     << < 1 2 3..10..20 >>		 // Pages (optional)
+    ...		     |
+
+**Sidebar**
+
+At the sidebar you can add tags (As quick filters or saved searches).
+
+- Complex Tags like box(name), areea(name), project(name) are getting their own section.
+- Simple Tags like star, public, ... are added to Tag section.
+
+Possibly useful boxes: 
+
+- Inbox
+- Journal (Daily (Web)Diary)
+- Gymlog
+- Snippets (Code Listings)
+- Cheatsheets
+
+Possible useful can be supersection:
+
+- Inbox, Drafts (Incomplete/Unfinished), Archive.
+- Active, On Hold, Templates
+
+**Command Bar**
+
+Consists of one big input field, for searching, filtering, navigating, change view or sort.
+Maybe command bar can have a dropdown box in beginning to search inside one box only.
+
+**Content**
+
+Shows content as endless scroll or with pages to turn.
+
+**View/Sort Bar (optional)**
+
+Two dropdown boxes to change thes criteria.
+
+**Cards**
+
+- have a fixed height, with the ability to scroll inside
+- can be edited directly inside the card
+	- click Button`X` to toggle between rendered view/edit mode
+	- doubleclick Button`X` to open in external editor (VIM)
+- can be opened individually on a single page (double click title)
+- can be edited in single page
+
+### (Web) Application (Fullscreen/Focus/Study Mode)
+
+The full screen view of the application, helps to focus and shows nearly only one Index Card is shown nearly at fullscreen (without unecessary meta information). The card content is scrollable inside. without rearranging the other elements.
+
+A good learning card has just the amount of information so that scrolling is not necessary.
+With simple shortcuts (j/k or up/down arrow) the student can switch cards.
+
+	|Field/Box|v|________|SEARCH| TIMER
+								 
+	|---------------------------| |-------|
+	|			Title			| |Preview|	// Last Card
+	|		Card Content 		| |-------|
+	|							| ||-----||
+	|							| ||Prev.||	// Current Card
+	|		Current Card		| ||-----||
+	|							| |-------|
+	|							| |Preview|	// Next Card
+	|							| |-------|
+	|							| |-------|
+	|							| |Preview|	
+	|---------------------------| |-------|
+
+**Elements**
+
+- Content Area: One Index Card is shown nearly at fullscreen (without unecessary meta information).
+- (optional) The Command Bar lets enter commands, highlight text, search, filter for cards.
+- (optional) A minimal timer shows the current time and a pomodoro counter (graphical hourglass, disc, circle).
+- A small sidebar shows the stream of cards in this box. The cards only show the title and card content. They are displayed as little thumbnails (similar to Mac Preview App for a document with several pages). The current card from the main content is highlighted (e.g. framed blue). The last viewed (1 or 2 cards) and next (complete stack) viewed cards are visible (chronically).
+
+## Page Layouts
 
 ### Board and Area Page
  
@@ -128,7 +224,7 @@ Here a single card is rolled out (Focused View).
 	 /   \
 	/     \
 
-## Views
+## Content Layouts
 
 ### Simple View
 
@@ -213,6 +309,18 @@ Pure content view can be used for boards, like: next action board, scrum/kanban 
 	*************************************
 
 			   - Next Card -
+
+### Mosaic View (Board, Box Page)
+	
+Small card snapshot in float layout from bird's eye perspective
+
+	*******	  *******   *******   *******
+	*  1  *	  *	 2  *   *  3  *   *  4  *
+	*******   *******   *******   *******
+
+	*******   *******   *******   *******
+    *  5  *   *  6  *   *  7  *   *  8  *
+	*******   *******   *******   *******
 
 ### Meta View (Box Page)
 
@@ -378,6 +486,10 @@ An optimized layout for viewing cheatsheets or quick reference sheets. It uses c
 	- `DESCRIPTION` is the corresponding explanation.  
 - `BOX` boxes can add additional value.
 	- `TEXT` can be helpful facts or background information about groups. Written as automatically wrapped text (multi-line).
+
+### Report View
+
+Adds graphical bars for metrics [5/10].
 
 ### Training View
 
