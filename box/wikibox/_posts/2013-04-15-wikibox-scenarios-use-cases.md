@@ -35,6 +35,12 @@ Below follows an incomplete list of possible use cases.
 - Task Management
 - Note Taking
 
+## Presentations
+
+- Presentation Cards
+- Storyline Cards (Presentation Sketches Drafts)
+- Speaker Cards
+
 ## Studying
 
 - Learning Cards (Vocabulary)

@@ -435,7 +435,7 @@ Comments are only shown if YAML `comments: true` or if tagged with `#public(comm
 
 ### Plain View (Card Page)
 
-The most basic layout. Only shows the content.
+The most basic layout. Only shows the content. This layout can also be used for presentations, when you use each card as a single presentation slide.
 
 	- Content -
 
