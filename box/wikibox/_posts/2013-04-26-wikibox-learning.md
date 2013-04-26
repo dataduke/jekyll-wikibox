@@ -42,7 +42,7 @@ Every card will be repetitively learned for a minimum of 5 times.
 **Pseudo-Code**
 
 	initialize BoxX as Box12;
-	initialize StackPos as Start of Stack; // or as EndofStack
+	initialize StackPos as Start of Stack; // or as End of Stack
 
 	while (Stack of Cards in Box1 > 0)
 	{
