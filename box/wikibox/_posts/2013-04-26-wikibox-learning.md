@@ -41,47 +41,41 @@ Every card will be repetitively learned for a minimum of 5 times.
 
 **Pseudo-Code**
 
-	initialize boxX as box12;
-	initialize stackPos as start; // or end
+	initialize BoxX as Box12;
+	initialize StackPos as Start of Stack; // or as EndofStack
 
-	while (Stack of cards in box1 > 0)
+	while (Stack of Cards in Box1 > 0)
 	{
-		ask question;
-		if (answer is false)
-		{
-			erase all marks;
-			put card at end of stack in box 1;
+		ask Question;
+		if (Answer is false) {
+			erase all Marks;
+			put Card at End of Stack in Box1;
 		}
-		if (answer is true)
-		{
-			switch (mark)
-			{
-				not marked: put card at stackPos of stack in box2;
-				marked I: put card at stackPos of stack on box6;
-				marked II: put card at stackPos of stack on boxX;
-				marked III: put card at stackPos of stack on box19;
-				marked IIII: archive card {
-					put card in box with topic (get Topic of Card) 
-					at beginning of stack of Year-Month Section (get Date of Card | %Y-%M);
+		if (Answer is true) {
+			switch (Mark) {
+				not Marked: put card at StackPos in Box2;
+				I: put card at StackPos in Box6;
+				II: put card at StackPos in BoxX;
+				III: put card at StackPos in Box19;
+				IIII: archive Card {
+					put Card in Box with Topic (get Topic of Card) 
+					at Start of Stack of Year-Month Section (get Date of Card | %Y-%M);
+					// or sort chronologically with Year-Month Seperator
 				}
 			}
 		}
 	}
 	option 1:
-		for all boxes
+		for all Boxes
 		{
-			if (boxNumber == 1)
-			{
-				boxNumber = box19;
+			if (BoxNumber == 1) {
+				BoxNumber = Box19;
 			}
-			else
-			{
-				boxNumber = boxNumber - 1;
+			else {
+				BoxNumber--;
 			}
 		}
 	or option 2:
-		for all boxes
-		{
-			select stack;
-			move stack from boxN to box N-1;
+		for all Boxes {
+			move Stack from BoxN to Box(N-1);
 		}
