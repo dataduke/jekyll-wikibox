@@ -25,7 +25,7 @@ Every card will be repetitively learned for a minimum of 5 times.
 	2.1.1 all marks on the card are erased  
 	2.1.2 and the card is put back in box 1 (at the end of the stack)  
 	
-	2.2 If **you know the answer** of a card:
+	2.2 If **you know the answer** of a card:  
 	2.2.1 for the 1st time (not marked), you mark the card with `I` and put it in box 2.  
 	2.2.2 for the 2nd time (marked `I`), you mark the card with `II` and put it in box 6.  
 	2.2.3 for the 3rd time (marked `II`), you mark the card with `III` and put it in box X.  
