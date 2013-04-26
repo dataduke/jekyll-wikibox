@@ -11,7 +11,7 @@ Use Cases:
 	- store notes
 Iteration 1:
 	current cycle for next 2 weeks @sticky
-
+	- use creole over markdown (javascript)
 	- pinned cards shelf (with counts of words or task statistics)
 	- list view of takspapaer files with (instead of word count) count of  #due / next action #/ #all to done (#due = today, overdue)
 	
