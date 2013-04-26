@@ -44,7 +44,7 @@ Every card will be repetitively learned for a minimum of 5 times.
 	initialize BoxX as Box12;
 	initialize StackPos as Start of Stack; // or as End of Stack
 
-	while (Stack of Cards in Box1 > 0)
+	while (Stack of Cards in Box1 > 0 Cards)
 	{
 		ask Question;
 		if (Answer is false) {
