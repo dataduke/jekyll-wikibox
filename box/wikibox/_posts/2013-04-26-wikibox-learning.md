@@ -62,8 +62,16 @@ Every card will be repetitively learned for a minimum of 5 times.
 			}
 		}
 	}
-	for all boxes{
-		box = box - 1;
-	}
+	option 1:
+		for all boxes
+		{
+			boxNumber = boxNumber - 1;
+		}
+	or option 2:
+		for all boxes
+		{
+			select stack;
+			move stack from boxN to box N-1;
+		}
 
 
