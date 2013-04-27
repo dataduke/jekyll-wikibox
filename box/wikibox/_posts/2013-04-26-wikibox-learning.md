@@ -11,7 +11,7 @@ box: wikibox
 
 [Croco 2-6-X-19](http://www.youtube.com/watch?v=LnU53vjplI0) is a learning system based on index cards with questions written on the front and answers written on the back. 
 
-It uses a pipeline of 19 boxes for index cards representing 19 learning days. 2-6-X-19 represents a box number. X is a chosen number between 6 and 19 for extra heavy answers.
+It uses a pipeline of 19 boxes for index cards representing 19 learning days. 2-6-X-19 represents the box numbers for filing of correctly answered cards. X is a individually chosen number between 6 and 19 for extra heavy answers.
 
 Every card will be repetitively learned for a minimum of 5 times.
 
