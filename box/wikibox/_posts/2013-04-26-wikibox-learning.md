@@ -5,8 +5,7 @@ tags: ' #box(wikibox) '
 box: wikibox
 ---
 
-# Index Card Learning Method
-
+# Card Learning Methods
 
 ## Croco 2-6-19
 
@@ -44,38 +43,42 @@ Every card will be repetitively learned for a minimum of 5 times.
 	initialize BoxX as Box12;
 	initialize StackPos as Start of Stack; // or as End of Stack
 
-	while (Stack of Cards in Box1 > 0 Cards)
-	{
-		ask Question;
-		if (Answer is false) {
-			erase all Marks;
-			put Card at End of Stack in Box1;
-		}
-		if (Answer is true) {
-			switch (Mark) {
-				not Marked: put card at StackPos in Box2;
-				I: put card at StackPos in Box6;
-				II: put card at StackPos in BoxX;
-				III: put card at StackPos in Box19;
-				IIII: archive Card {
-					put Card in Box with Topic (get Topic of Card) 
-					at Start of Stack of Year-Month Section (get Date of Card | %Y-%M);
-					// or sort chronologically with Year-Month Seperator
+	for each Day {
+		for each Card of Box1 {
+			while (Stack of Cards in Box1 > 0 Cards)
+			{
+				ask Question of Card;
+				if (Answer is false) {
+					erase all Marks of Card;
+					put Card at End of Stack in Box1;
+				}
+				if (Answer is true) {
+					switch (Mark) {
+						not Marked: put card at StackPos in Box2;
+						I: put card at StackPos in Box6;
+						II: put card at StackPos in BoxX;
+						III: put card at StackPos in Box19;
+						IIII: archive Card {
+							put Card in Box with Topic (get Topic of Card) 
+							at Start of Stack of Year-Month Section (get Date of Card | %Y-%M);
+							// or sort chronologically with Year-Month Seperator
+						}
+					}
 				}
 			}
 		}
+		option 1:
+			for each Box
+			{
+				if (BoxNumber == 1) {
+					BoxNumber = Box19;
+				}
+				else {
+					BoxNumber--;
+				}
+			}
+		or option 2:
+			for each Box {
+				move Stack from BoxN to Box(N-1);
+			}
 	}
-	option 1:
-		for all Boxes
-		{
-			if (BoxNumber == 1) {
-				BoxNumber = Box19;
-			}
-			else {
-				BoxNumber--;
-			}
-		}
-	or option 2:
-		for all Boxes {
-			move Stack from BoxN to Box(N-1);
-		}
