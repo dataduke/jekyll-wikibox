@@ -1,11 +1,13 @@
 ---
 layout: post
-title: Learning Systems
+title: Learning Boards and Systems
 tags: ' #box(wikibox) '
 box: wikibox
 ---
 
 # Card Learning Methods
+
+A learning method can be implemented as special board with e.g. 19 stacks (boxes) of cards.
 
 ## Croco 2-6-19
 

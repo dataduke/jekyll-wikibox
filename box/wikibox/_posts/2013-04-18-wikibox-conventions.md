@@ -71,6 +71,9 @@ Reserved hashtags:
 
 	##ref(CardFile)		// references another card by its file title (without date and ext)
 
+	#learn(1)		   // puts a card in box X of learning system (numbers 1-19)
+	#answered(2)	   // counts X times for correct answers (numbers 0-4)
+
 **Item Type and Categories**
 
 Category tag and YAML category differ. YAML category describes the item type (card, box, stack, area, board) and category tag describes a personal meaningful category (e.g. dev - development, pro - productivity).
