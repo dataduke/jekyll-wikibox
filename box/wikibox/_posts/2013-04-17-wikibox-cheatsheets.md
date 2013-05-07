@@ -1,11 +1,37 @@
 ---
 layout: post
-title: Cheatsheets and Reference Cards
+title: Reference Cards and Cheatsheets
 tags: ' #box(wikibox) '
 box: wikibox
 ---
 
-# Creating simple and shareable quick references
+# Definitions
+
+- A (regular) reference is condensed transcript (e.g. of a lecture) with examples and background information. The information content is nearly complete in comparison to the original.
+- A cheat sheet or quick reference is a very short and essential outline. It only gives hints to your mind to dig deeper in your memory or the web.
+
+# Reference Cards
+
+Structuring Approach:
+
+	Abbreviations (used inside this card)
+	1. Topic 1
+	1.1. Subtopic 1
+		Text
+		Examples (Code Snippets)
+		References (Table with Shortcut, Action, Description, Definitions)
+	1.2 Subtopic 2
+	2. Topic 2
+	References
+
+Similar to learning math: 
+
+	* Starting with definition (introduction)
+	* do some basic examples
+	* deduce rules
+	* practice a lot.
+
+# Quick References (Cheatsheets)
 
 Cheatsheets can be used for quick reference, glossary, definition lists, any key value lists.
 
@@ -53,7 +79,7 @@ OR
 
 **Sharing Formats**
 
-Besides the YAML frontmatter cheatsheets are more or less a representation of classical grouped key-value pairs. Thus the written`markdown` file (definition lists) can easily be exported/imported in common standards las `XML` or `JSON`.
+Besides the YAML frontmatter cheatsheets are more or less a representation of classical grouped key-value pairs. Thus the written`markdown` file (definition lists) can easily be exported/imported in common standards as `XML` or `JSON`.
 
 	---
 	Standard YAML Frontmatter

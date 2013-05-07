@@ -42,24 +42,24 @@ Every card will be repetitively learned for a minimum of 5 times.
 
 **Pseudo-Code**
 
-	initialize BoxX as Box12;
+	initialize Box-X as Box-12;
 	initialize StackPos as Start of Stack; // or as End of Stack
 
 	for each Day {
-		for each Card of Box1 {
-			while (Stack of Cards in Box1 > 0 Cards)
+		for each Card of Box-1 {
+			while (Stack of Cards in Box-1 > 0 Cards)
 			{
 				ask Question of Card;
 				if (Answer is false) {
 					erase all Marks of Card;
-					put Card at End of Stack in Box1;
+					put Card at End of Stack in Box-1;
 				}
 				if (Answer is true) {
 					switch (Mark) {
-						not Marked: put card at StackPos in Box2;
-						I: put card at StackPos in Box6;
-						II: put card at StackPos in BoxX;
-						III: put card at StackPos in Box19;
+						not Marked: put card at StackPos in Box-2;
+						I: put card at StackPos in Box-6;
+						II: put card at StackPos in Box-X;
+						III: put card at StackPos in Box-19;
 						IIII: archive Card {
 							put Card in Box with Topic (get Topic of Card) 
 							at Start of Stack of Year-Month Section (get Date of Card | %Y-%M);
@@ -73,7 +73,7 @@ Every card will be repetitively learned for a minimum of 5 times.
 			for each Box
 			{
 				if (BoxNumber == 1) {
-					BoxNumber = Box19;
+					BoxNumber = Box-19;
 				}
 				else {
 					BoxNumber--;

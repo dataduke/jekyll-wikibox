@@ -11,11 +11,10 @@ Use Cases:
 	- store notes
 Iteration 1:
 	current cycle for next 2 weeks @sticky
-	- create scritpt: use evernote api to push physical learning cards (markdown-files with only one image attachment) to evernote notebooks
-	- use creole over markdown (javascript)
+	- create script: use evernote api to push physical learning cards (markdown-files with only one image attachment) to evernote notebooks
+	- use creole over markdown (javascript) http://wikicreole.org/wiki/Creole1.0
 	- pinned cards shelf (with counts of words or task statistics)
-	- list view of takspapaer files with (instead of word count) count of  #due / next action #/ #all to done (#due = today, overdue)
-	
+	- list view of takspaper files with (instead of word count) count of  #due / next action #/ #all to done (#due = today, overdue)
 	- basic layout  
 		- fix horizontal scrolling
 		- post layout
