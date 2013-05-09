@@ -37,4 +37,3 @@ Sharing is supposed to be done in one of these ways.
 			|-- attachment.pdf 			// other pdfs
 			|-- attachment.doc 			// other documents
 			|-- attachment.java			// code snippets
-

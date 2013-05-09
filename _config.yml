@@ -3,7 +3,7 @@
 # Jekyll Settings #
 ###################
 
-exclude: ['Rakefile', 'config.rb', 'CNAME', 'CHANGELOG.md', 'JEKYLL-WIKI.taskpaper', 'JEKYLL-WIKI.sublime-project', 'JEKYLL-WIKI.sublime-workspace']
+exclude: ['Rakefile', 'config.rb', 'CNAME', 'CHANGELOG.md', 'BACKLOG.md', 'README.md', 'JEKYLL-WIKIBOX.taskpaper', 'JEKYLL-WIKIBOX.sublime-project', 'JEKYLL-WIKIBOX.sublime-workspace']
 markdown: rdiscount
 pygments: false
 permalink: /:categories/:year-:month-:day-:title # https://github.com/mojombo/jekyll/wiki/Permalinks
