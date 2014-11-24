@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>jekyll-wikibox by dataduke</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>jekyll-wikibox</h1>
+        <p>A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpaper) transformed into static html by jekyll.</p>
+
+        <p class="view"><a href="https://github.com/dataduke/jekyll-wikibox">View the Project on GitHub <small>dataduke/jekyll-wikibox</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/dataduke/jekyll-wikibox/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/dataduke/jekyll-wikibox/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/dataduke/jekyll-wikibox">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="jekyll-wikibox" class="anchor" href="#jekyll-wikibox" aria-hidden="true"><span class="octicon octicon-link"></span></a>jekyll-wikibox</h1>
+
+<p>A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpaper) transformed into static html by jekyll. The default theme is inspired by sublime text editor.</p>
+
+<ul>
+<li>
+<strong><a href="#features">Features</a></strong> or what is it about?
+
+<ul>
+<li>Functional Features</li>
+<li>Appearance</li>
+</ul>
+</li>
+<li>
+<strong><a href="#usage">Usage</a></strong> or how can I exploit it?
+
+<ul>
+<li>Live Demo</li>
+<li>Installation</li>
+<li>Local Deployment</li>
+<li>Web Deployment</li>
+<li>Magic Tricks</li>
+<li>Customization</li>
+<li>Themes</li>
+</ul>
+</li>
+<li>
+<strong><a href="#project-planning">Project Planning</a></strong> or how can I hack it?
+
+<ul>
+<li>Important Files</li>
+<li>Project Structure</li>
+<li>Theme Development</li>
+</ul>
+</li>
+<li>
+<strong><a href="#references">References</a></strong> or how does it work?
+
+<ul>
+<li>Core Technologies</li>
+<li>Related Technologies</li>
+<li>Markup Languages</li>
+<li>Higher-Level Languages</li>
+<li>Feature Inspirations</li>
+<li>Design Inspirations</li>
+<li>Design Frameworks</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<h3>
+<a id="functional-features" class="anchor" href="#functional-features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Functional Features</h3>
+
+<ul>
+<li>multiple boxes/repositories (blogs) for notes (markdown, textile)</li>
+<li>sort by date created</li>
+</ul>
+
+<h3>
+<a id="appearance" class="anchor" href="#appearance" aria-hidden="true"><span class="octicon octicon-link"></span></a>Appearance</h3>
+
+<ul>
+<li>Folding Text Theme</li>
+<li>iOS Linen Theme</li>
+<li>Paint Bucket Theme</li>
+<li>Sublime Text Theme</li>
+</ul>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<h3>
+<a id="live-demo" class="anchor" href="#live-demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Live Demo</h3>
+
+<ul>
+<li>Available via <code>branch gh-pages</code> (github pages)<br>
+<code>http://dataduke.github.com/jekyll-wikibox</code> (to be done)</li>
+</ul>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<ol>
+<li>install ruby</li>
+<li>install jekyll <code>$ sudo gem install jekyll</code>
+</li>
+<li>fork/clone/check out this github project <code>$ git clone git://github.com/dataduke/jekyll-wikibox.git</code>
+</li>
+</ol>
+
+<h3>
+<a id="local-deployment" class="anchor" href="#local-deployment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Local Deployment</h3>
+
+<ol>
+<li>change to <code>$ cd ~/github/jekyll-wiki</code>
+</li>
+<li>run <code>$ jekyll --server</code> </li>
+<li>open <code>http://localhost:4000/</code>
+</li>
+</ol>
+
+<h3>
+<a id="web-deployment" class="anchor" href="#web-deployment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Web Deployment</h3>
+
+<ul>
+<li>GitHub Hosting: Please refer to github pages help.</li>
+<li>Other web hoster: Please refer to jekyll wiki/help.</li>
+</ul>
+
+<h3>
+<a id="magic-tricks" class="anchor" href="#magic-tricks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Magic Tricks</h3>
+
+<ul>
+<li>Interactive Wallpaper: <a href="http://mac.appstorm.net/reviews/internet-reviews/desktopr-put-a-website-on-your-desktop/">desktopr.app</a> (Mac OS X )</li>
+<li>Individual App: <a href="http://fluidapp.com">fluid.app</a> (Mac OS X ), <a href="http://fakeapp.com/">fake.app</a> (Mac OS X )</li>
+</ul>
+
+<h3>
+<a id="customization" class="anchor" href="#customization" aria-hidden="true"><span class="octicon octicon-link"></span></a>Customization</h3>
+
+<pre><code>./_config.yml           # configuration
+./_themes/themename     # themes; move all files/folders contained in a theme to root folder (and override)
+</code></pre>
+
+<h3>
+<a id="hacking-layouts-with-parameters" class="anchor" href="#hacking-layouts-with-parameters" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacking Layouts with Parameters</h3>
+
+<p>The files <code>./index.html</code> and <code>./box000/index.html</code> define the index pages. There (ex: <code>./box004/index.html</code>), the choosen layout (in YAML frontmatter, ex: <code>index-posts-1</code>) and a parameter list for the choosen layout (as content, ex: <code>box004</code>) have to be defined:</p>
+
+<pre><code>---
+layout: index-posts-1
+title: Box 4
+navigation: true
+navtitle: Box 4
+navpos: 5 
+---
+box004 showday
+</code></pre>
+
+<p>Inside the choosen layout file (ex: <code>./_layouts/index-posts-1.html</code>) the parameter list is refereed to by the liquid template variable <code>content</code> in line 3 and 5:</p>
+
+<pre><code>{% for post in site.posts %}
+  {% capture b %}{{ post.box }}{% endcapture %}
+  {% if content contains b %}
+    &lt;!-- do something with every post with YAML frontmatter of "box: box004" --&gt;
+    {% if content contains "showday" %}
+      &lt;!-- do something with dates, like display day --&gt;
+      Day : {{ post.date | date:"%A" }
+    {% endif}
+  {% endif %}
+{% endfor %}
+</code></pre>
+
+<h3>
+<a id="themes" class="anchor" href="#themes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Themes</h3>
+
+<p>Folding Text <a href="https://github.com/dataduke/jekyll-wikibox/tree/master/_themes/foldingtext">README</a></p>
+
+<p><img src="https://github.com/dataduke/jekyll-wikibox/raw/master/_themes/foldingtext/_foldingtext.jpg" alt="Folding Text" width="700"></p>
+
+<p>iOS Linen <a href="https://github.com/dataduke/jekyll-wikibox/tree/master/_themes/ioslinen">README</a>  </p>
+
+<p><img src="https://raw.github.com/dataduke/jekyll-wikibox/master/_themes/ioslinen/_ioslinen.jpg" alt="iOS Linen" width="700"></p>
+
+<p>Paint Bucket <a href="https://github.com/dataduke/jekyll-wikibox/tree/master/_themes/paintpucket">README</a>  </p>
+
+<p><img src="https://github.com/dataduke/jekyll-wikibox/raw/master/_themes/paintpucket/_paintbucket.jpg" alt="Paint Bucket" width="700"></p>
+
+<p>Sublime Text <a href="https://github.com/dataduke/jekyll-wikibox/tree/master/_themes/sublimetext">README</a>  </p>
+
+<p><img src="https://raw.github.com/dataduke/jekyll-wikibox/master/_themes/sublimetext/_sublimetext.jpg" alt="Sublime Text" width="700"></p>
+
+<h2>
+<a id="project-planning" class="anchor" href="#project-planning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project Planning</h2>
+
+<h3>
+<a id="important-files" class="anchor" href="#important-files" aria-hidden="true"><span class="octicon octicon-link"></span></a>Important Files</h3>
+
+<pre><code>./README.md                       # contains general information
+./CHANGELOG.md                    # contains version history
+./BACKLOG.md                      # contains initial feature backlog (backup/reminder)
+./JEKYLL-WIKIBOX.taskpaper        # contains planned features and current backlog
+</code></pre>
+
+<h3>
+<a id="project-structure" class="anchor" href="#project-structure" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project Structure</h3>
+
+<pre><code>.
+|-- .info                         # can be ignored; used for project information only
+|-- .temp                         # can be ignored; used at development for backup of important files
+|-- _includes                     # used for building index pages
+|   |-- main-index-sidebar.md
+|   |-- main-index-box-N.md
+|   |-- box-N-index-sidebar.md
+|   |-- box-N-index.md
+|-- _layouts
+|   |-- default.html
+|   |-- post.html
+|-- _themes             
+|-- _site                         # not checked in; created by jekyll as deployment directory
+|-- _plugins 
+|   |-- additional-feature-X
+|-- assets                        # for layout dependencies only
+|   |-- css
+|       |-- style.css
+|   |-- img
+|   |-- js
+|   |-- favicon.ico
+|-- box000                        # box001-005; more boxes can be added/renamed/deleted
+|   |-- _posts
+|   |   |-- 2013-01-01-hello-world.markdown    # .md or .textile or .taskpaper
+|   |   |-- 2013-01-01-hello-world             # folder for post attachments
+|   |       |-- attachment-1.jpg
+|   |       |-- attachment-2.pdf
+|   |-- atom.xml
+|   |-- index.html
+|-- _config.yml
+|-- index.html
+|-- atom.xml
+</code></pre>
+
+<h3>
+<a id="theme-development" class="anchor" href="#theme-development" aria-hidden="true"><span class="octicon octicon-link"></span></a>Theme Development</h3>
+
+<p><strong>Best Practices and Conventions:</strong></p>
+
+<ol>
+<li><p><strong>Markdown Editing:</strong> Build a basic <code>theme.css</code> by styling a simple markdown text file (with the help of Marked.app this is superfast). Typically this stylesheet includes the styling of body fonts, headings (h1-h4), links, lists, sourcecode, blockquotes, definitions, tables, columns, dividers (hr) etc. This file can be used for general text editing, post previewing, printing etc. (Your basic theme.css should/could be print and mobile friendly.)</p></li>
+<li><p><strong>Desktop Browsing:</strong> Now create a <code>theme-ext.css</code> (or <code>theme-web.css</code>). This file will extend your basic <code>theme.css</code> to style navigation and external media elements. It should include the styling for header, navigation (bars, breadcrumb), footer, index (page body content), embedded media, etc. and maybe overwrite <code>theme.css</code> with a different background etc. For desktop browsing load both created stylesheets: <code>theme.css</code>, which renders your post texts, and <code>theme-ext.css</code> for nice navigation.</p></li>
+<li><p><strong>Mobile Browsing:</strong> If your basic <code>theme.css</code> doesn't satisfy the mobile browsing experience. Build a separate, custom and minimal <code>theme-mobile.css</code> without any dependencies on <code>theme.css</code> or <code>theme-extensions.css</code>.</p></li>
+<li><p>Throw everything away and just use <code>bootstrap</code>! Just kidding.</p></li>
+</ol>
+
+<h2>
+<a id="references" class="anchor" href="#references" aria-hidden="true"><span class="octicon octicon-link"></span></a>References</h2>
+
+<h3>
+<a id="acknowledgments" class="anchor" href="#acknowledgments" aria-hidden="true"><span class="octicon octicon-link"></span></a>Acknowledgments</h3>
+
+<p>To all jekyll builders.</p>
+
+<h3>
+<a id="core-technologies" class="anchor" href="#core-technologies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Core Technologies</h3>
+
+<ul>
+<li><a href="http://www.ruby-lang.org/en/">ruby</a></li>
+<li>
+<a href="https://github.com/mojombo/jekyll">jekyll</a>, <a href="http://stackoverflow.com/questions/tagged/jekyll">Stackoverflow</a>
+</li>
+</ul>
+
+<h3>
+<a id="related-technologies" class="anchor" href="#related-technologies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Related Technologies</h3>
+
+<ul>
+<li>
+<a href="https://github.com/matthodan/jekyll-asset-pipeline">jekyll-asset-pipeline</a>, <a href="http://matthodan.com/2012/11/22/jekyll-asset-pipeline.html">blogpost</a>
+</li>
+<li><a href="https://github.com/moshen/jekyll-asset_bundler">jekkll-asset_bundler</a></li>
+<li>
+<a href="https://github.com/plusjade/jekyll-bootstrap">jekyll-bootstrap</a> </li>
+<li><a href="https://github.com/ggarron/multi-blog-jekyll">multi-blog-jekyll</a></li>
+<li>
+<a href="http://pages.github.com/">github pages</a>, <a href="https://help.github.com/categories/20/articles">help</a> </li>
+<li><a href="https://github.com/imathis/octopress">octopress</a></li>
+<li><a href="http://ruhoh.com">ruhoh</a></li>
+</ul>
+
+<h3>
+<a id="markup-languages" class="anchor" href="#markup-languages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Markup Languages</h3>
+
+<ul>
+<li>
+<a href="http://daringfireball.net/projects/markdown/">markdown</a> by John Gruber</li>
+<li>
+<a href="http://fletcherpenney.net/multimarkdown/">multimarkdown</a> by Fletcher Penny</li>
+<li>
+<a href="https://help.github.com/articles/github-flavored-markdown">github flavored markdown</a> by GitHub</li>
+<li>
+<a href="http://textism.com/tools/textile/">textile</a> by Dean Allan</li>
+<li>
+<a href="http://www.hogbaysoftware.com/products/taskpaper">taskpaper</a> by Jesse Grosjea</li>
+</ul>
+
+<h3>
+<a id="higher-level-languages" class="anchor" href="#higher-level-languages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Higher-Level Languages</h3>
+
+<ul>
+<li>
+<a href="http://www.yaml.org">YAML</a>: data serialization;</li>
+<li>
+<a href="http://www.liquidmarkup.org/">liquid</a> <a href="https://github.com/Shopify/liquid">github-repo</a> <a href="https://github.com/Shopify/liquid/wiki">github-wiki</a> <a href="http://wiki.shopify.com/UsingLiquid">guide</a>: template engine;</li>
+<li>
+<a href="http://mustache.github.com">{{ mustache }}</a>, <a href="https://github.com/janl/mustache.js">js-github-repo</a>: tag expansion;</li>
+<li>
+<a href="http://sass-lang.com">Sass</a>: CSS3 abstraction; .scss or .sass;</li>
+<li>
+<a href="http://haml.info">Haml</a>, <a href="http://haml.info/docs/yardoc/file.REFERENCE.html">doc</a>: HTML abstraction; .html.haml;</li>
+<li>
+<a href="http://lesscss.org/">less</a>, <a href="https://github.com/cloudhead/less.js">github-repo</a>: CSS3 extension for dynamic behaviour (variables etc.);</li>
+<li>
+<a href="http://www.liquidmarkup.org/">liquid</a>, <a href="https://github.com/mojombo/jekyll/wiki/liquid-extensions">help</a>, <a href="https://github.com/Shopify/liquid">github-repo</a>, <a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers">wiki</a>: template system;</li>
+<li>
+<a href="http://de.wikipedia.org/wiki/ERuby">ERuby</a>, <a href="http://ruby-doc.org/stdlib-1.9.3/libdoc/erb/rdoc/ERB.html">erb</a>: Ruby templating; .erb, .html.erb, .xml.erb;</li>
+<li>
+<a href="http://coffeescript.org/">CoffeeScript</a>: JavaScript abstraction;</li>
+</ul>
+
+<h3>
+<a id="feature-inspirations" class="anchor" href="#feature-inspirations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Feature Inspirations</h3>
+
+<ul>
+<li>
+<strong>PoIC</strong> (Pile of Index Cards), <a href="http://pileofindexcards.org/">Wiki</a>, <a href="http://pileofindexcards.org/blog/">Blog</a>
+</li>
+</ul>
+
+<h3>
+<a id="design-inspirations" class="anchor" href="#design-inspirations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Design Inspirations</h3>
+
+<ul>
+<li>
+<strong>Sublime Text</strong> Theme, <a href="http://www.sublimetext.com/">Sublime Text Editor</a>, <a href="https://github.com/buymeasoda/soda-theme">Soda-Dark.sublime-theme</a>, <a href="https://github.com/simeonv/st2-color-schemes">Monokai-Soda.tmtheme</a>
+</li>
+</ul>
+
+<h3>
+<a id="design-frameworks" class="anchor" href="#design-frameworks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Design Frameworks</h3>
+
+<ul>
+<li><a href="http://jqueryui.com/">jQuery UI</a></li>
+<li>
+<a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>, <a href="https://github.com/twitter/bootstrap">github-repo</a>
+</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/dataduke">dataduke</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
