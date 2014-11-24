@@ -35,9 +35,10 @@ A guerilla wiki for hackers based on plaintext files (markdown, textile, taskpap
 
 ### Appearance
   
-  - Sublime Text Theme
-  - Paint Bucket Theme
+  - Folding Text Theme
   - iOS Linen Theme
+  - Paint Bucket Theme
+  - Sublime Text Theme
 
 ## Usage
 
@@ -103,19 +104,19 @@ Inside the choosen layout file (ex: `./_layouts/index-posts-1.html`) the paramet
 
 Folding Text [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_themes/foldingtext)
 
-![Folding Text](https://github.com/dataduke/jekyll-wikibox/raw/master/_themes/foldingtext/_foldingtext.jpg)
+<img src="https://github.com/dataduke/jekyll-wikibox/raw/master/_themes/foldingtext/_foldingtext.jpg" alt="Folding Text" width="700">
 
 iOS Linen [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_themes/ioslinen)  
 
-![iOS Linen](https://raw.github.com/dataduke/jekyll-wikibox/master/_themes/ioslinen/_ioslinen.jpg)
+<img src="https://raw.github.com/dataduke/jekyll-wikibox/master/_themes/ioslinen/_ioslinen.jpg" alt="iOS Linen" width="700">
 
 Paint Bucket [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_themes/paintpucket)  
 
-![Paint Bucket](https://github.com/dataduke/jekyll-wikibox/raw/master/_themes/paintpucket/_paintbucket.jpg)
+<img src="https://github.com/dataduke/jekyll-wikibox/raw/master/_themes/paintpucket/_paintbucket.jpg" alt="Paint Bucket" width="700">
 
 Sublime Text [README](https://github.com/dataduke/jekyll-wikibox/tree/master/_themes/sublimetext)  
 
-![Sublime Text](https://raw.github.com/dataduke/jekyll-wikibox/master/_themes/sublimetext/_sublimetext.jpg)
+<img src="https://raw.github.com/dataduke/jekyll-wikibox/master/_themes/sublimetext/_sublimetext.jpg" alt="Sublime Text" width="700">
 
 ## Project Planning
 
